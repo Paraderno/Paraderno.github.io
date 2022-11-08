@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            2021.12.19 图论DFS |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/avatar.3co1ubx6en80.png","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Keep writing and Keep loving.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">2021.12.19 图论DFS</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/avatar.3co1ubx6en80.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-04-15 18:00:00</span>
+        <span class="mobile">2022-04-15 18:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2022-11-06 21:54:54</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E4%BD%9C%E4%B8%9A/">作业</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>774 字</span>
+        </span>
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h1 id="基础"><a href="#基础" class="headerlink" title=" 基础"></a><span id="more"></span> 基础</h1><h2 id="kattis-Birthday-Party"><a href="#kattis-Birthday-Party" class="headerlink" title="kattis Birthday Party"></a>kattis Birthday Party</h2><p><a class="link"   target="_blank" rel="noopener" href="https://open.kattis.com/problems/birthday" >https://open.kattis.com/problems/birthday<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>求强联通分量个数是否大于 $1$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 不一定正确</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Node</span> &#123;</span><br><span class="line">	<span class="type">int</span> dfn,low,vis,belong;</span><br><span class="line">&#125;;</span><br><span class="line">std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; To;</span><br><span class="line">std::vector&lt;Node&gt; node;</span><br><span class="line">std::stack&lt;<span class="type">int</span>&gt; stack;</span><br><span class="line"><span class="type">int</span> cnt,timer;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u,<span class="type">int</span> fa)</span> </span>&#123;</span><br><span class="line">	node[u].dfn = node[u].low = ++timer;</span><br><span class="line">	node[u].vis = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">	stack.<span class="built_in">push</span>(u);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> v : To[u]) &#123;</span><br><span class="line">		<span class="keyword">if</span>(v == fa) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">if</span>(node[v].vis == <span class="number">0</span>) &#123;</span><br><span class="line">			<span class="built_in">dfs</span>(v,u);</span><br><span class="line">			node[u].low = std::<span class="built_in">min</span>(node[u].low,node[v].low);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> node[u].low = std::<span class="built_in">min</span>(node[u].low,node[v].dfn);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span>(node[u].low == node[u].dfn) &#123;</span><br><span class="line">		<span class="type">int</span> v;</span><br><span class="line">		cnt++;</span><br><span class="line">		<span class="keyword">do</span> &#123;</span><br><span class="line">			v = stack.<span class="built_in">top</span>();</span><br><span class="line">			stack.<span class="built_in">pop</span>();</span><br><span class="line">			node[v].vis = <span class="number">-1</span>;</span><br><span class="line">			node[v].belong = cnt;</span><br><span class="line">		&#125;<span class="keyword">while</span>(u != v);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> m )</span> </span>&#123;</span><br><span class="line">	To.<span class="built_in">clear</span>();To.<span class="built_in">resize</span>(n + <span class="number">1</span>);</span><br><span class="line">	node.<span class="built_in">clear</span>();node.<span class="built_in">resize</span>(n + <span class="number">1</span>);</span><br><span class="line">	cnt = <span class="number">0</span>; timer = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> m)</span> </span>&#123;</span><br><span class="line">	<span class="built_in">init</span>(n,m);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">		<span class="type">int</span> a,b;</span><br><span class="line">		std::cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">		a++;b++;</span><br><span class="line">		To[a].<span class="built_in">push_back</span>(b);</span><br><span class="line">		To[b].<span class="built_in">push_back</span>(a);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">		<span class="keyword">if</span>(!node[i].vis)</span><br><span class="line">			<span class="built_in">dfs</span>(i,i);</span><br><span class="line">	<span class="keyword">if</span>(cnt &gt; <span class="number">1</span>) std::cout &lt;&lt; <span class="string">&quot;Yes\n&quot;</span>;</span><br><span class="line">	<span class="keyword">else</span> std::cout &lt;&lt; <span class="string">&quot;No\n&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">	std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">		<span class="type">int</span> n,m;</span><br><span class="line">		std::cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">		<span class="keyword">if</span>(n == <span class="number">0</span> &amp;&amp; m == <span class="number">0</span>) <span class="keyword">break</span>;</span><br><span class="line">		<span class="built_in">solve</span>(n,m);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>强连通分量题不一定保证图连通</p>
+<h2 id="USACO2019-Jan-S-P1-Grass-Planting"><a href="#USACO2019-Jan-S-P1-Grass-Planting" class="headerlink" title="USACO2019 Jan, S P1. Grass Planting"></a>USACO2019 Jan, S P1. Grass Planting</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5197" >https://www.luogu.com.cn/problem/P5197<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>求每个点的度数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line">std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; To;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">	std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	std::cin &gt;&gt; n;</span><br><span class="line">	To.<span class="built_in">resize</span>(n + <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">		<span class="type">int</span> a,b;</span><br><span class="line">		std::cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">		To[a].<span class="built_in">push_back</span>(b);</span><br><span class="line">		To[b].<span class="built_in">push_back</span>(a);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) </span><br><span class="line">		ans = std::<span class="built_in">max</span>(ans,(<span class="type">int</span>)To[i].<span class="built_in">size</span>() + <span class="number">1</span>);</span><br><span class="line">	std::cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="USACO2019-Feb-B-P2-The-Great-Revegetation"><a href="#USACO2019-Feb-B-P2-The-Great-Revegetation" class="headerlink" title="USACO2019 Feb B P2. The Great Revegetation"></a>USACO2019 Feb B P2. The Great Revegetation</h2><p><a class="link"   target="_blank" rel="noopener" href="https://vjudge.net/problem/Gym-331106T" >https://vjudge.net/problem/Gym-331106T<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>从小到大依次确定点的颜色</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line">std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; To;</span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; ans;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">	std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">	<span class="type">int</span> n,m;</span><br><span class="line">	std::cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	To.<span class="built_in">resize</span>(n + <span class="number">1</span>); ans.<span class="built_in">resize</span>(n + <span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">		<span class="type">int</span> a,b;</span><br><span class="line">		std::cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">		To[a].<span class="built_in">push_back</span>(b);</span><br><span class="line">		To[b].<span class="built_in">push_back</span>(a);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> u = <span class="number">1</span>; u &lt;= n; u++) &#123;</span><br><span class="line">		<span class="type">bool</span> vis[<span class="number">5</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> v : To[u]) </span><br><span class="line">			vis[ans[v]] = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">4</span>; i++)</span><br><span class="line">			<span class="keyword">if</span>(!vis[i]) &#123;</span><br><span class="line">				ans[u] = i;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">		std::cout &lt;&lt; ans[i];</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-1"><a href="#碎碎念-1" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>不能从根节点 $dfs$，因为要求输出最小字典序</p>
+<h2 id="USACO2019-Open-B-P2-Milk-Factory"><a href="#USACO2019-Open-B-P2-Milk-Factory" class="headerlink" title="USACO2019 Open, B P2. Milk Factory"></a>USACO2019 Open, B P2. Milk Factory</h2><p><a class="link"   target="_blank" rel="noopener" href="https://vjudge.net/problem/Gym-331106W" >https://vjudge.net/problem/Gym-331106W<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="USACO2019-Dec-B-P3-Livestock-Lineup"><a href="#USACO2019-Dec-B-P3-Livestock-Lineup" class="headerlink" title="USACO2019 Dec, B P3. Livestock Lineup"></a>USACO2019 Dec, B P3. Livestock Lineup</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5833" >https://www.luogu.com.cn/problem/P5833<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="Tree-Reconstruction-UVa10410"><a href="#Tree-Reconstruction-UVa10410" class="headerlink" title="Tree Reconstruction,UVa10410"></a>Tree Reconstruction,UVa10410</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/UVA10410" >https://www.luogu.com.cn/problem/UVA10410<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="CF862B-Mahmoud-and-Ehab-and-the-bipartiteness"><a href="#CF862B-Mahmoud-and-Ehab-and-the-bipartiteness" class="headerlink" title="CF862B Mahmoud and Ehab and the bipartiteness"></a>CF862B Mahmoud and Ehab and the bipartiteness</h2><p><a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/contest/862/problem/B" >https://codeforces.com/contest/862/problem/B<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="CF1176E-Cover-it"><a href="#CF1176E-Cover-it" class="headerlink" title="CF1176E Cover it!"></a>CF1176E Cover it!</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1176E" >https://www.luogu.com.cn/problem/CF1176E<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="Inspector’sDilemma-Dhaka2007-UVa12118"><a href="#Inspector’sDilemma-Dhaka2007-UVa12118" class="headerlink" title="Inspector’sDilemma, Dhaka2007, UVa12118"></a>Inspector’sDilemma, Dhaka2007, UVa12118</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/UVA12118" >https://www.luogu.com.cn/problem/UVA12118<i class="fas fa-external-link-alt"></i></a></p>
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><h2 id="SWERC-Birdwatching"><a href="#SWERC-Birdwatching" class="headerlink" title="SWERC Birdwatching"></a>SWERC Birdwatching</h2><p><a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/gym/102501/problem/K" >https://codeforces.com/gym/102501/problem/K<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="USACO2019-Open-B-P3-Cow-Evolution"><a href="#USACO2019-Open-B-P3-Cow-Evolution" class="headerlink" title="USACO2019 Open, B P3. Cow Evolution"></a>USACO2019 Open, B P3. Cow Evolution</h2><p><a class="link"   target="_blank" rel="noopener" href="https://vjudge.net/problem/Gym-331106X" >https://vjudge.net/problem/Gym-331106X<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="USACO2018-Open-B-P3-Family-Tree"><a href="#USACO2018-Open-B-P3-Family-Tree" class="headerlink" title="USACO2018 Open, B P3. Family Tree"></a>USACO2018 Open, B P3. Family Tree</h2><p><a class="link"   target="_blank" rel="noopener" href="https://vjudge.net/problem/Gym-331106L" >https://vjudge.net/problem/Gym-331106L<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="CF920E-Connected-Components"><a href="#CF920E-Connected-Components" class="headerlink" title="CF920E. Connected Components?"></a>CF920E. Connected Components?</h2><p><a class="link"   target="_blank" rel="noopener" href="https://codeforces.com/problemset/problem/920/E" >https://codeforces.com/problemset/problem/920/E<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="Baltic-OI-2020-–-Graph"><a href="#Baltic-OI-2020-–-Graph" class="headerlink" title="Baltic OI 2020 – Graph"></a>Baltic OI 2020 – Graph</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P6696" >https://www.luogu.com.cn/problem/P6696<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="Spreadsheet-Calculator-WF1992-UVa215"><a href="#Spreadsheet-Calculator-WF1992-UVa215" class="headerlink" title="Spreadsheet Calculator, WF1992, UVa215"></a>Spreadsheet Calculator, WF1992, UVa215</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/UVA215" >https://www.luogu.com.cn/problem/UVA215<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="APIO-2011-Table-Coloring"><a href="#APIO-2011-Table-Coloring" class="headerlink" title="APIO 2011 - Table Coloring"></a>APIO 2011 - Table Coloring</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3631" >https://www.luogu.com.cn/problem/P3631<i class="fas fa-external-link-alt"></i></a></p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E4%BD%9C%E4%B8%9A/">#作业</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80"><span class="nav-text"> 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#kattis-Birthday-Party"><span class="nav-text">kattis Birthday Party</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#USACO2019-Jan-S-P1-Grass-Planting"><span class="nav-text">USACO2019 Jan, S P1. Grass Planting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="nav-text">思路</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#USACO2019-Feb-B-P2-The-Great-Revegetation"><span class="nav-text">USACO2019 Feb B P2. The Great Revegetation</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-1"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#USACO2019-Open-B-P2-Milk-Factory"><span class="nav-text">USACO2019 Open, B P2. Milk Factory</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#USACO2019-Dec-B-P3-Livestock-Lineup"><span class="nav-text">USACO2019 Dec, B P3. Livestock Lineup</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tree-Reconstruction-UVa10410"><span class="nav-text">Tree Reconstruction,UVa10410</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CF862B-Mahmoud-and-Ehab-and-the-bipartiteness"><span class="nav-text">CF862B Mahmoud and Ehab and the bipartiteness</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CF1176E-Cover-it"><span class="nav-text">CF1176E Cover it!</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Inspector%E2%80%99sDilemma-Dhaka2007-UVa12118"><span class="nav-text">Inspector’sDilemma, Dhaka2007, UVa12118</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6"><span class="nav-text">进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#SWERC-Birdwatching"><span class="nav-text">SWERC Birdwatching</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#USACO2019-Open-B-P3-Cow-Evolution"><span class="nav-text">USACO2019 Open, B P3. Cow Evolution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#USACO2018-Open-B-P3-Family-Tree"><span class="nav-text">USACO2018 Open, B P3. Family Tree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CF920E-Connected-Components"><span class="nav-text">CF920E. Connected Components?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Baltic-OI-2020-%E2%80%93-Graph"><span class="nav-text">Baltic OI 2020 – Graph</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spreadsheet-Calculator-WF1992-UVa215"><span class="nav-text">Spreadsheet Calculator, WF1992, UVa215</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#APIO-2011-Table-Coloring"><span class="nav-text">APIO 2011 - Table Coloring</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2022
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+            <script async 
+                    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.5.2</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

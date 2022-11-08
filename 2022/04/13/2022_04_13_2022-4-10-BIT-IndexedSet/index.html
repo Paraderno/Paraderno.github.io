@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            2022.4.10 BIT&amp;IndexedSet |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/fontawesome/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/avatar.3co1ubx6en80.png","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Keep writing and Keep loving.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.5.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"};
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"};
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">2022.4.10 BIT&amp;IndexedSet</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/avatar.3co1ubx6en80.png">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-04-13 15:09:31</span>
+        <span class="mobile">2022-04-13 15:09</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2022-11-06 22:00:23</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">数据结构与算法</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E4%BD%9C%E4%B8%9A/">作业</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>2.7k 字</span>
+        </span>
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                <h1 id="基础"><a href="#基础" class="headerlink" title=" 基础"></a><span id="more"></span> 基础</h1><h2 id="POJ2352-Stars"><a href="#POJ2352-Stars" class="headerlink" title="POJ2352 Stars"></a>POJ2352 Stars</h2><p><a class="link"   target="_blank" rel="noopener" href="http://bailian.openjudge.cn/practice/2352?lang=en_US" >http://bailian.openjudge.cn/practice/2352?lang=en_US<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>定义每个点的价值 $f_i$ 为 $x \leq x_i$ 且 $y \leq y_i$ 的点的个数</p>
+<p>显然，我们可以将一维坐标 $x$ 从小到大排序，这样对当前点可能有价值的点都已经被遍历过</p>
+<p>维护一个树状数组，$a[i]$ 表示纵坐标为 $i$ 的点个数，使用 $BIT$ 能以 $log$ 的时间复杂度进行区间和查询与单点修改</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span> &lt; (<span class="type">const</span> <span class="keyword">struct</span> node &amp;Node) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x == Node.x) <span class="keyword">return</span> y &lt; Node.y;</span><br><span class="line">        <span class="keyword">return</span> x &lt; Node.x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    <span class="type">int</span> val[<span class="number">40000</span>];</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt; <span class="number">40000</span>; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    std::cin &gt;&gt; n;</span><br><span class="line">    <span class="function">std::vector&lt;node&gt; <span class="title">a</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">    	std::cin &gt;&gt; a[i].x &gt;&gt; a[i].y;</span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>());</span><br><span class="line"></span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">ans</span><span class="params">(n)</span></span>;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">BIT</span> f;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="type">int</span> x = f.<span class="built_in">query</span>(a[i].y + <span class="number">1</span>);</span><br><span class="line">        ans[x]++;</span><br><span class="line">        f.<span class="built_in">add</span>(a[i].y + <span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        std::cout &lt;&lt; ans[i] &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>$POJ$ 是什么东西啊（恼 </p>
+<h2 id="Ultra-QuickSort"><a href="#Ultra-QuickSort" class="headerlink" title="Ultra-QuickSort"></a>Ultra-QuickSort</h2><p><a class="link"   target="_blank" rel="noopener" href="http://bailian.openjudge.cn/practice/2299?lang=en_US" >http://bailian.openjudge.cn/practice/2299?lang=en_US<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>求逆序对个数</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    std::vector&lt;<span class="type">int</span>&gt; val;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        size = x;</span><br><span class="line">        val.<span class="built_in">resize</span>(x + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= size; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(n)</span>,<span class="title">b</span><span class="params">(n)</span></span>;</span><br><span class="line">    std::unordered_map&lt;<span class="type">int</span>,<span class="type">int</span>&gt; map;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) </span><br><span class="line">        std::cin &gt;&gt; a[i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        b[i] = a[i];   </span><br><span class="line"></span><br><span class="line">    <span class="built_in">sort</span>(b.<span class="built_in">begin</span>(), b.<span class="built_in">end</span>());</span><br><span class="line">    <span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(map[b[i]] == <span class="number">0</span>)</span><br><span class="line">            map[b[i]] = ++cnt;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">BIT</span> f;</span><br><span class="line">    f.<span class="built_in">resize</span>(cnt);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = n - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="type">int</span> x = map[a[i]];</span><br><span class="line">        ans += f.<span class="built_in">query</span>(x - <span class="number">1</span>);</span><br><span class="line">        f.<span class="built_in">add</span>(x,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    std::cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">int</span> n;</span><br><span class="line">        std::cin &gt;&gt; n;</span><br><span class="line">        <span class="keyword">if</span>(n) <span class="built_in">solve</span>(n);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-1"><a href="#碎碎念-1" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>这个图都好几年了。。。</p>
+<h2 id="Japan"><a href="#Japan" class="headerlink" title="Japan"></a>Japan</h2><p><a class="link"   target="_blank" rel="noopener" href="https://vjudge.net/problem/UVALive-2926" >https://vjudge.net/problem/UVALive-2926<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>若干对线段，求交点个数</p>
+<p>即 BIT 求逆序对个数</p>
+<p>注意答案范围，需要使用 long long</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">node</span> &#123;</span><br><span class="line">    <span class="type">int</span> x,y;</span><br><span class="line">    <span class="type">bool</span> <span class="keyword">operator</span> &lt; (<span class="type">const</span> <span class="keyword">struct</span> node &amp;Node) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x == Node.x) <span class="keyword">return</span> y &gt; Node.y;</span><br><span class="line">        <span class="keyword">return</span> x &gt; Node.x;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    std::vector&lt;<span class="type">int</span>&gt; val;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        size = x;</span><br><span class="line">        val.<span class="built_in">resize</span>(x + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= size; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i]++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">long</span> <span class="type">long</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> n,m,k;</span><br><span class="line">    std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;</span><br><span class="line">    <span class="function">std::vector&lt;node&gt; <span class="title">a</span><span class="params">(k)</span></span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; k; i++) </span><br><span class="line">        std::cin &gt;&gt; a[i].x &gt;&gt; a[i].y;</span><br><span class="line">    <span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>());</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">BIT</span> f;</span><br><span class="line">    f.<span class="built_in">resize</span>(<span class="number">1000</span>);</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">        ans += f.<span class="built_in">query</span>(a[i].y - <span class="number">1</span>);</span><br><span class="line">        f.<span class="built_in">add</span>(a[i].y,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> T;</span><br><span class="line">    std::cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= T; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;Test case %d: %lld\n&quot;</span>,i,<span class="built_in">solve</span>());</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-2"><a href="#碎碎念-2" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>忘开 <code>long long</code> 卡了几分钟。。。</p>
+<h2 id="Mega-Inversions"><a href="#Mega-Inversions" class="headerlink" title="Mega Inversions"></a>Mega Inversions</h2><p><a class="link"   target="_blank" rel="noopener" href="https://vjudge.net/problem/Kattis-megainversions" >https://vjudge.net/problem/Kattis-megainversions<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>正反做两次 $BIT$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    std::vector&lt;<span class="type">int</span>&gt; val;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        size = x;</span><br><span class="line">        val.<span class="built_in">resize</span>(x + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= size; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i] += value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; a,f,g;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> A,B;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    a.<span class="built_in">resize</span>(n); f.<span class="built_in">resize</span>(n); g.<span class="built_in">resize</span>(n);   </span><br><span class="line">    A.<span class="built_in">resize</span>(n); B.<span class="built_in">resize</span>(n);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    std::cin &gt;&gt; n;</span><br><span class="line">    <span class="built_in">init</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        std::cin &gt;&gt; a[i];</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        f[i] = i - A.<span class="built_in">query</span>(a[i]);</span><br><span class="line">        A.<span class="built_in">add</span>(a[i],<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = n - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        g[i] = B.<span class="built_in">query</span>(a[i] - <span class="number">1</span>);</span><br><span class="line">        B.<span class="built_in">add</span>(a[i],<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    LL ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        ans = ans + <span class="number">1ll</span> * f[i] * g[i];</span><br><span class="line">    std::cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-3"><a href="#碎碎念-3" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>板子题</p>
+<h2 id="P6278-USACO20OPEN-Haircut-G"><a href="#P6278-USACO20OPEN-Haircut-G" class="headerlink" title="P6278 [USACO20OPEN]Haircut G"></a>P6278 [USACO20OPEN]Haircut G</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P6278" >https://www.luogu.com.cn/problem/P6278<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><p>$h[x]$ 记录高度为 $x$ 的点</p>
+<p>从 $0$ 到 $n - 1$ ，如果当前点的高度 $h[i] &#x3D; j$ ，那么这个点对之后答案的贡献为 $1\sim i-1$ 中存在的点的个数</p>
+<p>用 $BIT$ 去维护信息</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> LL long long</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    std::vector&lt;LL&gt; val;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        size = x;</span><br><span class="line">        val.<span class="built_in">resize</span>(x + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= size; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i] += value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">LL <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        LL sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; a,f;</span><br><span class="line">std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; h;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> A;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    a.<span class="built_in">resize</span>(n); </span><br><span class="line">    h.<span class="built_in">resize</span>(n);</span><br><span class="line">    f.<span class="built_in">resize</span>(n); </span><br><span class="line">    A.<span class="built_in">resize</span>(n); </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n;</span><br><span class="line">    std::cin &gt;&gt; n;</span><br><span class="line">    <span class="built_in">init</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        std::cin &gt;&gt; a[i];</span><br><span class="line">        <span class="keyword">if</span>(a[i] &lt; n) </span><br><span class="line">            h[a[i]].<span class="built_in">push_back</span>(i);</span><br><span class="line">        A.<span class="built_in">add</span>(i + <span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    LL ans = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        std::cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> x : h[i]) &#123;</span><br><span class="line">            ans += A.<span class="built_in">query</span>(x);</span><br><span class="line">            A.<span class="built_in">add</span>(x + <span class="number">1</span>,<span class="number">-1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-4"><a href="#碎碎念-4" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>题目挺不错的，思路很巧妙</p>
+<p>但难度标签应该再高一点点，感觉能到蓝色</p>
+<h2 id="POJ3321-Apple-Tree"><a href="#POJ3321-Apple-Tree" class="headerlink" title="POJ3321 Apple Tree"></a>POJ3321 Apple Tree</h2><p><a class="link"   target="_blank" rel="noopener" href="http://poj.org/problem?id=3321" >http://poj.org/problem?id=3321<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="思路-5"><a href="#思路-5" class="headerlink" title="思路"></a>思路</h2><p>将树转化为 $dfs$ 序，维护 $BIT$ </p>
+<p>单点修改，查询使用前缀和 $-$ 前缀和的方式</p>
+<p>代码：$POJ$ 的题懒得写</p>
+<h3 id="碎碎念-5"><a href="#碎碎念-5" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>想了半天</p>
+<p>一眼看穿是树剖板子题（虽然但是，没必要</p>
+<p>但没反应过来可以直接用 $BIT$ 解决。往区间修改区间查询的方向去想了</p>
+<p>还得加练QAQ</p>
+<h2 id="CQOI2006-简单题"><a href="#CQOI2006-简单题" class="headerlink" title="[CQOI2006]简单题"></a>[CQOI2006]简单题</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5057" >https://www.luogu.com.cn/problem/P5057<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-6"><a href="#思路-6" class="headerlink" title="思路"></a>思路</h3><p>维护 $BIT$ </p>
+<ul>
+<li>对于修改， $l$ 处 $+1$ ，$r + 1$ 处 $+1$</li>
+<li>对于查询，判断 $1\sim x$ 的前缀和是奇数还是偶数</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    std::vector&lt;<span class="type">int</span>&gt; val;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        size = x;</span><br><span class="line">        val.<span class="built_in">resize</span>(x + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= size; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i] += value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum % <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; a,f;</span><br><span class="line">std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; h;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> A;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    A.<span class="built_in">resize</span>(n); </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    std::cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    <span class="built_in">init</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++) &#123;</span><br><span class="line">        <span class="type">int</span> opt;</span><br><span class="line">        std::cin &gt;&gt; opt;</span><br><span class="line">        <span class="keyword">if</span>(opt == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="type">int</span> l,r;</span><br><span class="line">            std::cin &gt;&gt; l &gt;&gt; r;</span><br><span class="line">            A.<span class="built_in">add</span>(l,<span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span>(r != n) A.<span class="built_in">add</span>(r + <span class="number">1</span>,<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="type">int</span> x;</span><br><span class="line">            std::cin &gt;&gt; x;</span><br><span class="line">            std::cout &lt;&lt; A.<span class="built_in">query</span>(x) &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-6"><a href="#碎碎念-6" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>$2006$ 年的省选题还是 $BIT$ 板子，现在呢？？</p>
+<p>呜呜X…X</p>
+<h2 id="Cows"><a href="#Cows" class="headerlink" title="Cows"></a>Cows</h2><p><a class="link"   target="_blank" rel="noopener" href="http://bailian.openjudge.cn/practice/2481?lang=en_US" >http://bailian.openjudge.cn/practice/2481?lang=en_US<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-7"><a href="#思路-7" class="headerlink" title="思路"></a>思路</h3><p>按照 $r$ 递减为第一优先级， $l$ 递增为第二优先级排序</p>
+<p>类似于求逆序数对的方法，维护一个 $BIT$</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    std::vector&lt;<span class="type">int</span>&gt; val;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        val.<span class="built_in">clear</span>();</span><br><span class="line">        size = x;</span><br><span class="line">        val.<span class="built_in">resize</span>(x + <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= size; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            val[i] += value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            sum += val[i];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Node</span> &#123;</span><br><span class="line">    <span class="type">int</span> l,r,id,ans;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp1</span><span class="params">(Node x,Node y)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(x.r == y.r) <span class="keyword">return</span> x.l &lt; y.l;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">return</span> x.r &gt; y.r;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">cmp2</span><span class="params">(Node x,Node y)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x.id &lt; y.id;</span><br><span class="line">&#125;</span><br><span class="line">std::vector&lt;Node&gt; cow;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> A;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    A.<span class="built_in">resize</span>(<span class="number">1e5</span> + <span class="number">10</span>);</span><br><span class="line">    cow.<span class="built_in">clear</span>();</span><br><span class="line">    cow.<span class="built_in">resize</span>(n);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="built_in">init</span>(n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        std::cin &gt;&gt; cow[i].l &gt;&gt; cow[i].r;</span><br><span class="line">        cow[i].l++; cow[i].r++;</span><br><span class="line">        cow[i].id = i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">sort</span>(cow.<span class="built_in">begin</span>(), cow.<span class="built_in">end</span>(),cmp1);</span><br><span class="line">    <span class="type">int</span> op = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span>(op &lt; n) &#123;</span><br><span class="line">        <span class="type">int</span> pos = op + <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span>(pos &lt; n) &#123;</span><br><span class="line">            <span class="keyword">if</span>(cow[pos].l == cow[op].l &amp;&amp; cow[pos].r == cow[op].r)</span><br><span class="line">                pos++;</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> ans;</span><br><span class="line">        ans = A.<span class="built_in">query</span>(cow[op].l);</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = op; i &lt; pos; i++)</span><br><span class="line">            cow[i].ans = ans;</span><br><span class="line">        A.<span class="built_in">add</span>(cow[op].l,pos - op);</span><br><span class="line">        op = pos;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">sort</span>(cow.<span class="built_in">begin</span>(), cow.<span class="built_in">end</span>(),cmp2);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">        std::cout &lt;&lt; cow[i].ans &lt;&lt; <span class="string">&quot; \n&quot;</span>[i == n - <span class="number">1</span>];</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="type">int</span> n;</span><br><span class="line">        std::cin &gt;&gt; n;</span><br><span class="line">        <span class="keyword">if</span>(!n) <span class="keyword">break</span>;</span><br><span class="line">        <span class="built_in">solve</span>(n);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-7"><a href="#碎碎念-7" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>第一遍写的时候读错题了，当做计算每只牛有多少个比他弱的</p>
+<p>后面改的时候排序优先级改了一半。。。WA了一次</p>
+<h2 id="P4054-JSOI2009-计数问题"><a href="#P4054-JSOI2009-计数问题" class="headerlink" title="P4054 [JSOI2009] 计数问题"></a>P4054 [JSOI2009] 计数问题</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4054" >https://www.luogu.com.cn/problem/P4054<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="思路-8"><a href="#思路-8" class="headerlink" title="思路"></a>思路</h3><p>二维 $BIT$ + 二维差分</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> &#123;</span><br><span class="line">    <span class="type">int</span> val[<span class="number">310</span>][<span class="number">310</span>][<span class="number">110</span>];</span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">resize</span><span class="params">(<span class="type">int</span> initn,<span class="type">int</span> initm)</span> </span>&#123;</span><br><span class="line">        n = initn;</span><br><span class="line">        m = initm;   </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lowbit</span><span class="params">(<span class="type">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> x &amp; -x;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="type">void</span> <span class="title">add</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> color,<span class="type">int</span> value)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i &lt;= n; i += <span class="built_in">lowbit</span>(i))</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j = y; j &lt;= m; j += <span class="built_in">lowbit</span>(j))</span><br><span class="line">                val[i][j][color] += value;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">query</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y,<span class="type">int</span> color)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> sum = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i = x; i; i -= <span class="built_in">lowbit</span>(i))</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j = y; j; j -= <span class="built_in">lowbit</span>(j))</span><br><span class="line">               sum += val[i][j][color];</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BIT</span> A;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	std::ios::<span class="built_in">sync_with_stdio</span>(<span class="literal">false</span>);</span><br><span class="line">    std::cin.<span class="built_in">tie</span>(<span class="literal">nullptr</span>);</span><br><span class="line">    <span class="type">int</span> n,m;</span><br><span class="line">    <span class="type">int</span> color[<span class="number">310</span>][<span class="number">310</span>];</span><br><span class="line">    std::cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">    A.<span class="built_in">resize</span>(n,m);</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= m; j++) &#123;</span><br><span class="line">            std::cin &gt;&gt; color[i][j];</span><br><span class="line">            A.<span class="built_in">add</span>(i,j,color[i][j],<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="type">int</span> q;</span><br><span class="line">    std::cin &gt;&gt; q;</span><br><span class="line">    <span class="keyword">while</span>(q--) &#123;</span><br><span class="line">        <span class="type">int</span> opt;</span><br><span class="line">        std::cin &gt;&gt; opt;</span><br><span class="line">        <span class="keyword">if</span>(opt == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="type">int</span> x,y,c;</span><br><span class="line">            std::cin &gt;&gt; x &gt;&gt; y &gt;&gt; c;</span><br><span class="line">            A.<span class="built_in">add</span>(x,y,color[x][y],<span class="number">-1</span>);</span><br><span class="line">            color[x][y] = c;</span><br><span class="line">            A.<span class="built_in">add</span>(x,y,color[x][y],<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="type">int</span> x1,x2,y1,y2,c,ans;</span><br><span class="line">            std::cin &gt;&gt; x1 &gt;&gt; x2 &gt;&gt; y1 &gt;&gt; y2 &gt;&gt; c;</span><br><span class="line">            ans = A.<span class="built_in">query</span>(x2,y2,c) - A.<span class="built_in">query</span>(x1 - <span class="number">1</span>,y2,c)</span><br><span class="line">                - A.<span class="built_in">query</span>(x2,y1 - <span class="number">1</span>,c) + A.<span class="built_in">query</span>(x1 - <span class="number">1</span>,y1 - <span class="number">1</span>,c);</span><br><span class="line">            std::cout &lt;&lt; ans &lt;&lt; <span class="string">&#x27;\n&#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="碎碎念-8"><a href="#碎碎念-8" class="headerlink" title="碎碎念"></a>碎碎念</h3><p>二维 $BIT$ 的代码看起来是那么显然。。。</p>
+<p>形象的去理解它还是有点难度</p>
+<h1 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h1><h2 id="P1972-SDOI2009-HH的项链"><a href="#P1972-SDOI2009-HH的项链" class="headerlink" title="P1972 [SDOI2009] HH的项链"></a>P1972 [SDOI2009] HH的项链</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1972" >https://www.luogu.com.cn/problem/P1972<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="P3605-USACO17JAN-Promotion-Counting-P"><a href="#P3605-USACO17JAN-Promotion-Counting-P" class="headerlink" title="P3605 [USACO17JAN]Promotion Counting P"></a>P3605 [USACO17JAN]Promotion Counting P</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3605" >https://www.luogu.com.cn/problem/P3605<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="P3656-USACO17FEB-Why-Did-the-Cow-Cross-the-Road-I-P"><a href="#P3656-USACO17FEB-Why-Did-the-Cow-Cross-the-Road-I-P" class="headerlink" title="P3656 [USACO17FEB]Why Did the Cow Cross the Road I P"></a>P3656 [USACO17FEB]Why Did the Cow Cross the Road I P</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3656" >https://www.luogu.com.cn/problem/P3656<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="P3660-USACO17FEB-Why-Did-the-Cow-Cross-the-Road-III-G"><a href="#P3660-USACO17FEB-Why-Did-the-Cow-Cross-the-Road-III-G" class="headerlink" title="P3660 [USACO17FEB]Why Did the Cow Cross the Road III G"></a>P3660 [USACO17FEB]Why Did the Cow Cross the Road III G</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3660" >https://www.luogu.com.cn/problem/P3660<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="P5200-USACO19JAN-Sleepy-Cow-Sorting-G"><a href="#P5200-USACO19JAN-Sleepy-Cow-Sorting-G" class="headerlink" title="P5200 [USACO19JAN]Sleepy Cow Sorting G"></a>P5200 [USACO19JAN]Sleepy Cow Sorting G</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P5200" >https://www.luogu.com.cn/problem/P5200<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="P3586-POI2015-LOG"><a href="#P3586-POI2015-LOG" class="headerlink" title="P3586 [POI2015] LOG"></a>P3586 [POI2015] LOG</h2><p><a class="link"   target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3586" >https://www.luogu.com.cn/problem/P3586<i class="fas fa-external-link-alt"></i></a></p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E4%BD%9C%E4%B8%9A/">#作业</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80"><span class="nav-text"> 基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#POJ2352-Stars"><span class="nav-text">POJ2352 Stars</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ultra-QuickSort"><span class="nav-text">Ultra-QuickSort</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-1"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Japan"><span class="nav-text">Japan</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-2"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mega-Inversions"><span class="nav-text">Mega Inversions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-3"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P6278-USACO20OPEN-Haircut-G"><span class="nav-text">P6278 [USACO20OPEN]Haircut G</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-4"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-4"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#POJ3321-Apple-Tree"><span class="nav-text">POJ3321 Apple Tree</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-5"><span class="nav-text">思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-5"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CQOI2006-%E7%AE%80%E5%8D%95%E9%A2%98"><span class="nav-text">[CQOI2006]简单题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-6"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-6"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Cows"><span class="nav-text">Cows</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-7"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-7"><span class="nav-text">碎碎念</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P4054-JSOI2009-%E8%AE%A1%E6%95%B0%E9%97%AE%E9%A2%98"><span class="nav-text">P4054 [JSOI2009] 计数问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%9D%E8%B7%AF-8"><span class="nav-text">思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A2%8E%E7%A2%8E%E5%BF%B5-8"><span class="nav-text">碎碎念</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6"><span class="nav-text">进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#P1972-SDOI2009-HH%E7%9A%84%E9%A1%B9%E9%93%BE"><span class="nav-text">P1972 [SDOI2009] HH的项链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P3605-USACO17JAN-Promotion-Counting-P"><span class="nav-text">P3605 [USACO17JAN]Promotion Counting P</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P3656-USACO17FEB-Why-Did-the-Cow-Cross-the-Road-I-P"><span class="nav-text">P3656 [USACO17FEB]Why Did the Cow Cross the Road I P</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P3660-USACO17FEB-Why-Did-the-Cow-Cross-the-Road-III-G"><span class="nav-text">P3660 [USACO17FEB]Why Did the Cow Cross the Road III G</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P5200-USACO19JAN-Sleepy-Cow-Sorting-G"><span class="nav-text">P5200 [USACO19JAN]Sleepy Cow Sorting G</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#P3586-POI2015-LOG"><span class="nav-text">P3586 [POI2015] LOG</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2022
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+            <script async 
+                    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.5.2</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
