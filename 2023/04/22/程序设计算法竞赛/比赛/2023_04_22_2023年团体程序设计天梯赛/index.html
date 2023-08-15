@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            2023年团体程序设计天梯赛 |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Do what is easy and your life will be hard. || Do what is hard and your life will be easy.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">2023年团体程序设计天梯赛</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-04-22 17:00:00</span>
+        <span class="mobile">2023-04-22 17:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-05-29 10:19:38</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">程序设计算法竞赛</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">算法竞赛</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E6%B8%B8%E8%AE%B0/">游记</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>950 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id="比赛前"><a href="#比赛前" class="headerlink" title=" 比赛前"></a><span id="more"></span> 比赛前</h1><p>第三次参加天梯赛了，第一次还是三四年前，高中生打星队<br>去年菜·个人国三·菜</p>
+<p>起床后看了一个小时 One Piece<br>之后跟罗神一起骑单车去成信<br><img lazyload="" alt="F665A42C56325E1E67CCF57F6E244315" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/F665A42C56325E1E67CCF57F6E244315.180efiacr0qk.webp"></p>
+<p>稍微逛了会校园<br><img lazyload="" alt="23170E564FB8A70601944B23D35F272A" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/23170E564FB8A70601944B23D35F272A.119vtohoif8w.webp"><br><img lazyload="" alt="51ADA355E11ADDF0DC3EAF970DDA90FA" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/51ADA355E11ADDF0DC3EAF970DDA90FA.129x6pa23yy8.webp"></p>
+<p>好多只鸟，薄纱尼川<br><img lazyload="" alt="032B0018816625639D91180707F805F0" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/032B0018816625639D91180707F805F0.254wcc7h7t40.webp"></p>
+<p>看到好多校车，尼川啥也没有0.0<br><img lazyload="" alt="43A7EA339720DC78F3F97FCCBE50545E" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/43A7EA339720DC78F3F97FCCBE50545E.4ilb2upnh5w0.webp"><br><img lazyload="" alt="4E3C8FC2D06B7AD72197021FAAE907C4" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/4E3C8FC2D06B7AD72197021FAAE907C4.6zs0sipnd780.webp"><br><img lazyload="" alt="0F47A20A67F177E4D60A377247E7AE36" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/0F47A20A67F177E4D60A377247E7AE36.6v8ro7v2a240.webp"></p>
+<p>成信赛点最后一个签到的学校，甚至有十几个人没到，成信校方拍照都得等会</p>
+<p>找食堂，稍微有点迷路了，虽然也没什么地图就是。<br>教职工食堂在一片竹林后面，再次薄纱尼川</p>
+<p>午餐是自助餐，来得比较晚，菜品没多少了。有点后悔在九点吃早饭了，十一点半又吃午饭0.0<br><img lazyload="" alt="8E20CBC3861997A7E150D99727C79FF2" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/8E20CBC3861997A7E150D99727C79FF2.5vvtqjr8yxs0.webp"><br>别人有校队队服0.0叒薄纱尼川<br><img lazyload="" alt="C934026787C7AF90159A95BCE2C380FD" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/C934026787C7AF90159A95BCE2C380FD.839fku2gif.webp"></p>
+<p>拍个照之后，跟另外一个学校的一起在公园路沿上坐着，一道亮丽的风景线。<br>因为休息室满了0.0</p>
+<p>准备入场，尼川跟电科交叉着坐，要被薄纱了<br><img lazyload="" alt="B663DE1F36D9FBC9E1E27B72BED655C9" data-src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/B663DE1F36D9FBC9E1E27B72BED655C9.6jsw6b5cvqw0.webp"></p>
+<h1 id="比赛时"><a href="#比赛时" class="headerlink" title="比赛时"></a>比赛时</h1><p>闲聊时有人说：进去先睡十分钟给周围人压力，然后再开比赛。（因为是 180 分钟固定时长，20 分钟机动开始时间）<br>就有人回：等别人都走了你还在那里写代码hhhh</p>
+<p>显示器分辨率看得我头晕，马赛克清晰可见，键盘敲击反馈也很糟糕，IDE没一个顺手的，Dev还只能用5.版本，6.版本不让用</p>
+<p>这个教室好像就我们这一排四个人是瘫在椅子上休息的<br>没有睡午觉头有点昏，平时有睡十分钟，下午状态会好很多的</p>
+<p>晚了三分钟开比赛，调整呼吸，收拾桌面，调整键盘高度</p>
+<hr>
+<p>L1 拿了 99/100分，不知道那一分怎么挂掉的，也懒得去修改，做 L2 去了</p>
+<p>L2-1 直接切了，然后 L2-2感觉题面有点长就先跳过去做 L2-3 了，结果 L2-3 写挂了，耽误了很长时间。<br>回头去写 L2-2 和 L2-4。 然后 L2-2 也没能 AC，21/25分。 L2-4 记得是直接切掉了。</p>
+<p>L2-3 看了一会还是没思路，就去开 L3 的题目， L3-1 感觉不是很难，但是代码量跟细节应该很多，就跳过去了。 L3-2 一眼感觉是树上 DP，状态 0,1,2 记录黑白色差距绝对值，转移的时候开个临时数组记录 ±150 差值，拿了 22 分。</p>
+<p>重构了 L2-3，拿到了 17 分<br>这时候开始算分，差 11 分就能到 220 拿到国二<br>L3-2 又试了几个不同的偏移量，最后拿到了 26/30 分。<br>看了下剩下的分数跟时间，感觉只有把 L2-3 调成 AC 就能拿到 8 分超过 220</p>
+<p>想来想去反应过来我的贪心算法好像有点问题，还是需要记录子树最大值，改了之后想提交看看情况<br>哦豁，前方还有七八千条提交记录。我感觉是有人故意的…下次或许晚十五分钟开比赛会好一点<br>这时也没办法再修改调整代码了，等着看结果咯<br>打开一看，AC，这时离结束还有一分钟左右<br>221，个人国二，终于不是国三了。</p>
+<p>那今年蓝桥杯国赛呢？不清楚学校报销参赛费用、交通费、住宿费不0.0</p>
+<h1 id="比赛后"><a href="#比赛后" class="headerlink" title="比赛后"></a>比赛后</h1><p>去食堂吃饭，不是自助餐了<br>乌鸡蘑菇汤挺好喝的，虽然碗里乌鸡很少，蘑菇也很少</p>
+<p>白嫖了两顿饭，还算不错的<br>至于这些那些证书，好像还真没什么用处，简历凑字数？</p>
+<hr>
+<p>有 700 块奖金www</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">#算法竞赛</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E6%B8%B8%E8%AE%B0/">#游记</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/04/23/%E9%9A%8F%E7%AC%94/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%AE%AD/2023_04_23_%E6%99%BA%E8%83%BD%E5%88%B6%E9%80%A0+%E5%8C%BB%E5%AD%A6%E8%AE%BE%E5%A4%87/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">智能制造+医学设备</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/04/19/%E9%9A%8F%E7%AC%94/%E5%BD%B1%E8%A7%86%E4%B8%8E%E5%B0%8F%E8%AF%B4/2023_04_19_%E3%80%8A2012%E3%80%8B%E9%9A%8F%E7%AC%94/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">《2012》随笔</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%B5%9B%E5%89%8D"><span class="nav-text"> 比赛前</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%B5%9B%E6%97%B6"><span class="nav-text">比赛时</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%B5%9B%E5%90%8E"><span class="nav-text">比赛后</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

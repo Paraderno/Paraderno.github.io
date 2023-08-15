@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            2022年团体程序设计天梯赛 |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Do what is easy and your life will be hard. || Do what is hard and your life will be easy.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">2022年团体程序设计天梯赛</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2022-04-23 17:00:00</span>
+        <span class="mobile">2022-04-23 17:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-01-04 15:30:50</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">程序设计算法竞赛</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">算法竞赛</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>2.3k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id="比赛前"><a href="#比赛前" class="headerlink" title=" 比赛前"></a><span id="more"></span> 比赛前</h1><p>上午《军事理论》考试</p>
+<p>考完后去东园吃了个午饭，十二点前到了集训教室</p>
+<p>玩了会 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="6.296ex" height="1.595ex" role="img" focusable="false" viewBox="0 -694 2783 705"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtext"><path data-c="73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z"></path><path data-c="77" d="M90 368Q84 378 76 380T40 385H18V431H24L43 430Q62 430 84 429T116 428Q206 428 221 431H229V385H215Q177 383 177 368Q177 367 221 239L265 113L339 328L333 345Q323 374 316 379Q308 384 278 385H258V431H264Q270 428 348 428Q439 428 454 431H461V385H452Q404 385 404 369Q404 366 418 324T449 234T481 143L496 100L537 219Q579 341 579 347Q579 363 564 373T530 385H522V431H529Q541 428 624 428Q692 428 698 431H703V385H697Q696 385 691 385T682 384Q635 377 619 334L559 161Q546 124 528 71Q508 12 503 1T487 -11H479Q460 -11 456 -4Q455 -3 407 133L361 267Q359 263 266 -4Q261 -11 243 -11H238Q225 -11 220 -3L90 368Z" transform="translate(394,0)"></path><path data-c="69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" transform="translate(1116,0)"></path><path data-c="74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" transform="translate(1394,0)"></path><path data-c="63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" transform="translate(1783,0)"></path><path data-c="68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(2227,0)"></path></g></g></g></svg></mjx-container> ，大乱斗对线九级电脑终于胜率有八成了(╥╯^╰╥)</p>
+<p>线上比赛登录挺麻烦的</p>
+<h1 id="比赛时"><a href="#比赛时" class="headerlink" title="比赛时"></a>比赛时</h1><p>打算晚个几分钟开题的，最后还是在一点半开题。。。</p>
+<h2 id="L1-1"><a href="#L1-1" class="headerlink" title="L1-1"></a>L1-1</h2><p>签到题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	std::cout &lt;&lt; <span class="string">"I'm gonna win! Today!\n"</span>;</span><br><span class="line">	std::cout &lt;&lt; <span class="string">"2022-04-23\n"</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-2"><a href="#L1-2" class="headerlink" title="L1-2"></a>L1-2</h2><p>小学数学题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> N,v;</span><br><span class="line">	std::cin &gt;&gt; N &gt;&gt; v;</span><br><span class="line">	<span class="type">int</span> ans = N / v;</span><br><span class="line">	std::cout &lt;&lt; ans &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-3"><a href="#L1-3" class="headerlink" title="L1-3"></a>L1-3</h2><p>小模拟题，因为没想那么多，所以代码稍微有点长，不过都是复制粘贴也没花多长时间</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> a,b,c,d;</span><br><span class="line">	std::cin &gt;&gt; a &gt;&gt; b &gt;&gt; c &gt;&gt; d;</span><br><span class="line">	<span class="keyword">if</span>(c &gt;= a &amp;&amp; d &gt;= a) {</span><br><span class="line">		std::cout &lt;&lt; c &lt;&lt; <span class="string">"-Y "</span> &lt;&lt; d &lt;&lt; <span class="string">"-Y\n"</span>;</span><br><span class="line">		std::cout &lt;&lt; <span class="string">"huan ying ru guan\n"</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span>(c &gt;= b || d &gt;= b) {</span><br><span class="line">		std::cout &lt;&lt; c &lt;&lt; <span class="string">"-Y "</span> &lt;&lt; d &lt;&lt; <span class="string">"-Y\n"</span>;</span><br><span class="line">		<span class="keyword">if</span>(c &gt;= b) std::cout &lt;&lt; <span class="string">"qing 1 zhao gu hao 2\n"</span>;</span><br><span class="line">		<span class="keyword">else</span> std::cout &lt;&lt; <span class="string">"qing 2 zhao gu hao 1\n"</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">else</span> {</span><br><span class="line">		<span class="keyword">if</span>(c &gt; a) {</span><br><span class="line">			std::cout &lt;&lt; c &lt;&lt; <span class="string">"-Y "</span> &lt;&lt; d &lt;&lt; <span class="string">"-N\n"</span>;</span><br><span class="line">			std::cout &lt;&lt; <span class="string">"1: huan ying ru guan\n"</span>;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(d &gt; a) {	</span><br><span class="line">			std::cout &lt;&lt; c &lt;&lt; <span class="string">"-N "</span> &lt;&lt; d &lt;&lt; <span class="string">"-Y\n"</span>;</span><br><span class="line">			std::cout &lt;&lt; <span class="string">"2: huan ying ru guan\n"</span>;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">else</span> {</span><br><span class="line">			std::cout &lt;&lt; c &lt;&lt; <span class="string">"-N "</span> &lt;&lt; d &lt;&lt; <span class="string">"-N\n"</span>;</span><br><span class="line">			std::cout &lt;&lt; <span class="string">"zhang da zai lai ba\n"</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-4"><a href="#L1-4" class="headerlink" title="L1-4"></a>L1-4</h2><p>小学数学题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> a,b;</span><br><span class="line">	std::cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= a + b; i++)</span><br><span class="line">		ans = ans * i;</span><br><span class="line">	std::cout &lt;&lt; ans &lt;&lt;<span class="string">'\n'</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-5"><a href="#L1-5" class="headerlink" title="L1-5"></a>L1-5</h2><p>小模拟</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(<span class="number">6</span>)</span></span>;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) </span><br><span class="line">		std::cin &gt;&gt; a[i];</span><br><span class="line">	std::cin &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">6</span>; i++) {</span><br><span class="line">		<span class="type">int</span> pos = <span class="number">6</span>,k = n;</span><br><span class="line">		<span class="keyword">while</span>(<span class="literal">true</span>) {</span><br><span class="line">			<span class="keyword">if</span>(a[i] == pos) k++;</span><br><span class="line">			<span class="keyword">if</span>(k == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">			k--;</span><br><span class="line">			pos--;</span><br><span class="line">		}</span><br><span class="line">		std::cout &lt;&lt; pos;</span><br><span class="line">		<span class="keyword">if</span>(i != <span class="number">5</span>) std::cout &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-6"><a href="#L1-6" class="headerlink" title="L1-6"></a>L1-6</h2><p>小模拟</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	std::string a,b;</span><br><span class="line">	std::cin &gt;&gt; a &gt;&gt; b;</span><br><span class="line">	std::string ansA = <span class="string">""</span>;</span><br><span class="line">	std::string ansB = <span class="string">""</span>;</span><br><span class="line">	<span class="type">int</span> lena = a.<span class="built_in">length</span>();</span><br><span class="line">	<span class="type">int</span> lenb = b.<span class="built_in">length</span>();</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; lena; i++) {</span><br><span class="line">		<span class="keyword">if</span>((<span class="type">int</span>)a[i] % <span class="number">2</span> == (<span class="type">int</span>)a[i<span class="number">-1</span>] % <span class="number">2</span>) {</span><br><span class="line">			<span class="keyword">if</span>((<span class="type">int</span>) a[i] &gt; (<span class="type">int</span>) a[i - <span class="number">1</span>])</span><br><span class="line">				ansA += a[i];</span><br><span class="line">		  	<span class="keyword">else</span> ansA += a[i - <span class="number">1</span>];</span><br><span class="line">	 	}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; lenb; i++) {</span><br><span class="line">		<span class="keyword">if</span>((<span class="type">int</span>)b[i] % <span class="number">2</span> == (<span class="type">int</span>)b[i<span class="number">-1</span>] % <span class="number">2</span>) {</span><br><span class="line">			<span class="keyword">if</span>((<span class="type">int</span>) b[i] &gt; (<span class="type">int</span>) b[i - <span class="number">1</span>])</span><br><span class="line">				ansB += b[i];</span><br><span class="line">		  	<span class="keyword">else</span> ansB += b[i - <span class="number">1</span>];</span><br><span class="line">	 	}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">if</span>(ansA == ansB) std::cout &lt;&lt; ansA &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">	<span class="keyword">else</span> std::cout &lt;&lt; ansA &lt;&lt; <span class="string">'\n'</span> &lt;&lt; ansB &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-7"><a href="#L1-7" class="headerlink" title="L1-7"></a>L1-7</h2><p>小学数学题</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> N,M,Q;</span><br><span class="line">	std::cin &gt;&gt; N &gt;&gt; M &gt;&gt; Q;</span><br><span class="line">	<span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">a</span><span class="params">(N + <span class="number">1</span>)</span>,<span class="title">b</span><span class="params">(M + <span class="number">1</span>)</span></span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; Q; i++) {</span><br><span class="line">		<span class="type">int</span> t,c;</span><br><span class="line">		std::cin &gt;&gt; t &gt;&gt; c;</span><br><span class="line">		<span class="keyword">if</span>(t == <span class="number">0</span>) a[c] = <span class="literal">true</span>;</span><br><span class="line">		<span class="keyword">else</span> b[c] = <span class="literal">true</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= N; i++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= M; j++)</span><br><span class="line">			<span class="keyword">if</span>(a[i] != <span class="literal">true</span> &amp;&amp; b[j] != <span class="literal">true</span>)</span><br><span class="line">				ans++;</span><br><span class="line">	std::cout &lt;&lt; ans &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L1-8"><a href="#L1-8" class="headerlink" title="L1-8"></a>L1-8</h2><p>贪心题</p>
+<p>能选就选</p>
+<p>开始还在想暴力会不会被卡掉，想着不罚时就直接交了，结果能过。。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> N,K,S,ans;</span><br><span class="line">std::vector&lt;std::pair&lt;<span class="type">int</span>,<span class="type">int</span>&gt;&gt; a;</span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; b;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">solve</span><span class="params">(<span class="type">int</span> x)</span> </span>{</span><br><span class="line">	<span class="keyword">if</span>(a[x].first &lt; <span class="number">175</span>) <span class="keyword">return</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; K; i++) {</span><br><span class="line">		<span class="keyword">if</span>(a[x].first &gt; b[i]) {</span><br><span class="line">			b[i] = a[x].first;</span><br><span class="line">			ans++;</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">if</span>(a[x].first == b[i] &amp;&amp; a[x].second &gt;= S) {</span><br><span class="line">			ans++;</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	std::cin &gt;&gt; N &gt;&gt; K &gt;&gt; S;</span><br><span class="line">	a.<span class="built_in">resize</span>(N);b.<span class="built_in">resize</span>(K);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; i++) </span><br><span class="line">		std::cin &gt;&gt; a[i].first &gt;&gt; a[i].second;</span><br><span class="line">	std::<span class="built_in">sort</span>(a.<span class="built_in">begin</span>(), a.<span class="built_in">end</span>());</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; i++)</span><br><span class="line">		<span class="built_in">solve</span>(i);</span><br><span class="line">	std::cout &lt;&lt; ans &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L2-1"><a href="#L2-1" class="headerlink" title="L2-1"></a>L2-1</h2><p>模拟题，用一个队列一个栈记录数据就行</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> n,m,k;</span><br><span class="line">	std::cin &gt;&gt; n &gt;&gt; m &gt;&gt; k;</span><br><span class="line">	std::queue&lt;<span class="type">int</span>&gt; a;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) {</span><br><span class="line">		<span class="type">int</span> x;</span><br><span class="line">		std::cin &gt;&gt; x;</span><br><span class="line">		a.<span class="built_in">push</span>(x);</span><br><span class="line">	}</span><br><span class="line">	std::stack&lt;<span class="type">int</span>&gt; b;</span><br><span class="line">	std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; ans;</span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>) {</span><br><span class="line">		<span class="keyword">if</span>(a.<span class="built_in">empty</span>() &amp;&amp; b.<span class="built_in">empty</span>())</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		std::vector&lt;<span class="type">int</span>&gt; pos;</span><br><span class="line">		pos.<span class="built_in">clear</span>();</span><br><span class="line">		pos.<span class="built_in">push_back</span>(<span class="number">150</span>);</span><br><span class="line">		<span class="type">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">while</span>(<span class="literal">true</span>) {</span><br><span class="line">			<span class="keyword">if</span>(cnt == k) <span class="keyword">break</span>;</span><br><span class="line">			<span class="keyword">if</span>(!b.<span class="built_in">empty</span>() &amp;&amp; pos[cnt] &gt;= b.<span class="built_in">top</span>()) {</span><br><span class="line">					pos.<span class="built_in">push_back</span>(b.<span class="built_in">top</span>());</span><br><span class="line">					b.<span class="built_in">pop</span>();</span><br><span class="line">					cnt++;</span><br><span class="line">			}</span><br><span class="line">			<span class="keyword">else</span> <span class="keyword">if</span>(!a.<span class="built_in">empty</span>()) {</span><br><span class="line">				<span class="keyword">if</span>(pos[cnt] &gt;= a.<span class="built_in">front</span>()) {</span><br><span class="line">					pos.<span class="built_in">push_back</span>(a.<span class="built_in">front</span>());</span><br><span class="line">					a.<span class="built_in">pop</span>();</span><br><span class="line">					cnt++;</span><br><span class="line">				}</span><br><span class="line">				<span class="keyword">else</span> {</span><br><span class="line">					<span class="keyword">if</span>((<span class="type">int</span>)b.<span class="built_in">size</span>() == m) <span class="keyword">break</span>;</span><br><span class="line">					b.<span class="built_in">push</span>(a.<span class="built_in">front</span>());</span><br><span class="line">					a.<span class="built_in">pop</span>();</span><br><span class="line">				}</span><br><span class="line">			}</span><br><span class="line">			<span class="keyword">else</span> {</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">		ans.<span class="built_in">push_back</span>(pos);</span><br><span class="line">	}</span><br><span class="line">	<span class="type">bool</span> flag = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">auto</span> v : ans) {</span><br><span class="line">		<span class="keyword">if</span>(flag) std::cout &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">		<span class="type">bool</span> Flag = <span class="literal">false</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> x : v) {</span><br><span class="line">			<span class="keyword">if</span>(x != <span class="number">150</span>) {</span><br><span class="line">				<span class="keyword">if</span>(Flag) std::cout &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">				Flag= <span class="literal">true</span>;</span><br><span class="line">				std::cout &lt;&lt; x;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">		flag = <span class="literal">true</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L2-2"><a href="#L2-2" class="headerlink" title="L2-2"></a>L2-2</h2><p>字符串模拟题，<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="4.593ex" height="1.645ex" role="img" focusable="false" viewBox="0 -705 2030 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D446" d="M308 24Q367 24 416 76T466 197Q466 260 414 284Q308 311 278 321T236 341Q176 383 176 462Q176 523 208 573T273 648Q302 673 343 688T407 704H418H425Q521 704 564 640Q565 640 577 653T603 682T623 704Q624 704 627 704T632 705Q645 705 645 698T617 577T585 459T569 456Q549 456 549 465Q549 471 550 475Q550 478 551 494T553 520Q553 554 544 579T526 616T501 641Q465 662 419 662Q362 662 313 616T263 510Q263 480 278 458T319 427Q323 425 389 408T456 390Q490 379 522 342T554 242Q554 216 546 186Q541 164 528 137T492 78T426 18T332 -20Q320 -22 298 -22Q199 -22 144 33L134 44L106 13Q83 -14 78 -18T65 -22Q52 -22 52 -14Q52 -11 110 221Q112 227 130 227H143Q149 221 149 216Q149 214 148 207T144 186T142 153Q144 114 160 87T203 47T255 29T308 24Z"></path></g><g data-mml-node="mi" transform="translate(645,0)"><path data-c="1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path></g><g data-mml-node="mi" transform="translate(1349,0)"><path data-c="1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path></g></g></g></svg></mjx-container> 大法好</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	std::cin &gt;&gt; n;</span><br><span class="line">	std::vector&lt;std::pair&lt;std::string,std::string&gt;&gt; <span class="built_in">s</span>(n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) {</span><br><span class="line">		std::string x;</span><br><span class="line">		std::cin &gt;&gt; s[i].first &gt;&gt; x &gt;&gt; s[i].second;</span><br><span class="line">	}</span><br><span class="line">	std::<span class="built_in">sort</span>(s.<span class="built_in">begin</span>(), s.<span class="built_in">end</span>());</span><br><span class="line">	std::string x = <span class="string">"00:00:00"</span>;</span><br><span class="line">	<span class="type">bool</span> flag = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) {</span><br><span class="line">		<span class="keyword">if</span>(s[i].first != x) {</span><br><span class="line">			<span class="keyword">if</span>(flag) std::cout &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">			flag = <span class="literal">true</span>;</span><br><span class="line">			std::cout &lt;&lt; x &lt;&lt; <span class="string">" - "</span> &lt;&lt; s[i].first;</span><br><span class="line">		}</span><br><span class="line">		x = s[i].second;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">if</span>(x != <span class="string">"23:59:59"</span>) {</span><br><span class="line">		<span class="keyword">if</span>(flag) std::cout &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">		std::cout &lt;&lt; x &lt;&lt; <span class="string">" - "</span> &lt;&lt; <span class="string">"23:59:59"</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L2-3"><a href="#L2-3" class="headerlink" title="L2-3"></a>L2-3</h2><p>感觉我想复杂了，而且还没过。。。</p>
+<p>考虑 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.482ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1539 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mi" transform="translate(520,0)"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g><g data-mml-node="mi" transform="translate(1070,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g></g></g></svg></mjx-container> 序将树变成数组</p>
+<p>然后最小代价是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="3.482ex" height="2.059ex" role="img" focusable="false" viewBox="0 -705 1539 910"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g><g data-mml-node="mi" transform="translate(520,0)"><path data-c="1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path></g><g data-mml-node="mi" transform="translate(1070,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g></g></g></svg></mjx-container> 序相邻的两个点之间的距离之和 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="1.505ex" role="img" focusable="false" viewBox="0 -583 778 665"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g></g></g></svg></mjx-container> 深度最大的点</p>
+<p>离线倒序处理</p>
+<blockquote>
+<p>找到原因了，根节点可能不是 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: 0;" xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.507ex" role="img" focusable="false" viewBox="0 -666 500 666"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></g></svg></mjx-container> ，懒得改了，摆烂</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> MAXN = <span class="number">2e5</span>;</span><br><span class="line"><span class="type">int</span> n,m,tim;</span><br><span class="line">std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; To,Fa;</span><br><span class="line">std::vector&lt;<span class="type">int</span>&gt; Deep,dfn,id;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">init</span><span class="params">()</span> </span>{</span><br><span class="line">	To.<span class="built_in">resize</span>(MAXN + <span class="number">1</span>);</span><br><span class="line">	Fa.<span class="built_in">resize</span>(MAXN + <span class="number">1</span>,std::<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt; (<span class="number">21</span>));</span><br><span class="line">	Deep.<span class="built_in">resize</span>(MAXN + <span class="number">1</span>);</span><br><span class="line">	dfn.<span class="built_in">resize</span>(MAXN + <span class="number">1</span>);</span><br><span class="line">	id.<span class="built_in">resize</span>(MAXN + <span class="number">1</span>);</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">dfs</span><span class="params">(<span class="type">int</span> u)</span> </span>{</span><br><span class="line">	dfn[u] = ++tim;</span><br><span class="line">	id[tim] = u;</span><br><span class="line">	Deep[u] = Deep[Fa[u][<span class="number">0</span>]] + <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> v : To[u]) {</span><br><span class="line">		Fa[v][<span class="number">0</span>] = u;</span><br><span class="line">		<span class="built_in">dfs</span>(v);</span><br><span class="line">	}</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Lca</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span> </span>{</span><br><span class="line">	<span class="keyword">if</span>(Deep[x] &lt; Deep[y]) std::<span class="built_in">swap</span>(x,y);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">20</span>; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">		<span class="keyword">if</span>(Deep[Fa[x][i]] &gt;= Deep[y])</span><br><span class="line">			x = Fa[x][i];</span><br><span class="line">	<span class="keyword">if</span>(x == y) <span class="keyword">return</span> x;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">20</span>; i &gt;= <span class="number">0</span>; i--)</span><br><span class="line">		<span class="keyword">if</span>(Fa[x][i] != Fa[y][i]) {</span><br><span class="line">			x = Fa[x][i];</span><br><span class="line">			y = Fa[y][i];</span><br><span class="line">		}</span><br><span class="line">	<span class="keyword">return</span> Fa[x][<span class="number">0</span>];</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">dist</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span> </span>{</span><br><span class="line">	<span class="type">int</span> lca = <span class="built_in">Lca</span>(x,y);</span><br><span class="line">	<span class="keyword">return</span> Deep[x] + Deep[y] - <span class="number">2</span> * Deep[lca];</span><br><span class="line">}</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	std::cin &gt;&gt; n &gt;&gt; m;</span><br><span class="line">	<span class="built_in">init</span>();</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) {</span><br><span class="line">		<span class="type">int</span> x;</span><br><span class="line">		std::cin &gt;&gt; x;</span><br><span class="line">		<span class="keyword">if</span>(x == <span class="number">-1</span>) <span class="keyword">continue</span>;</span><br><span class="line">		To[x].<span class="built_in">push_back</span>(i);</span><br><span class="line">	}</span><br><span class="line">	<span class="built_in">dfs</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">1</span>; k &lt;= <span class="number">20</span>; k++)</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">			Fa[i][k] = Fa[Fa[i][k - <span class="number">1</span>]][k - <span class="number">1</span>];</span><br><span class="line">	<span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">ans</span><span class="params">(MAXN + <span class="number">1</span>)</span>,<span class="title">add</span><span class="params">(MAXN + <span class="number">1</span>)</span>,<span class="title">cnt</span><span class="params">(MAXN + <span class="number">1</span>)</span></span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++) {</span><br><span class="line">		std::cin &gt;&gt; add[i];</span><br><span class="line">		cnt[add[i]]++;</span><br><span class="line">	}</span><br><span class="line">	<span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">nxt</span><span class="params">(MAXN + <span class="number">1</span>)</span>,<span class="title">pre</span><span class="params">(MAXN + <span class="number">1</span>)</span></span>;</span><br><span class="line">	std::priority_queue&lt;<span class="type">int</span>&gt; A,B;</span><br><span class="line">	A.<span class="built_in">push</span>(<span class="number">1</span>);</span><br><span class="line">	<span class="type">int</span> pos = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">2</span>; i &lt;= n; i++) {</span><br><span class="line">		<span class="keyword">if</span>(cnt[id[i]]) {</span><br><span class="line">			A.<span class="built_in">push</span>(Deep[id[i]]);</span><br><span class="line">			nxt[pos] = id[i];</span><br><span class="line">			pre[id[i]] = pos;</span><br><span class="line">			pos = id[i];</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	nxt[pos] = <span class="number">1</span>;pre[<span class="number">1</span>] = pos;</span><br><span class="line">	</span><br><span class="line">	<span class="type">int</span> ANS = <span class="number">0</span>;</span><br><span class="line">	pos = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">while</span>(<span class="literal">true</span>) {</span><br><span class="line">		ANS += <span class="built_in">dist</span>(pos,nxt[pos]);</span><br><span class="line">		<span class="keyword">if</span>(nxt[pos] == <span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">		pos = nxt[pos];</span><br><span class="line">	}</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = m; i &gt;= <span class="number">1</span>; i--) {</span><br><span class="line">		ans[i] = ANS - (A.<span class="built_in">top</span>() - <span class="number">1</span>);</span><br><span class="line">		cnt[add[i]]--;</span><br><span class="line">		<span class="keyword">if</span>(cnt[add[i]] == <span class="number">0</span>) {</span><br><span class="line">			<span class="type">int</span> x = add[i];</span><br><span class="line">			<span class="type">int</span> l = pre[x];</span><br><span class="line">			<span class="type">int</span> r = nxt[x];</span><br><span class="line">			ANS = ANS - <span class="built_in">dist</span>(l,x) - <span class="built_in">dist</span>(x,r) + <span class="built_in">dist</span>(l,r);</span><br><span class="line">			B.<span class="built_in">push</span>(Deep[x]);</span><br><span class="line">			nxt[l] = r;</span><br><span class="line">			pre[r] = l;</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">while</span>(!B.<span class="built_in">empty</span>() &amp;&amp; B.<span class="built_in">top</span>() == A.<span class="built_in">top</span>()) {</span><br><span class="line">			B.<span class="built_in">pop</span>();</span><br><span class="line">			A.<span class="built_in">pop</span>();</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= m; i++) {</span><br><span class="line">		std::cout &lt;&lt; ans[i] &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L2-4"><a href="#L2-4" class="headerlink" title="L2-4"></a>L2-4</h2><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.464ex;" xmlns="http://www.w3.org/2000/svg" width="5.751ex" height="2.034ex" role="img" focusable="false" viewBox="0 -694 2542 899"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D439" d="M48 1Q31 1 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H742Q749 676 749 669Q749 664 736 557T722 447Q720 440 702 440H690Q683 445 683 453Q683 454 686 477T689 530Q689 560 682 579T663 610T626 626T575 633T503 634H480Q398 633 393 631Q388 629 386 623Q385 622 352 492L320 363H375Q378 363 398 363T426 364T448 367T472 374T489 386Q502 398 511 419T524 457T529 475Q532 480 548 480H560Q567 475 567 470Q567 467 536 339T502 207Q500 200 482 200H470Q463 206 463 212Q463 215 468 234T473 274Q473 303 453 310T364 317H309L277 190Q245 66 245 60Q245 46 334 46H359Q365 40 365 39T363 19Q359 6 353 0H336Q295 2 185 2Q120 2 86 2T48 1Z"></path></g><g data-mml-node="mi" transform="translate(749,0)"><path data-c="1D459" d="M117 59Q117 26 142 26Q179 26 205 131Q211 151 215 152Q217 153 225 153H229Q238 153 241 153T246 151T248 144Q247 138 245 128T234 90T214 43T183 6T137 -11Q101 -11 70 11T38 85Q38 97 39 102L104 360Q167 615 167 623Q167 626 166 628T162 632T157 634T149 635T141 636T132 637T122 637Q112 637 109 637T101 638T95 641T94 647Q94 649 96 661Q101 680 107 682T179 688Q194 689 213 690T243 693T254 694Q266 694 266 686Q266 675 193 386T118 83Q118 81 118 75T117 65V59Z"></path></g><g data-mml-node="mi" transform="translate(1047,0)"><path data-c="1D45C" d="M201 -11Q126 -11 80 38T34 156Q34 221 64 279T146 380Q222 441 301 441Q333 441 341 440Q354 437 367 433T402 417T438 387T464 338T476 268Q476 161 390 75T201 -11ZM121 120Q121 70 147 48T206 26Q250 26 289 58T351 142Q360 163 374 216T388 308Q388 352 370 375Q346 405 306 405Q243 405 195 347Q158 303 140 230T121 120Z"></path></g><g data-mml-node="mi" transform="translate(1532,0)"><path data-c="1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(2022,0)"><path data-c="1D451" d="M366 683Q367 683 438 688T511 694Q523 694 523 686Q523 679 450 384T375 83T374 68Q374 26 402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487H491Q506 153 506 145Q506 140 503 129Q490 79 473 48T445 8T417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157Q33 205 53 255T101 341Q148 398 195 420T280 442Q336 442 364 400Q369 394 369 396Q370 400 396 505T424 616Q424 629 417 632T378 637H357Q351 643 351 645T353 664Q358 683 366 683ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z"></path></g></g></g></svg></mjx-container> 板子题目</p>
+<p>不知道哪里挂了，拿了部分分</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>{</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	std::cin &gt;&gt; n;</span><br><span class="line">	<span class="function">std::vector&lt;std::string&gt; <span class="title">a</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">	std::vector&lt;std::vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dist</span>(n + <span class="number">1</span>,std::<span class="built_in">vector</span>&lt;<span class="type">int</span>&gt; (n + <span class="number">1</span>,<span class="number">1e8</span>));</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) {</span><br><span class="line">		std::cin &gt;&gt; a[i];</span><br><span class="line">		<span class="type">int</span> k;</span><br><span class="line">		std::cin &gt;&gt; k;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= k; j++) {</span><br><span class="line">			<span class="type">int</span> v,w;</span><br><span class="line">			<span class="type">char</span> c;</span><br><span class="line">			std::cin &gt;&gt; v &gt;&gt; c &gt;&gt; w;</span><br><span class="line">			dist[i][v] = w;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> k = <span class="number">1</span>; k &lt;= n; k++) </span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">			<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; j++)	</span><br><span class="line">				<span class="keyword">if</span>(i != k &amp;&amp; j != k &amp;&amp; i != j &amp;&amp; dist[i][k] + dist[k][j] &lt; dist[i][j])</span><br><span class="line">					dist[i][j] = dist[i][k] + dist[k][j];</span><br><span class="line">	<span class="function">std::vector&lt;<span class="type">int</span>&gt; <span class="title">D</span><span class="params">(n + <span class="number">1</span>)</span></span>;</span><br><span class="line">	D[<span class="number">0</span>] = <span class="number">2e8</span>;</span><br><span class="line">	<span class="type">int</span> pos = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) {</span><br><span class="line">		<span class="keyword">if</span>(a[i] == <span class="string">"M"</span>) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; j++) {</span><br><span class="line">			<span class="keyword">if</span>(a[j] == <span class="string">"F"</span>) <span class="keyword">continue</span>;</span><br><span class="line">			D[i] = std::<span class="built_in">max</span>(D[i],dist[j][i]);</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">if</span>(D[i] &lt; D[pos]) pos = i;</span><br><span class="line">	}</span><br><span class="line">	<span class="type">bool</span> flag = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) {</span><br><span class="line">		<span class="keyword">if</span>(a[i] == <span class="string">"M"</span>) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">if</span>(D[i] == D[pos]) {</span><br><span class="line">			<span class="keyword">if</span>(flag) std::cout &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">			flag = <span class="literal">true</span>;</span><br><span class="line">			std::cout &lt;&lt; i;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	std::cout &lt;&lt; <span class="string">'\n'</span>;</span><br><span class="line"></span><br><span class="line">	pos = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) {</span><br><span class="line">		<span class="keyword">if</span>(a[i] == <span class="string">"F"</span>) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">for</span>(<span class="type">int</span> j = <span class="number">1</span>; j &lt;= n; j++) {</span><br><span class="line">			<span class="keyword">if</span>(a[j] == <span class="string">"M"</span>) <span class="keyword">continue</span>;</span><br><span class="line">			D[i] = std::<span class="built_in">max</span>(D[i],dist[j][i]);</span><br><span class="line">		}</span><br><span class="line">		<span class="keyword">if</span>(D[i] &lt; D[pos]) pos = i;</span><br><span class="line">	}</span><br><span class="line">	flag = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) {</span><br><span class="line">		<span class="keyword">if</span>(a[i] == <span class="string">"F"</span>) <span class="keyword">continue</span>;</span><br><span class="line">		<span class="keyword">if</span>(D[i] == D[pos]) {</span><br><span class="line">			<span class="keyword">if</span>(flag) std::cout &lt;&lt; <span class="string">' '</span>;</span><br><span class="line">			flag = <span class="literal">true</span>;</span><br><span class="line">			std::cout &lt;&lt; i;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<h2 id="L3-1"><a href="#L3-1" class="headerlink" title="L3-1"></a>L3-1</h2><p>模拟了大半天，最后还没写完就结束了</p>
+<blockquote>
+<p>赛后想了一下，只需要比较两个相邻的，搞一个拓扑排序就行。比赛时想复杂了。。。</p>
+</blockquote>
+<h1 id="比赛后"><a href="#比赛后" class="headerlink" title="比赛后"></a>比赛后</h1><p>感觉这次题目比以前难（错觉？</p>
+<p>只有 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="3.394ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1500 688"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(500,0)"></path><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z" transform="translate(1000,0)"></path></g></g></g></svg></mjx-container> 分</p>
+<p>虽然前几年参加的那次打得更撇</p>
+<p>稍微看了下，如果没理解错评奖规则的话，那应该是个人国三，团队国三，团队省二，学校省一</p>
+<p>明天再加油</p>
+<p>赛后去团建干饭了</p>
+<p>好久没出校吃饭了，感觉被学校封了两个月。。。</p>
+<p><img lazyload="" alt="86F2F81F8EAC5D28268A35DBA00F34B4" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/86F2F81F8EAC5D28268A35DBA00F34B4.3bb44hvuzo60.jpg"></p>
+<h2 id="UPD-2022-5-18"><a href="#UPD-2022-5-18" class="headerlink" title="UPD:2022.5.18"></a>UPD:2022.5.18</h2><p>一堆证书，虽然没一个有用的。。。</p>
+<p><img lazyload="" alt="QQ截图20220518144130" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/QQ截图20220518144130.5rqul88s5xw0.png"></p>
+<p><img lazyload="" alt="QQ截图20220518144146" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/QQ截图20220518144146.7behrvpk2ao0.png"></p>
+<p><img lazyload="" alt="QQ截图20220518144202" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/QQ截图20220518144202.7gi86xd95740.png"></p>
+<p><img lazyload="" alt="QQ截图20220518144427" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/QQ截图20220518144427.1rh9mhe9sz34.png"></p>
+<p><img lazyload="" alt="2" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/2.7ikrj7cxtzo0.png"></p>
+<p><img lazyload="" alt="1" data-src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/1.58svyvhoebw0.png"></p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/">#算法竞赛</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2022/05/04/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E6%AF%94%E8%B5%9B/2022_05_04_2022%E5%B9%B4%E5%9B%9B%E5%B7%9D%E7%9C%81%E5%A4%A7%E5%AD%A6%E7%94%9F%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%A4%A7%E8%B5%9B%E9%80%89%E6%8B%94%E8%B5%9B/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">2022年四川省大学生程序设计大赛选拔赛</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2022/04/22/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/Codeforces/2022_04_22_Codeforces%20Round%20784%20(Div.%204)/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Codeforces Round 784 (Div. 4)</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%B5%9B%E5%89%8D"><span class="nav-text"> 比赛前</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%B5%9B%E6%97%B6"><span class="nav-text">比赛时</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-1"><span class="nav-text">L1-1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-2"><span class="nav-text">L1-2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-3"><span class="nav-text">L1-3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-4"><span class="nav-text">L1-4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-5"><span class="nav-text">L1-5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-6"><span class="nav-text">L1-6</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-7"><span class="nav-text">L1-7</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L1-8"><span class="nav-text">L1-8</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L2-1"><span class="nav-text">L2-1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L2-2"><span class="nav-text">L2-2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L2-3"><span class="nav-text">L2-3</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L2-4"><span class="nav-text">L2-4</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L3-1"><span class="nav-text">L3-1</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AF%94%E8%B5%9B%E5%90%8E"><span class="nav-text">比赛后</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#UPD-2022-5-18"><span class="nav-text">UPD:2022.5.18</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            田叔毁卷 |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Do what is easy and your life will be hard. || Do what is hard and your life will be easy.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">田叔毁卷</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-06-13 12:00:00</span>
+        <span class="mobile">2023-06-13 12:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-07-02 20:25:37</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%B0%8F%E6%95%85%E4%BA%8B/">小故事</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>2k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>法律与人情</p>
+<h2 id="序"><a href="#序" class="headerlink" title=" 序"></a><span id="more"></span> 序</h2><p>法律面前人人平等，但是特殊情况应该由人情介入，这才是 rule of law<br>有关「白左起诉川普，将司法部作为政治迫害工具。（rule by law）」的一些学习思考</p>
+<p>这个故事并没有确切的名字，此文仅以核心人物的行为指代</p>
+<h2 id="故事"><a href="#故事" class="headerlink" title="故事"></a>故事</h2><p>在汉景帝刘启的时候有过一个立储风波，就是汉景帝当时犹豫要不要立他的弟弟梁王刘武作为自己的接班人。<br>结果了很多大臣反对，因为这等于说是兄终弟及，不是父死子继。<br>这其中包括汉景帝手下的一个著名的大臣，或者说道德非常高尚的一个人，叫做袁盎。</p>
+<p>刘武和汉景帝都是窦太后的儿子，窦太后非常喜欢刘武，而刘武也是特别嚣张的。<br>当时刘武在洛阳那个地方跟皇帝一样地出警入跸，他也指望说接班做皇帝。<br>后来他知道汉景帝手下很多大臣都反对他继位，他就派出刺客去把这些反对他的大臣杀死，包括袁盎。<br>具体派出刺客去执行的人是刘武的两个近臣，一个叫羊胜，另一个叫公孙诡。</p>
+<p>后来这汉景帝就发现事情不太对，这接连十几个大臣遇刺。他知道这一定是刘武所为，就派出十几个大臣去调查。<br>当时窦太后也知道这肯定是刘武所为，她担心这个事情一旦暴露之后，汉景帝不得不依照国家的法律严厉地去处罚梁王，那梁王就有可能被杀头嘛。<br>窦太后也是忧心这个事，不肯吃饭，日夜的啼哭。景帝也很头疼。</p>
+<p>后来去梁国办案子的一个叫田叔的，他当时去梁国办案回来了。<br>他收集到了梁武刘武的所有不法证据，就一堆卷宗，但是了在进长安城之前，一把火把这些卷宗全部烧掉了。然后空手去见汉景帝。</p>
+<p>汉景帝就问，梁王是不是犯了死罪。<br>田叔说，是的。<br>景帝就说，请你把文件拿来给我看。<br>田叔说，我已经都烧掉了。<br>景帝就问，为什么要烧掉。<br>田叔说，如果你不把杀掉梁王的话，等于说大汉的法律没有尊严。但是呢，如果你杀掉梁王的话，那你怎么去跟你自己的母亲交代啊。你要不然的话是，你就放弃大汉法律的尊严，要不然就是得罪你的母亲还有弟弟。两难之间你怎么选，我想来想去，干脆烧掉算了。这个事情假装没有发生，大家都装糊涂算了。</p>
+<p>景帝觉得说得太对了，就让田叔去拜见窦太后，跟窦太后说，这都是刘武手下的两个大臣羊胜跟公孙诡干的，跟梁王没有关系，现在羊胜跟公孙诡已经被杀掉了，梁王没事的。<br>当时太后一听，马上就起来了啊，原来绝食不吃饭嘛，现在就坐下来吃饭，心情也平复了下来。</p>
+<h2 id="小感触"><a href="#小感触" class="headerlink" title="小感触"></a>小感触</h2><p>大家可能觉得这个故事是「宫廷的权谋」，教授讲这个故事并不是想说他们有多么聪明，只是想说，处在那个位置的人，他不得不钻一些法律的漏洞。<br>很多时候我们觉得法律非常的严格，但有的时候，在一些特殊的情况下，法律是允许例外的。</p>
+<p>教授认为，关于川普的这个事情的话，第一它不是一件大事，第二就是川普做的这些事情其他总统都做过，要么就都起诉，要么就都不起诉。但最好是都不起诉，这并不伤美国法律的尊严，大家都能理解这样的例外的。</p>
+<blockquote>
+<p>参考资料：资治通鉴·韩景皇帝下<br>初，梁孝王以至亲有功，得赐天子旌旗。从千乘万骑，出跸入警。王宠信羊胜、公孙诡，以诡为中尉。胜、诡多奇邪计，欲使王求为汉嗣。栗太子之废也，太后意欲以梁王为嗣，尝因置酒谓帝曰：“安车大驾，用梁王为寄。”帝跪席举身曰：“诺。”罢酒，帝以访诸大臣，大臣袁盎等曰：“不可。昔宋宣公不立子而立弟，以生祸乱，五世不绝。小不忍，害大义，故《春秋》大居正。”由是太后议格，遂不复言。王又尝上书；“愿赐容车之地，径至长乐宫，自梁国士众筑作甬道朝太后。”袁盎等皆建以为不可。</p>
+<p>梁王由此怨袁盎及议臣，乃与羊胜、公孙诡谋，阴使人刺杀袁盎及他议臣十馀人。贼未得也，于是天子意梁；逐贼，果梁所为。上遣田叔、吕委主往按梁事，捕公孙诡、羊胜；诡、胜匿王后宫，使者十馀辈至梁，责二千石急。梁相轩丘豹及内史韩安国以下举国大索，月馀弗得。安国闻诡、胜匿王所，乃入见王而泣曰：“主辱者臣死。大王无良臣，故纷纷至此。今胜、诡不得，请辞，赐死！”王曰：“何至此！”安国泣数行下，曰：“大王自度于皇帝，孰与临江王亲？”王曰：“弗如也。”安国曰：“临江王鳣长太子，以一言过，废王临江；用宫垣事，卒自杀中尉府。何者？治天下终不用私乱公。今大王列在诸侯，訹邪臣浮说，犯上禁，桡明法。天子以太后故，不忍致法于大王；太后日夜涕泣，幸大王自改，大王终不觉寤。有如太后宫车即晏驾，大王尚谁攀乎？”语未卒，王泣数行而下，谢安国曰：“吾今出胜、诡。”王乃令胜、诡皆自杀，出之。上由此怨望梁王。</p>
+<p>梁王恐，使邹阳入长安，见皇后兄王信说曰：“长君弟得幸于上，后宫莫及；而长君行迹多不循道理者。今袁盎事即究竟，梁王伏诛，太后无所发怒，切齿侧目于贵臣，窃为足下忧之。”长君曰：“为之奈何？”阳曰：“长君诚能精为上言之，得毋竟梁事；长君必固自结于太后，太后厚德长君入于骨髓，而长君之弟幸于两宫，金城之固也。昔者舜之弟象，日以杀舜为事，及舜立为天子，封之于有卑。夫仁人之于兄弟，无藏怒，无宿怨，厚亲爱而已。是以后世称之。以是说天子，徼幸梁事不奏。”长君曰：“诺。”乘间入言之。帝怒稍解。</p>
+<p>是时，太后忧梁事不食，日夜泣不止，帝亦患之。会田叔等按梁事来还，至霸昌厩，取火悉烧梁之狱辞，空手来见帝。帝曰：“梁有之乎？”叔对曰：“死罪。有之。”上曰：“其事安在？”田叔曰：“上毋以梁事为问也。”上曰：“何也？”曰：“今梁王不伏诛，是汉法不行也；伏法而太后食不甘味，卧不安席，此忧在陛下也。”上大然之，使叔等谒太后，且曰：“梁王不知也。造为之者，独在幸臣羊胜、公孙诡之属为之耳，谨已伏诛死，梁王无恙也。”太后闻之，立起坐餐，气平复。</p>
+<p>梁王因上书请朝。既至关，茅兰说王，使乘布车，从两骑入，匿于长公主园。汉使使迎王，王已入关，车骑尽居外，不知王处。太后泣曰：“帝果杀吾子！”帝忧恐。于是梁王伏斧质于阙下谢罪。太后、帝大喜，相泣，复如故，悉召王从官入关。然帝益疏王，不与同车辇矣。帝以田叔为贤，擢为鲁相。</p>
+</blockquote>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%B0%8F%E6%95%85%E4%BA%8B/">#小故事</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/06/16/%E4%B9%A6%E7%B1%8D/2023_06_16_%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E7%9A%84%E6%A0%B8%E5%BF%83/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">中华文明的核心与特点</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/06/13/%E9%9A%8F%E7%AC%94/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%AE%AD/2023_06_13_%E8%BD%A6+%E9%92%B3/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">车+钳</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BA%8F"><span class="nav-text"> 序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%85%E4%BA%8B"><span class="nav-text">故事</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B0%8F%E6%84%9F%E8%A7%A6"><span class="nav-text">小感触</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
