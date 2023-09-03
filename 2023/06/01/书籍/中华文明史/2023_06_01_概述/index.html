@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            概述 |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Do what is easy and your life will be hard. || Do what is hard and your life will be easy.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">概述</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-06-01 10:00:00</span>
+        <span class="mobile">2023-06-01 10:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-07-02 20:28:12</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E4%B9%A6%E7%B1%8D/">书籍</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">阅读与记录</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E3%80%8A%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2%E3%80%8B/">《中华文明史》</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>837 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>本文为《中华文明史》第一部分中华文明概述，第一讲的概括</p>
+<h1 id="概述"><a href="#概述" class="headerlink" title=" 概述"></a><span id="more"></span> 概述</h1><h2 id="中国历史教育的问题"><a href="#中国历史教育的问题" class="headerlink" title="中国历史教育的问题"></a>中国历史教育的问题</h2><ul>
+<li>用某类历史观生搬硬套中国的历史<ul>
+<li>秦始皇统一中国后，一直实现的是中央集权，而非封建制度。</li>
+</ul>
+</li>
+<li>缺乏一种人文精神<ul>
+<li>「民族」是一种文化概念。犹太民族没有土地没有国家，但文化一直存在。而文化断了，民族也就名存实亡。</li>
+<li>高等教育缺乏传统的历史和哲学课程。</li>
+</ul>
+</li>
+<li>缺乏一种整体感<ul>
+<li>以重大事件为中心的碎片化历史，缺乏详细的历史背景、原因、目的、影响。</li>
+<li>对历史进行筛选，隐藏“不符合”史观的碎片。</li>
+</ul>
+</li>
+<li>历史教育的时间太短<ul>
+<li>三两年讲不清楚中国历史</li>
+</ul>
+</li>
+</ul>
+<h2 id="改朝换代的原因"><a href="#改朝换代的原因" class="headerlink" title="改朝换代的原因"></a>改朝换代的原因</h2><p>并非农民造反改朝换代，阶级斗争难以推动历史发展。</p>
+<ul>
+<li>夏朝开国：华夏民族实行「家天下」。</li>
+<li>商灭夏：商族（夷族）灭掉了华夏族，一国灭另一个国，一族灭另一族。</li>
+<li>周灭商：周与夏文化相通，周族灭掉夷族， 一国灭另一个国，一族灭另一族。</li>
+<li>秦灭周：秦国一统天下，一国灭其他国。</li>
+<li>楚灭秦：陈胜吴广、项羽刘邦、韩信萧何等都是楚人。陈胜吴广起义不到半年就被扑灭。最终是项羽刘邦灭掉秦国。</li>
+<li>汉灭楚：一国灭一国。</li>
+<li>三国：黄巾起义造反很快就被扑灭，曹丕取代了汉朝。篡汉也好，代汉自立也罢，都是权臣篡位的模式。</li>
+<li>西晋：司马家族篡了魏国的国政，司马炎也是权臣。</li>
+<li>西晋的灭亡：外族入侵，一国灭另一国。</li>
+<li>东晋的灭亡：大将军刘裕取代东晋，权臣篡位。北方「五胡乱华」，民族互相之间打来打去，政权更迭是一国灭另一国，或者是大将篡位。</li>
+<li>南北朝：南方的宋齐梁陈都是权臣篡位，北方则是北周灭北齐，然后北周被隋取代（权臣篡位）</li>
+<li>唐灭隋：唐高祖李渊和隋炀帝是表兄弟的关系，隋朝末年李渊仁太原留守，权臣篡位。</li>
+<li>唐朝的灭亡：黄巢造反只建立了一个流寇政权，唐朝的灭亡是节度使朱温篡位。</li>
+<li>五代十国：权臣篡位。</li>
+<li>北宋：御前都检点赵匡胤取代后周的小皇帝，建立北宋。</li>
+<li>宋朝的灭亡：北宋亡于金国入侵，南宋亡于蒙古人入侵，一国灭掉另一国。</li>
+<li>元朝的灭亡：朱元璋虽出身农民，但誓师北伐并不是阶级斗争，而是民族解放的色彩，「驱逐胡虏，恢复中华，立纲陈纪，救济斯民」。</li>
+<li>明朝的灭亡：李自成攻入北京，接着吴三桂投靠满清，将李自成赶走。当时南方还有南明政权，最终清灭掉明。</li>
+<li>清朝的灭亡当然也不是农民造反。辛亥革命它带有一种民族独立的色彩。孙中山借鉴了朱元璋的口号，他叫「驱除鞑奴、恢复中华」，带有民族自决的色彩。而且辛亥革命始于兵变，并不是农民造反。</li>
+</ul>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">#阅读与记录</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E3%80%8A%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2%E3%80%8B/">#《中华文明史》</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/06/10/%E4%B9%A6%E7%B1%8D/%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2/2023_06_10_%E5%8F%B2%E5%89%8D%E6%96%87%E6%98%8E%E7%9A%84%E9%81%97%E8%BF%B9/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">史前文明的遗迹</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/05/29/%E9%9A%8F%E7%AC%94/%E7%94%9F%E6%97%A5/2023_05_19_%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%8D%81%E5%85%AB%E5%B2%81/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">关于我的十八岁</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A6%82%E8%BF%B0"><span class="nav-text"> 概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E6%95%99%E8%82%B2%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-text">中国历史教育的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%94%B9%E6%9C%9D%E6%8D%A2%E4%BB%A3%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-text">改朝换代的原因</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

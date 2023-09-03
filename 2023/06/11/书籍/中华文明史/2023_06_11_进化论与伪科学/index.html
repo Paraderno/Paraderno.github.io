@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="FallenGemini">
+    
+    <title>
+        
+            进化论与伪科学 |
+        
+        FallenGemini的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","favicon":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg","avatar":"https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg","description":"Do what is easy and your life will be hard. || Do what is hard and your life will be easy.","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://raw.githubusercontent.com/Paraderno/image-hosting/master/logo.4mlr5cs5x6k0.jpg">
+                </a>
+            
+            <a class="logo-title" href="/">
+               FallenGemini的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">进化论与伪科学</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.staticaly.com/gh/Paraderno/image-hosting@master/632x632bb.ijzvbq7kih4.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">FallenGemini</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-06-11 11:00:00</span>
+        <span class="mobile">2023-06-11 11:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2023-07-02 20:28:15</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E4%B9%A6%E7%B1%8D/">书籍</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">阅读与记录</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E3%80%8A%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2%E3%80%8B/">《中华文明史》</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>3.6k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>本文为《中华文明史》第一部分中华文明概述，第四讲的概括</p>
+<h1 id="进化论与伪科学"><a href="#进化论与伪科学" class="headerlink" title=" 进化论与伪科学"></a><span id="more"></span> 进化论与伪科学</h1><p>写于 2022 年 10 月</p>
+<h2 id="0-序"><a href="#0-序" class="headerlink" title="0.序"></a>0.序</h2><p>不知道你有没有思考过，达尔文的《进化论》是不是真的？至少对我来说，直到本科一年级结束都没有思考过这个问题。</p>
+<p>因为高中选课并没有选择生物学，我对生物学的知识十分浅薄；又因为生物只需要及格线考试而不需要高考，所以并没有下功夫去学习。关于《进化论》也仅仅记得两句“物竞天择，适者生存”，并自以为这是十分正确，不需要验证的。</p>
+<p>而前不久，我正在阅读我一位非常尊敬的教授的著作《中华文明史》时，看到了这位教授关于《进化论》的几点思考。<br>我不能确定这是否是真的，我只能尽我所能，去寻找这位教授所提供的证据是否属实。<br>于是我计划写下这段经历，其中大部分为教授的观点以及论证。</p>
+<h2 id="1-关于科学与伪科学"><a href="#1-关于科学与伪科学" class="headerlink" title="1.关于科学与伪科学"></a>1.关于科学与伪科学</h2><p>【我不是一位有神论者，至少目前我没有一位信仰的神。】</p>
+<p>教授在书中提出一个观点：<br>一提到有神无神，有的人就会讲：我不相信神，我相信科学。但其实科学和宗教的性质是一样的，都同属于信仰。为什么这么讲呢？因为科学和信仰都是建立于一系列公理之上的一个体系。<br>比如说平面几何，比如两点之间一定能做一条直线，这是不需要证明的，或者说不证自明的。那么也就不许你去挑战他。整个平面几何学和应用都是从这几个公理推导出来的。<br>而宗教中的公理，就是神的存在。你说：你证明给我看啊。我说：这不需要证明，我就是相信。反过来问你，为什么你要相信平面几何，你必须从那几条公理证明。</p>
+<p>根据科学哲学家卡尔·波普尔的说法，科学的一个特点就是「可以证伪」。因为科学实际上就是通过大量观测世上发生的一些现象，提取出一些问题，再提出假设，并验证假设。从这个逻辑上，只要找出一条不符合假设的现象，就能证明结论是错误的。这样的结论是一个「科学」的结论。<br>在这个基础上，「科学」才能不断修正，但永远不能成为真理。就比如物理学中，意外的发现了量子不符合牛顿定理，从而衍生出量子物理这门学说。关于爱因斯坦的相对论与普朗克的量子力学之间也由很多争论。但正因为有争论，「科学」才能不断发展。<br>【但我们无法保证下一分下一秒会不会发生什么与我们过去认识的物理理论完全相反的情况，比如「鏖杀公」突然来到你的面前。。。】</p>
+<p>从这个角度出发，把人类和宇宙的时空尺度来做对比，就会觉得有些滑稽。就像是把细菌和人之间的时间尺度做对比。<br>假如人体内的细菌出现了一些有智慧的生命，它们可能会研究人体，研究人体是什么形状，存在了多少年，人怎么新陈代谢，怎么血液循环，怎么保持体温恒定等等。<br>细菌研究的这些听起来也很「科学」，但有一个前提，就是这个人没有死。一旦这个人死了，细菌研究的科学大厦直接崩塌。<br>【一群人天天在研究怎么让数学大厦崩塌，所以什么时候崩塌www。】</p>
+<h2 id="2-关于进化论及其四大假说"><a href="#2-关于进化论及其四大假说" class="headerlink" title="2.关于进化论及其四大假说"></a>2.关于进化论及其四大假说</h2><p>现在来讨论进化论。我之前相信进化论是因为我相信科学（现在也相信科学www），可我们刚刚讲到科学本身也是一种信仰。<br>【所以我之前应该是「信仰」进化论，认为它正确的十分自然。】</p>
+<p>第一个叫过度繁殖，就是任何一个物种都会不断生育，使它种群的数量不断扩大。</p>
+<p>第二个叫生存竞争，就是说当一个种群的数量非常庞大的时候，就会面临食物不足的问题，还有天敌会来把它消灭。那么为了能够生存下来，个体就必须不断地适应这个环境。</p>
+<p>第三个叫遗传与变异，也就是一些适合生存的特征会通过遗传保留下来，或者通过基因突变产生变异（他当时还没有基因突变的概念）【这个他应该是指的达尔文吧？】，让一些个体出现更适应生存的特点，再把这个特点遗传下去。</p>
+<p>第四个叫适者生存，留下来的就是最适合生存的物种。</p>
+<h2 id="3-关于进化论的五大问题"><a href="#3-关于进化论的五大问题" class="headerlink" title="3.关于进化论的五大问题"></a>3.关于进化论的五大问题</h2><h3 id="3-1-比较解剖学"><a href="#3-1-比较解剖学" class="headerlink" title="3.1.比较解剖学"></a>3.1.比较解剖学</h3><p><a class="link" target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E6%AF%94%E8%BC%83%E8%A7%A3%E5%89%96%E5%AD%B8">什么是比较解剖学<i class="fas fa-external-link-alt"></i></a>：在地壳中发现了很多化石，比较他们之间的相似性。发现猴子和人的相似度高于鱼和人的相似度，那么他就认为猴子和人之间的进化距离比较短。也就是通过化石的比较，得出一个种族之间的大概进化关系。<br>比较解剖学实际上是一个逻辑错误，也就是循环论证。因为猴子和人比较像，所以人是猴子进化来的；因为人是猴子进化来的，所以人和猴子比较像。违反了形式逻辑。</p>
+<p>【尝试从其他的角度用比较解剖学解释进化论，但没能让自己满意。或许使用其他的方式来证明人是猴子进化来的会比较好一点。<br>此外，我稍微在维基百科上翻了一下，没有特别显著的写出比较解剖学如何证明进化论，仅仅是在提及进化论时谈到这个名词罢了。或许应该去文献中寻找。】</p>
+<h3 id="3-2-胚胎重演律"><a href="#3-2-胚胎重演律" class="headerlink" title="3.2.胚胎重演律"></a>3.2.胚胎重演律</h3><p>一个已经被证实为错误的假说。<br>该假说是19世纪的生物学家海克尔提出的。他认为生物在胚胎发育的过程中，会把整个进化流程重演一遍。其为了证实他的假说，故意画错多个胚胎图。<br>该假说也犯了一个逻辑错误——循环论证。因为人是进化来的，所以胚胎会重演。因为胚胎会重演所以人是进化来的。</p>
+<p>【从我们生活的时代来看这个假说，使用超声波之类的技术很容易发现它是错误的。但对于当时那个时代的人来说，为了证伪不知道花了多少精力。<br>同样的，我们也会花费大量的精力在进化论假说的证实与证伪，这是很有意义的。「科学」就是这么不停进步下去的。】</p>
+<h3 id="3-3-古生物学"><a href="#3-3-古生物学" class="headerlink" title="3.3.古生物学"></a>3.3.古生物学</h3><p>进化论的信奉者把生命从简单到复杂画出一棵树，表示生物的进化路径。从这棵进化树上不同的物种可以找到它的祖先。<br>但随着挖掘出的化石不断增加，这棵树变得越来越乱。比如应该出现在树顶的高级生物，却出现在了树根这些低级生物那里。<br>典型的例子就是寒武纪生命大爆炸。<br><a class="link" target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/wiki/%E5%AF%92%E6%AD%A6%E7%BA%AA%E5%A4%A7%E7%88%86%E5%8F%91">寒武纪大爆发的事实证据也曾让达尔文非常困惑，在《物种起源》中写道：“这件事情到现在为止都还没办法解释。所以，或许有些人刚好就可以用这个案例，来驳斥我提出的进化观点”。但即使到达尔文死后一百多年的今日，寒武纪大爆发依旧是科学界的一大谜题，尚待更多的科学证据出土，也许就能窥见当时的实际情况，找出真正的原因。<i class="fas fa-external-link-alt"></i></a><br>换句话说，达尔文也认为物种起源只是一种假说。</p>
+<h3 id="3-4-分子生物学"><a href="#3-4-分子生物学" class="headerlink" title="3.4.分子生物学"></a>3.4.分子生物学</h3><p>在达尔文时代，人解释物种的变化，比如说一只梅花鹿怎么变成了长颈鹿，就说由于地面的草越来越不够了，所以鹿就伸脖子吃树叶，最后脖子越伸越长，就变成了一直长颈鹿。【好像哄小孩子的玩笑www】其实根本不是这样的。一只鹿的脖子伸得再长，它的后代也得从头伸起。那么就剩下一种可能，就是在食物不足的情况下，一些鹿发生了基因突变，然后变成了长颈鹿。<br>现在我们就要看看，通过基因变异而改变物种的可能性有多大。</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Darwin%27s_Black_Box">Michael J. Behe的著作《达尔文的黑匣子》<i class="fas fa-external-link-alt"></i></a><br>Behe begins by reminding the general reader of paradigm shifts in the history of science, in which the foundations and assumptions of theories are examined, sometimes resulting in the rejection of an entire past theory. Behe suggests that such a paradigm shift in biology (and particularly in evolution) is imminent due to recent discoveries (circa 1996) in biochemistry. Behe acknowledges acceptance of the theory of evolution by “the great majority” of scientists, and he states that “most (though not all) do so based on authority.”</p>
+<p>教授在他的论证中引用了 Behe 在书中的一个通过基因突变造成物种变化的概率公式，粗略计算出概率为 10 的负 110 次方，也就是说需要 10 的 110 次方个个体才能通过基因突变产生一个新的物种。而我们目前所能探测到的这个宇宙其所包含的原子数是 10 的 80 次方。<br>那么通过基因突变产生新物种的概率是一个完全不可能的事件。而刚刚计算的公式中，物种之间的基因差别假定为10，实际关于人和大猩猩之间的基因差别越为 1000 个基因。</p>
+<p>此外，即使基因突变是正确的，那么变异过程中的那些物种又在哪里呢？能找到一个物种，它恰好是大猩猩变异成人类而仅变异了一半？<br>基因突变还有一个内在矛盾，就是进化的速度。按照我们现在的化石记录来看，越简单的生物它应该进化起来越漫长，比如说从原始的病毒进化为单细胞生物，从单细胞生物变成多细胞生物，这个过程是数亿年、十几亿年的时间跨度。但它一旦进入哺乳动物，从猿变成猴子的速度就非常快，大概只花了数百万年时间。<br>但实际上，分子生物学又认为，物种越高级，它的基因就越稳定，越不容易发生变化。</p>
+<p>最后还要考虑到生态系统，因为地球并不是单个物种发生进化，那么考虑到整个生物圈的进化，这个可能性又有多高呢？</p>
+<p>【以我微薄的生物学知识，我还记得一点点关于 DNA 双螺旋结构的特点就是比较稳定。<br>在维基百科上查了一下 Behe 的这本书，发现它并没有受到科学界的广泛认可，或者说，它受到了科学界的高度批评，认为 Behe 的假设在逻辑审查上失败了，相当于伪科学。】</p>
+<h3 id="3-5-一个关于进化论的实验"><a href="#3-5-一个关于进化论的实验" class="headerlink" title="3.5.一个关于进化论的实验"></a>3.5.一个关于进化论的实验</h3><p><a class="link" target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/E._coli_long-term_evolution_experiment">美国科学院院士Richard Lenski的大肠杆菌实验<i class="fas fa-external-link-alt"></i></a>，他特别想观测一种生物能不能通过若干代的繁殖之后变成另一种生物。Lenski教授就开始使用大肠杆菌做实验，这种生物的繁殖速度十分惊人，一天之内可以繁殖多达72代。他进行这个实验观察了30多年，大肠杆菌繁殖了五十多万代，但大肠杆菌还是大肠杆菌。<br>假设说人繁殖五十多万代，20 年繁殖一代，那也就是一千多万年。咱们现在说猿变成人大概需要三百万年时间，而人的基因又比大肠杆菌更精密更稳定，那三百万年又怎么能实现呢？</p>
+<p>大肠杆菌只要变化出一点点东西，哪怕它只是产生一种新的基因或者是只是一种新的蛋白质或者变成另一种组织结构，这对于进化论都是惊天新闻。但五十多万代的繁殖都没能实现，你又怎么能相信猴子繁殖五十多万代就能变成人呢?</p>
+<p>【教授在这里的数据似乎有点问题？在密歇根州立大学进行的实验于 2022 年 5 月结束，当时种群达到 75,000 代。实验于 2022 年 6 月 21 日在巴里克的实验室中恢复并重新开始。并非教授所说的五十多万代，可能教授是粗略估计的吧。<br>但即使是七万多代，对于教授最后的结论影响也并不是很大。】</p>
+<p>【Although the bacteria in each population are thought to have generated hundreds of millions of mutations over the first 20,000 generations, Lenski has estimated that within this time frame, only 10 to 20 beneficial mutations achieved fixation in each population, with fewer than 100 total point mutations (including neutral mutations) reaching fixation in each population.从这段文字来看，似乎大肠杆菌有发生一些基因突变？其中还有部分能稳定下来。】</p>
+<h2 id="4-后记"><a href="#4-后记" class="headerlink" title="4.后记"></a>4.后记</h2><p>没有谁是绝对的权威，哪怕是这位我十分尊敬的教授也一样。<br>这位教授一直在他的自媒体节目中去教会观众如何去理性思考问题。<br>我的一位语文老师也在努力教会我们学会理性思考。对于任何事情，首先进行事实判断，再进行是非判断，然后进行价值判断，最后进行道德判断。<br>可我似乎有些愚钝，只学了一点皮毛。</p>
+<p>关于进化论，我暂时持一个否定态度，但这并不代表进化论假说是错误的。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">#阅读与记录</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E3%80%8A%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2%E3%80%8B/">#《中华文明史》</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/06/12/%E4%B9%A6%E7%B1%8D/%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2/2023_06_12_%E5%8E%86%E5%8F%B2%E7%9A%84%E5%B7%A7%E5%90%88/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">历史的巧合</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/06/10/%E4%B9%A6%E7%B1%8D/%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2/2023_06_10_%E5%8F%B2%E5%89%8D%E6%96%87%E6%98%8E%E7%9A%84%E9%81%97%E8%BF%B9/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">史前文明的遗迹</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E5%8C%96%E8%AE%BA%E4%B8%8E%E4%BC%AA%E7%A7%91%E5%AD%A6"><span class="nav-text"> 进化论与伪科学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-%E5%BA%8F"><span class="nav-text">0.序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%85%B3%E4%BA%8E%E7%A7%91%E5%AD%A6%E4%B8%8E%E4%BC%AA%E7%A7%91%E5%AD%A6"><span class="nav-text">1.关于科学与伪科学</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%85%B3%E4%BA%8E%E8%BF%9B%E5%8C%96%E8%AE%BA%E5%8F%8A%E5%85%B6%E5%9B%9B%E5%A4%A7%E5%81%87%E8%AF%B4"><span class="nav-text">2.关于进化论及其四大假说</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%85%B3%E4%BA%8E%E8%BF%9B%E5%8C%96%E8%AE%BA%E7%9A%84%E4%BA%94%E5%A4%A7%E9%97%AE%E9%A2%98"><span class="nav-text">3.关于进化论的五大问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E6%AF%94%E8%BE%83%E8%A7%A3%E5%89%96%E5%AD%A6"><span class="nav-text">3.1.比较解剖学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E8%83%9A%E8%83%8E%E9%87%8D%E6%BC%94%E5%BE%8B"><span class="nav-text">3.2.胚胎重演律</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-3-%E5%8F%A4%E7%94%9F%E7%89%A9%E5%AD%A6"><span class="nav-text">3.3.古生物学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-4-%E5%88%86%E5%AD%90%E7%94%9F%E7%89%A9%E5%AD%A6"><span class="nav-text">3.4.分子生物学</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-5-%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8E%E8%BF%9B%E5%8C%96%E8%AE%BA%E7%9A%84%E5%AE%9E%E9%AA%8C"><span class="nav-text">3.5.一个关于进化论的实验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%90%8E%E8%AE%B0"><span class="nav-text">4.后记</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2023
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">FallenGemini</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
