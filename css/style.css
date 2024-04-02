@@ -2551,7 +2551,7 @@ pre .javascript .function {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url("https://raw.githubusercontent.com/Paraderno/image-hosting/master/5b56b43498a17.2qf57vs2u100.jpg") center center/cover no-repeat;
+  background: url("/images/bg.jpg") center center/cover no-repeat;
 }
 .first-screen-container .content {
   position: relative;
