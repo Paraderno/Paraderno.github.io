@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            《死亡诗社》 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/logo.7zq7c3t1n3.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/logo.7zq7c3t1n3.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":null,"font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">《死亡诗社》</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-04-07 17:00:00</span>
+        <span class="mobile">2023-04-07 17:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-04-02 18:00:23</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%BD%B1%E8%A7%86%E4%B8%8E%E5%B0%8F%E8%AF%B4/">影视与小说</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.9k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h2 id="《死亡诗社》"><a href="#《死亡诗社》" class="headerlink" title=" 《死亡诗社》"></a><span id="more"></span> 《死亡诗社》</h2><p>又哭了。。。<br>上一次哭还是上一次，下一次选个纯喜剧电影看好了0.0</p>
+<p>很久以前，三四年了吧，国哥在课堂上放给我们看的，当时看的不是太懂。<br>最近英语课上不知道为什么放了这个电影的片段，三四分钟，于是打算再看一遍</p>
+<h3 id="剧情介绍"><a href="#剧情介绍" class="headerlink" title="剧情介绍"></a>剧情介绍</h3><p>　　威尔顿贵族学校1959年度开学典礼暨建校100周年华诞正隆重举行。校长诺伦博士骄傲地回顾着学校的辉煌，为学校一百年来始终坚持传统、荣誉、纪律和卓越四大信条并因此成为美国最好大学预备学校而骄傲。也就在这一天，威尔顿的荣誉毕业生、从伦敦回来执教的新教师约翰·基廷回校出任英文教师。</p>
+<p>　　新学期开始了。沉闷的氛围、陈腐的说教，让威尔顿的大男孩们倍感压抑，同学们私下里咒骂威尔顿是地狱学校，篡改威尔顿四大信条以示嘲弄。此时，同学们怎么也不会想到，新来的基廷老师和他们心中原始的渴望一样，与众不同离经叛道的上课方式，立刻在同学们中掀起波澜。基廷哼着的《扬基进行曲》、及时行乐的信条、撕去教科书上伊凡所·普利查矫作的诗歌分析，在威尔顿学生长期被窒息的心灵中引发了一场地震。不久，尼尔在学校图书馆里意外发现了一本刊登着基廷简历的威尔顿年鉴。原来基廷曾是足球球队的队长，参加过一个名叫“死亡诗社”的组织。</p>
+<p>　　何谓“死亡诗社”，基廷给同学们讲述了诗社的秘密。在尼尔同学的倡导下，“死亡诗社”得以重建，查理、纳克斯、米克、卡麦隆等同学热烈响应，怯懦的托德也加入进来。从此，“死亡诗社”的成员们在当年基廷聚会的地方和着优美的诗句，扭动起节奏强烈的非洲原始舞蹈，释放着青春生命的激情。</p>
+<p>　　威尔顿学校发生着悄然的变化，麻烦和不幸在这悄然的变化中也随之而来。尼尔参加《仲夏夜之梦》演出遭到父亲的极力阻拦；纳克斯暗恋上名花有主的克莉丝姑娘；“死亡诗社”发表主张招收女生的文章。一切的一切引起诺伦校长的注意。《仲夏夜之梦》演出结束的那天晚上，尼尔用父亲的手枪让自己的灵魂飘向了遥远的天国。</p>
+<p>　　尼尔的死震惊了威尔顿。校方迫于舆论压力，开始调查尼尔自杀的原因。调查结果表明，基廷对于威尔顿开学所发生的事情负完全责任。又是一堂英语课。同学们在诺伦的引导下朗读着伊凡斯·普利查的“鬼话”文章时，基廷前来告别。同学们以站上课桌大声朗读诗歌的庄重形式，目送着脸上荡漾着微笑离开教室的基廷。</p>
+<h3 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h3><p>学校的四大支柱：Tradition, Honoer, Discipline, Excellence.</p>
+<hr>
+<p>开幕就是 Neil 他爹释放压力，”我都是为了你好”<br>「Don’t you ever dispute me in public. Do you understand?」「After you’ve finished medical school and you’re on your own, then you can do as you damn well please. But until then, you do as I tell you. Is that clear?」<br>「Yes, sir. I’m soory.」</p>
+<hr>
+<p>Keating 的第一堂课就是室外课！！！<br>「O Captain, my Captain.」</p>
+<p>初中的英语老师柴柴有几次课让我们在操场, or anywhere else we want 去阅读，虽说是课本罢了0.0</p>
+<p>高中的时候，我不太记得有没有在教室以外的地方上过课。真的真的很可惜，如果早出生几年，还能在国哥的班上的话，我应该也能体验到那种课堂。以前看到过国哥带的那种班级的视频，可惜没找到。<br>找视频的时候看到这个，记得以前有看过一次<a class="link" target="_blank" rel="noopener" href="https://haokan.baidu.com/v?pd=wisenatural&amp;vid=10570155379545834810">视频1<i class="fas fa-external-link-alt"></i></a>，看到国哥的面容、听到国哥的声音，熟悉的感觉，挺想回高中的。</p>
+<p>一些题外话，当时的校长是国哥的亲姐姐，国哥是重庆市中学语文教师最顶级的正高级教师那一层，学校是重庆市重点中学，排个前七没啥问题，班级被称为创新班，也是学校成绩最好的那一批学生，那个时候班级里都是 985 确实差不多。或许因为有这些底子，所以国哥才有机会尝试他的素质教育。<br>等到我们这一届的时候，校长即将换成一个衡水模式的管理者，国哥也就没能像以前一样，如同 Mr.Keating 一样进行素质教育。当然，也没能全班 985， 只有四分之三左右的样子吧，剩下是 211， 还有几位出国留学了。国哥也没能担任班主任，辉总却一心抓成绩分数，有些可惜就是。</p>
+<hr>
+<p>「Seize the day. Make your lives extraordinary.」</p>
+<p>Knox 遇见了一个女孩，让他一见钟情。糟糕的是，女孩快要和别人订婚了。<br>我没办法猜到我会怎么做，因为我还没有遇见过。或者说，我现在不认为有人能让我一见钟情。</p>
+<hr>
+<p>你会撕书吗？做第一个撕书的人？<br>高中时候的我会撕书，但不会使第一个。大学时候的我会做第一个撕书的人。<br>跟学院派说再见，诗歌才不是简单的 P * I = G</p>
+<p>「We don’t read and write poetry because it’s cute. We read and write poetry because we are members of the human race. And the human race is filled with passion. Madicine, law, business, engineering: these are noble pursuits and necessary to sustain life. But poetry, beauty, romance, love…these are what we stay alive for.」</p>
+<hr>
+<p>「Funny, I never pegged you as a cynic.」<br>「Not a cynic. A realist. Show me the heart unfettered by foolish dreams and I’ll show you a happy man.」<br>「But only in their dreams can men be truly free. Twas always thus, and always thus will be.」</p>
+<p>无可救药的浪漫主义者，或许吧。</p>
+<hr>
+<p>深夜悄悄跑去洞穴里，并不是为了做出写叛逆的行为来展示个性，而是为了寻找什么才是生命。<br>可惜，并不是所有人都能领会到这一点，还是有学院派的 old schools 执著于世俗意义上学生的成功。</p>
+<hr>
+<p>「I stand upon my desk…to remind myself that we must constantly look at things in a different way. See, the world looks very different from up here.」<br>「Boys, you must strive to find your own voice. Because the longer you wait to begin, the less likely you are to find it at all. Thoreau said, “Most men lead lives of quiet desperation.” Don’t be resigned to that. Break out.」</p>
+<p>站的越高，高到任何墙都无法阻止我们看清世界，才会开始明白什么是世界。打破顽固，拒绝顺从他人安排的生命，寻找自己的声音。</p>
+<hr>
+<p>在庭院里走路那段，挺多想法的。<br>从开始的个性到后面的顺从大众，坚持信仰的难度确实很大</p>
+<p>还有那段「世界上第一个无人驾驶飞行文具盒」<br>这安慰人的技巧，学不会啊。。。</p>
+<hr>
+<p>Neil 他爹又来折腾了， Mr.Keating 开导 Neil，但 Neil 没那勇气跟他爹说清楚，直到自杀前都说 Nothing。<br>我还以为他爹那天去看戏剧后，会做出一点让步。。。</p>
+<p>还有那个 Cameron，真的是恶心啊，被教化奴役成什么样了。</p>
+<hr>
+<p>结局挺感人的<br>我一定一定，会站起来，但不一定是第一个，希望以后我能认为我会是第一个</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%BD%B1%E8%A7%86%E4%B8%8E%E5%B0%8F%E8%AF%B4/">#影视与小说</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/04/11/%E9%9A%8F%E7%AC%94/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%AE%AD/2023_04_11_QDX/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">QDX</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/04/04/%E9%9A%8F%E7%AC%94/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%AE%AD/2023_04_04_%E9%93%B8/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">铸</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E3%80%8A%E6%AD%BB%E4%BA%A1%E8%AF%97%E7%A4%BE%E3%80%8B"><span class="nav-text"> 《死亡诗社》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%A7%E6%83%85%E4%BB%8B%E7%BB%8D"><span class="nav-text">剧情介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9A%8F%E7%AC%94"><span class="nav-text">随笔</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

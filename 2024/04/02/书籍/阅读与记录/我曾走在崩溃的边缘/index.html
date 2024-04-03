@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            《我曾走在崩溃的边缘》 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/logo.7zq7c3t1n3.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/logo.7zq7c3t1n3.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":null,"font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">《我曾走在崩溃的边缘》</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2024-04-02 11:00:00</span>
+        <span class="mobile">2024-04-02 11:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-04-02 19:56:43</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E4%B9%A6%E7%B1%8D/">书籍</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">阅读与记录</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.8k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>2024 年 2 月~2024 年 3 月</p>
+<h2 id="俞敏洪先生自序"><a href="#俞敏洪先生自序" class="headerlink" title=" 俞敏洪先生自序"></a><span id="more"></span> 俞敏洪先生自序</h2><p>这是一本非常好的讲成长的书。很多大学生都希望自己进大学的时候，就能够了解社会、了解创业、了解发展。所以讲述新东方的成长历程，是让大学生提前知道他们想知道的，让他们直到创业、企业到底是怎么一回事，以便更好地在上大学期间确定自己未来是否可以创业……</p>
+<p>还有一点，是一以贯之的，就是希望能够激励一些挣扎在困境中的朋友。很多人可能都知道新东方的校训和励志文化，但并不知道校训中的那句“在绝望中寻找希望”是我在什么情境下卸载笔记本上的……</p>
+<p>总而言之，希望我的这些感悟和思考，能够对所有成长中的年轻人，但也不仅限于年轻人，有所帮助，哪怕一点点。</p>
+<p>人生是一场漫长的马拉松，加油。</p>
+<h2 id="一些记录"><a href="#一些记录" class="headerlink" title="一些记录"></a>一些记录</h2><h3 id="为什么第一个“造反”的老师是数学逻辑老师"><a href="#为什么第一个“造反”的老师是数学逻辑老师" class="headerlink" title="为什么第一个“造反”的老师是数学逻辑老师"></a>为什么第一个“造反”的老师是数学逻辑老师</h3><p>大厨效验：懂经营的人不一定懂做菜，懂做菜的人不一定懂经营。</p>
+<p>于是俞敏洪先生收获了一个深刻教训：如果你要开一个饭店自己又不会做菜，还想要大厨不“造反”的话，那就得配 2~3 个大厨，让大厨之间能相互制衡。当有一件事情你不能做的时候，一定要找几个人同时帮你做。除非你相信自己已经给了这个人足够的利益，并且这些利益能够保证他一辈子都愿意跟你一起干。</p>
+<p><strong>当一个人向你提出过分的要求时，你会怎么处理，这在某种意义上代表你的能力和智慧。</strong></p>
+<h3 id="不做假账：新东方最珍贵的传统"><a href="#不做假账：新东方最珍贵的传统" class="headerlink" title="不做假账：新东方最珍贵的传统"></a>不做假账：新东方最珍贵的传统</h3><p>2012 年，浑水公司攻击新东方，说新东方做假账、数据造假，但是最后也不了了之了。后来经过两年的独立审计，新东方被美国政权交易委员会确认为没有财务问题。</p>
+<p>截至目前，我（俞敏洪先生）敢说自己没有做过一起为了一己私利去伤害新东方整体利益，或者伤害新东方股东利益的事情。这一点是我值得骄傲的。我对自己的要求就是八个字：只求发展，不求私利。只有不求私利才能得到私利，作为最大的股东之一，新东方每发展一步，我就多一点收益。所以，如果太过计较私利，到最后把公司做垮了，吃亏的其实还是自己。<br>很多人之所以做出一些小肚鸡肠的事情，就是因为对大局、自己的大利以及共同利益没有想清楚。</p>
+<h3 id="为什么新东方在-10-多年前就开始做家庭教育"><a href="#为什么新东方在-10-多年前就开始做家庭教育" class="headerlink" title="为什么新东方在 10 多年前就开始做家庭教育"></a>为什么新东方在 10 多年前就开始做家庭教育</h3><p>新东方为什么要做家庭教育呢？这件事情要追溯到我（俞敏洪先生）自己成为父亲后。为人父的我突然发现家庭教育对于孩子的成长来说，实在是太重要了。现在，我可以比较自信地说：在一个孩子健康成长的过程中，父母的作用占到了 80%左右，学校的作用占到 15%左右，而社会的作用占到 5%左右。</p>
+<p>我（俞敏洪先生）曾经说过：中国有一半的父母全力以赴地养育孩子，最后却并没有达到自己的预期。</p>
+<p><strong>中国有句古话“三岁看大，七岁看老”，一个孩子在三岁时就养成了他的生活习惯，到七岁时就养成了他的学习习惯和思维习惯。</strong></p>
+<h3 id="屁股决定脑袋：新东方考核机制的变革"><a href="#屁股决定脑袋：新东方考核机制的变革" class="headerlink" title="屁股决定脑袋：新东方考核机制的变革"></a>屁股决定脑袋：新东方考核机制的变革</h3><p>俗话说，屁股决定脑袋。也就是说，<strong>给你什么样的考核机制，你就会往什么方向用力气。</strong></p>
+<p>因此，考核指标要满足两个条件：第一，考核指标必须跟企业的文化、战略和未来紧密结合；第二，所有的考核指标从上到下必须保持一致。</p>
+<h3 id="情怀和人文精神是新东方企业文化的核心"><a href="#情怀和人文精神是新东方企业文化的核心" class="headerlink" title="情怀和人文精神是新东方企业文化的核心"></a>情怀和人文精神是新东方企业文化的核心</h3><p>俞敏洪先生把北大精神总结为六个词：</p>
+<ol>
+<li>独立。不管是独立思考、独立行走，还是独立行动。</li>
+<li>自由。北大人欣赏一种自由的氛围，自由的生活、自由的精神、自由的情怀、自由的空间。</li>
+<li>质疑。北大人的特点就是怀疑一切，不是你说了我就会相信，我必须经过自己的思考、自己的思辨，才能确认你的思想和说法到底对不对。</li>
+<li>包容。北大的文化精神最核心的理念就是包容，即所谓的兼容并包。这是北大校长蔡元培先生所说的。兼容并包意味着刚才所说的所有冲动性的思想，都可以存在于一体之中。</li>
+<li>反思。真正的北大人往往具备非常强大的反思能力，他们并不把自己看作所谓的精英分子，而是通过不断地否定自己，通过反思去观察和接触自己碰到的人和事、社会结构、社会管理，来提升自己的境界。</li>
+<li>傲骨。北大人的傲骨是他们坚决不接受自己不认可的事情，很少会因为个人利益等去谄媚别人。当人今天的北大人，就像北大著名教授钱理群先生所说的那样，不少已经变成了精致的利己主义者，甚至为了利益可以放弃人品，放弃人格，放弃社会责任和担当。</li>
+</ol>
+<h3 id="做人做事的核心要素：诚信、坦诚和信任"><a href="#做人做事的核心要素：诚信、坦诚和信任" class="headerlink" title="做人做事的核心要素：诚信、坦诚和信任"></a>做人做事的核心要素：诚信、坦诚和信任</h3><p>诚信意味着你跟别人做事情时没有任何欺诈，不管是口头上的还是协议上的，不管是两方关系还是三方关系，你都保持诚信，能够不让别人操心，让人相信你所做的每一件事情、说的每一句话不是虚假的，也不是夸张的。<br>坦诚就是你做事情不是遮遮掩掩，而是愿意直来直往地与人打交道。<br>信任是一种相互的行为。</p>
+<p><strong>做人是很简单的，一个人只要拥有我刚才所说的诚信、坦诚和信任，那么别人就会对你非常放心。</strong><br>但俞敏洪先生给自己打分只有 80 分，并没有完全做到。如果让我给自己打分的话……</p>
+<p>世界上有两种人，一种人要把所有时间和精力耗费在解决自己所创造的麻烦和问题上，另一种人把自己的时间、精力和资源用在对自己的人生最重要的事情上。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">#阅读与记录</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/03/27/%E4%B9%A6%E7%B1%8D/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/%E6%88%91%E4%BB%AC%E4%BB%A8/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">《我们仨》</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%9E%E6%95%8F%E6%B4%AA%E5%85%88%E7%94%9F%E8%87%AA%E5%BA%8F"><span class="nav-text"> 俞敏洪先生自序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95"><span class="nav-text">一些记录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%AC%AC%E4%B8%80%E4%B8%AA%E2%80%9C%E9%80%A0%E5%8F%8D%E2%80%9D%E7%9A%84%E8%80%81%E5%B8%88%E6%98%AF%E6%95%B0%E5%AD%A6%E9%80%BB%E8%BE%91%E8%80%81%E5%B8%88"><span class="nav-text">为什么第一个“造反”的老师是数学逻辑老师</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E5%81%9A%E5%81%87%E8%B4%A6%EF%BC%9A%E6%96%B0%E4%B8%9C%E6%96%B9%E6%9C%80%E7%8F%8D%E8%B4%B5%E7%9A%84%E4%BC%A0%E7%BB%9F"><span class="nav-text">不做假账：新东方最珍贵的传统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%96%B0%E4%B8%9C%E6%96%B9%E5%9C%A8-10-%E5%A4%9A%E5%B9%B4%E5%89%8D%E5%B0%B1%E5%BC%80%E5%A7%8B%E5%81%9A%E5%AE%B6%E5%BA%AD%E6%95%99%E8%82%B2"><span class="nav-text">为什么新东方在 10 多年前就开始做家庭教育</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B1%81%E8%82%A1%E5%86%B3%E5%AE%9A%E8%84%91%E8%A2%8B%EF%BC%9A%E6%96%B0%E4%B8%9C%E6%96%B9%E8%80%83%E6%A0%B8%E6%9C%BA%E5%88%B6%E7%9A%84%E5%8F%98%E9%9D%A9"><span class="nav-text">屁股决定脑袋：新东方考核机制的变革</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%83%85%E6%80%80%E5%92%8C%E4%BA%BA%E6%96%87%E7%B2%BE%E7%A5%9E%E6%98%AF%E6%96%B0%E4%B8%9C%E6%96%B9%E4%BC%81%E4%B8%9A%E6%96%87%E5%8C%96%E7%9A%84%E6%A0%B8%E5%BF%83"><span class="nav-text">情怀和人文精神是新东方企业文化的核心</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%81%9A%E4%BA%BA%E5%81%9A%E4%BA%8B%E7%9A%84%E6%A0%B8%E5%BF%83%E8%A6%81%E7%B4%A0%EF%BC%9A%E8%AF%9A%E4%BF%A1%E3%80%81%E5%9D%A6%E8%AF%9A%E5%92%8C%E4%BF%A1%E4%BB%BB"><span class="nav-text">做人做事的核心要素：诚信、坦诚和信任</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

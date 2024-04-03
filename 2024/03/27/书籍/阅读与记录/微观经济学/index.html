@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            《微观经济学》 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/logo.7zq7c3t1n3.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/logo.7zq7c3t1n3.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":null,"font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini"
+                            >
+                                CF
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       target="_blank" rel="noopener" href="https://codeforces.com/profile/FallenGemini">CF</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">《微观经济学》</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2024-03-27 11:00:00</span>
+        <span class="mobile">2024-03-27 11:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-04-02 19:08:24</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E4%B9%A6%E7%B1%8D/">书籍</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">阅读与记录</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.6k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>2024 年 1 月~</p>
+<h2 id="微观经济学"><a href="#微观经济学" class="headerlink" title=" 微观经济学"></a><span id="more"></span> 微观经济学</h2><h3 id="第-2-章-像经济学家一样思考"><a href="#第-2-章-像经济学家一样思考" class="headerlink" title="第 2 章 像经济学家一样思考"></a>第 2 章 像经济学家一样思考</h3><p>大多数经济学家同意的主张 1.租金上限降低了可得到的住房的数量和质量。（93%） 16.美国不应该禁止转移因作物。（82%） 17.最低工资增加了年轻人和不熟练工人的失业。（79%）</p>
+<hr>
+<p>最近开始看 Mankiw 的经济学原理，书中记载了一个调查，关于经济学家的主张。<br>有一些主张不太能理解（例如第 6 点），有一些主张给了一个思考问题的新视角（第 1 点和第 17 点）</p>
+<p>在高中时，一位我十分尊敬的语文老师提过他的看法，判断一个地区的生活水平，不应该看 GDP 有多高，而应该看最低收入。（还是最低工资来着，有一点记不清了）<br>以前没怎么思考过最低工资限制对企业有什么影响，现在想想突然意识到，成本上升就会减少投入，减少雇员，那企业的状态不就会移动到生产可能性边界中的无效率点吗。经济发展就会减缓。<br>可如果不限制最低工资，在供大于求，或者说人力过饱和，的地方不也会发生恶意压价吗。如果社会环境好的话，需求应该也会上升，供需关系也会逐渐平衡，最后实现充分就业吧。</p>
+<p>经济学十大原理第一条：人们面临权衡取舍。<br>也许以后会对这个问题有一些新想法吧。</p>
+<h3 id="第-3-章-相互依存性与贸易的好处"><a href="#第-3-章-相互依存性与贸易的好处" class="headerlink" title="第 3 章 相互依存性与贸易的好处"></a>第 3 章 相互依存性与贸易的好处</h3><p>一位经济学家（Emily Oster）认为，你不应该仅仅因为你比你的配偶更擅长洗碗，就总是负责洗碗。</p>
+<hr>
+<p>经济学十大原理第五条：贸易可以使每个人的状况都变得更好。</p>
+<p>第一次接触机会成本、贸易这些概念是在高中一年级的政治课上，当时老师只是简单讲了讲交易双方专注于各自优势并进行贸易，可以让双方的状况都变得更好。但具体原因一直没有思考清楚（其实也是没怎么想过这个问题，不求甚解罢了。。。）</p>
+<p>今天在书上看到了详细的解释，贸易让交易双方的消费可能性边界向外扩展，而不是原来的与生产可能性边界相同。</p>
+<h3 id="第-4-章-供给与需求的市场力量"><a href="#第-4-章-供给与需求的市场力量" class="headerlink" title="第 4 章 供给与需求的市场力量"></a>第 4 章 供给与需求的市场力量</h3><p>在读《微观经济学》，供给与需求部分<br>书中转载了一篇报道《哄抬物价是变相抢劫吗？》，背景是一场自然灾害发生以后（毕竟正常情况下，市场能够自我调节）<br>报道中有几个观点很有趣，夹杂着一些我的思考</p>
+<p>灾难发生后，必需品的供给量减少，而需求量可能会剧增（至少不会大量减少），那应该如何决定哪一位顾客应该得到必需品。<br>抽彩吗？那哄抬物价的人仅仅从商人变成了中签的顾客。<br>有某种配给方案吗，按照家庭需求。问题是，这太困难了，需要巨量计划以及难以达到的知识水平。（这不是什么一拍脑门一拍大腿就能想出来，再一拍屁股走人不管的儿戏。）<br>那简单的先到先得呢。事实上这就是反哄抬物价法所鼓励的事情。会产生囤积。再者，速度能很好地代表公正吗，这并不比另一种价格体系更公正。<br>在极端需求情形下，允许价格上涨限制了过度消费，人们会仔细考虑他们的购买，结果是有更多顾客买得到物品，实际上比反哄抬物价法更能实现较为平等的分配。</p>
+<p>而商人并没有从灾难中获利，而是通过对物价的管理来获利的。扩大了商品的分配范围，限制了囤货居奇，从而产生有益的社会效应。</p>
+<p>反对意见认为，哄抬物价合法化会让富人买得到一切物品，而穷人什么也没有。实际上，就大多数情况而言，并没有使最穷的人无法获得必需品与必须的服务，只是让开支雪上加霜。<br>与其一开始就进行价格管制，通过转移支付来减轻家庭赤字是更有效的解决方案。</p>
+<p>我们应该期待哄抬物价的情况更多一些，但空货架更少些。</p>
+<hr>
+<p>我印象中，大流行期间，很多国家都是直接给公民卡里打钱，打很多钱。钱从政府的预算里来，这应该就是转移支付的一种吧？<br>虽然美国拜登政府挺烂的，一直印钞票，经济通胀的可怕</p>
+<p>文章里考虑的应该是自由市场，虽然可能不是“完全竞争”，但一定不是“垄断市场”。</p>
+<p>垄断市场怎么办呢，好像无解</p>
+<h3 id="第-6-章-供给、需求与政府政策"><a href="#第-6-章-供给、需求与政府政策" class="headerlink" title="第 6 章 供给、需求与政府政策"></a>第 6 章 供给、需求与政府政策</h3><p>对一种物品的征税是在买者支付的价格和卖者得到的价格之间打入的一个楔子。当市场向新均衡变动时，买者为该物品支付的价格高了，而卖者从该物品得到的价格低了。<br>从这种意义上说，买者和卖者分摊了税收负担。<br>税收归宿（也就是说，税收负担的分摊）并不取决于向买者征税，还是向卖者征税。<br>税收归宿取决于供给和需求的价格弹性。税收负担更多地落在缺乏弹性的市场一方，因为市场的这一方较难通过改变购买量或销售量来对税收做出反应。</p>
+<hr>
+<p>书中举了个奢侈品税的例子，1990 年美国国会批准的，1993 年就废除了大部分奢侈品税。因为供给缺乏弹性（工人，企业很难改变生产），而需求富有弹性（旅游，甚至遗产），税收实际大部分归于供给方，而他们并不是富人。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">#阅读与记录</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2024/03/27/%E4%B9%A6%E7%B1%8D/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/%E6%88%91%E4%BB%AC%E4%BB%A8/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">《我们仨》</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/03/27/%E4%B9%A6%E7%B1%8D/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/%E5%B0%8F%E7%8E%8B%E5%AD%90/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">《The Little Prince》</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6"><span class="nav-text"> 微观经济学</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC-2-%E7%AB%A0-%E5%83%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E5%AE%B6%E4%B8%80%E6%A0%B7%E6%80%9D%E8%80%83"><span class="nav-text">第 2 章 像经济学家一样思考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC-3-%E7%AB%A0-%E7%9B%B8%E4%BA%92%E4%BE%9D%E5%AD%98%E6%80%A7%E4%B8%8E%E8%B4%B8%E6%98%93%E7%9A%84%E5%A5%BD%E5%A4%84"><span class="nav-text">第 3 章 相互依存性与贸易的好处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC-4-%E7%AB%A0-%E4%BE%9B%E7%BB%99%E4%B8%8E%E9%9C%80%E6%B1%82%E7%9A%84%E5%B8%82%E5%9C%BA%E5%8A%9B%E9%87%8F"><span class="nav-text">第 4 章 供给与需求的市场力量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC-6-%E7%AB%A0-%E4%BE%9B%E7%BB%99%E3%80%81%E9%9C%80%E6%B1%82%E4%B8%8E%E6%94%BF%E5%BA%9C%E6%94%BF%E7%AD%96"><span class="nav-text">第 6 章 供给、需求与政府政策</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
