@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            大阿尔克纳 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":"恐惧使人自律","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">大阿尔克纳</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2024-05-15 15:00:00</span>
+        <span class="mobile">2024-05-15 15:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-05-15 16:00:15</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%A1%94%E7%BD%97%E7%89%8C/">塔罗牌</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%A1%94%E7%BD%97%E7%89%8C%E7%89%8C%E4%B9%89/">塔罗牌牌义</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>5.5k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id=""><a href="#" class="headerlink" title=""></a><span id="more"></span></h1><h2 id="0-号-愚人"><a href="#0-号-愚人" class="headerlink" title="0 号 愚人"></a>0 号 愚人</h2><p><img lazyload="" alt="0号_愚人" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/0号_愚人.1e8duijcvf.webp"></p>
+<h3 id="我的感受"><a href="#我的感受" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>一只脚踩在岸边，另一只踮起脚尖，海面波涛汹涌，却抬头望向天空<ul>
+<li>有一种自信的感觉，又有一丝盲目；</li>
+</ul>
+</li>
+<li>手上拿着花，太阳在右上角照耀<ul>
+<li>清高、洁身自好；</li>
+</ul>
+</li>
+<li>拿着一个小包袱<ul>
+<li>象征新的开始，想要逃离现状；</li>
+<li>好像有一种向往自由的浪漫感；</li>
+<li>带的东西不多，好像只要有勇气与动力，准备不足也没有关系；</li>
+</ul>
+</li>
+<li>身边有只狗子，动作神态与愚人类似<ul>
+<li>在改变现状时可能有外界的帮助；</li>
+</ul>
+</li>
+<li>数字 0<ul>
+<li>一个循环，衔尾蛇的感觉。既是开始，也是结束</li>
+</ul>
+</li>
+<li>The Fool<ul>
+<li>无知、不自我拘束，打破常理，从不同角度看待问题</li>
+<li>无畏、勇敢</li>
+</ul>
+</li>
+</ul>
+<p>我会想要上去和他打招呼，想和他聊聊天，应该会挺有趣的。</p>
+<h3 id="牌面解析"><a href="#牌面解析" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>开始，冒险，大胆，天真，愚笨，我行我素，潜力，漂泊，旅行。</p>
+<p>愚人穿着色彩斑斓的服装，头上戴顶象征成功的桂冠，无视于前方的悬崖，昂首阔步向前行。</p>
+<p>他左手拿着一朵白玫瑰，白色象征纯洁，玫瑰象征热情。他的右手则轻轻握着一根杖，象征经验的包袱即系于其上。那根杖可不是普通的杖，它是一根权杖，象征力量。愚人脚边有只小白狗正狂吠着，似乎在提醒他要悬崖勒马，又好像随他一同起舞。无论如何，愚人仍旧保持着欢欣的神色，望向遥远的天空而非眼前的悬崖，好像悬崖下会有个天使扥住他似的，他就这样昂首阔步地向前走。远方的山脉象征他前方未知的旅程，白色的太阳自始至终都目睹着愚人的一举一动——他从哪里来？他往何处去？他又如何回来？</p>
+<h3 id="对比与思考"><a href="#对比与思考" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>白玫瑰的花语：确实不知道</li>
+<li>权杖，以及手持的方式：没看出来，但应该能想到才对，小阿尔克纳牌里有权杖系列，就是长这个样子。</li>
+<li>象征经验的包袱：并不是完全愚蠢，而是不受经验控制。我以为是象征准备，大差不差。</li>
+<li>桂冠：象征成功的可能性。</li>
+<li>包袱上的图案：对不起我眼瞎真看不出来，我对着我的纸质牌看着像一个松果。主流解读为：鸟（风元素）或老鹰的头（本能与向上提升的灵魂）</li>
+<li>狗子：动物，象征本能，愚人也是。占卜中有时代表新生儿。</li>
+</ul>
+<h2 id="1-号-魔术师"><a href="#1-号-魔术师" class="headerlink" title="1 号 魔术师"></a>1 号 魔术师</h2><p><img lazyload="" alt="1号_魔术师" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/1号_魔术师.2yy4vpucm3.webp"></p>
+<h3 id="我的感受-1"><a href="#我的感受-1" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>红色袈裟，画面四周的红玫瑰<ul>
+<li>红色与玫瑰都代表热情</li>
+</ul>
+</li>
+<li>桌上的宝剑、权杖、圣杯、星币<ul>
+<li>力量、权力、智慧、财富集一体，可能象征成功</li>
+<li>圣杯与星币在宝剑与权杖之间，可能象征要去保护自己的智慧与财富</li>
+</ul>
+</li>
+<li>一袭白衣、白色头环、白色牵牛花（？）表情严肃认真。手上拿着的看不出来是什么<ul>
+<li>纯洁、孤高，殉道者的形象</li>
+<li>花语（不知道）</li>
+</ul>
+</li>
+<li>一手指天，一手指地。头上顶着的像是数学符号无限。<ul>
+<li>天上地下，唯我独尊？</li>
+<li>从今以后，我化身天地，散尽力量、权力、智慧、财富，我即使无限。（有点中二）</li>
+</ul>
+</li>
+<li>桌子侧面刻着三个图案：山、海、鸟？腰间的好像不是腰带，是一条蛇！！<ul>
+<li>也是象征着本能吗？</li>
+</ul>
+</li>
+<li>数字 1<ul>
+<li>万物的开始，象征希望</li>
+</ul>
+</li>
+<li>The Magician<ul>
+<li>魔术给人的感觉就是神奇，但看穿之后又会觉得乏味</li>
+<li>可能象征要去看清本质</li>
+</ul>
+</li>
+</ul>
+<p>如果魔术师的表情没有这么严肃的话，我想他可能会说一句：“好戏开场啦！”</p>
+<h3 id="牌面解析-1"><a href="#牌面解析-1" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>创造力 沟通 交际 技能 精通 万事俱备 新计划 主动</p>
+<p>魔术师高举拿着权杖的右手指向天，左手食指指向地，他本人就是沟通上天与地面的桥梁。他身前的桌上放着象征四要素的权杖、圣杯、宝剑与钱币，同时也代表塔罗牌的四个牌组。他身穿的大红袍子象征热情与主动，白色内衫表示纯洁与智慧的内在。缠绕他腰间的是一条青蛇，蛇虽然经常象征邪恶，但在这里代表的是智慧与启发。魔术师头顶上有个倒８符号，代表无限。画面前方和上方的红玫瑰象征热情，白百合象征智慧。此时，万事齐备，魔术师可以开始进行他的新计划了。和愚人牌同样鲜黄色的背景，预示未来成功的可能。</p>
+<h3 id="对比与思考-1"><a href="#对比与思考-1" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>手上拿着的是权杖啊。。塔罗里面的权杖不是树枝的样子吗。。</li>
+<li>白色的是白百合，不是牵牛花。</li>
+<li>蛇代表智慧和启发</li>
+<li>鲜黄色背景预示成功的可能</li>
+<li>数字 1 代表沟通</li>
+<li>在占星学中，魔术师这张牌属于水星，代表智力与沟通。</li>
+<li>魔术师在占卜上也代表「生病、痛苦、失落、灾难」</li>
+</ul>
+<h2 id="2-号-女祭司"><a href="#2-号-女祭司" class="headerlink" title="2 号 女祭司"></a>2 号 女祭司</h2><p><img lazyload="" alt="2号_女祭司" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/2号_女祭司.3ye8inyre7.webp"></p>
+<h3 id="我的感受-2"><a href="#我的感受-2" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>一黑一白两个柱子，女祭司位于中间<ul>
+<li>均衡</li>
+</ul>
+</li>
+<li>白色衣服蓝色袈裟，表情严肃<ul>
+<li>圣洁、高贵</li>
+</ul>
+</li>
+<li>数字 2<ul>
+<li>有合作、均衡的意味</li>
+</ul>
+</li>
+<li>The High Priestess<ul>
+<li>祭祀应该是属于宗教范畴的，衣服上的十字架是基督宗教系列，不清楚时代背景，所以不确定是哪个分支（犹太？基督？天主？）</li>
+</ul>
+</li>
+</ul>
+<p>如果我上去搭话，她可能会以圣母的口吻去宽恕我过去做错的事情。</p>
+<h3 id="牌面解析-2"><a href="#牌面解析-2" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>静止 消极 直觉 智慧 神秘</p>
+<p>相较于上一张魔术师纯粹阳性的力量，女祭司表现的则是纯粹阴性的力量。她身穿代表纯洁的白色内袍，与圣母的蓝色外袍，静默端坐。胸前挂个十字架，象征阴阳平衡、与神合一。</p>
+<p>她头戴的帽子是由上弦月、下弦月和一轮满月所构成的，象征所有的处女神祇。手上拿着滚动条，象征深奥的智慧，其上的 TORA 字样，意为「神圣律法」，而滚动条卷起并半遮着，暗示此律法不为人所知。在她脚边的一轮新月，为她的内袍衣角所固定住，袍子并延伸到图面之外。女祭司两侧一黑一白的柱子，存在于圣经故事中所罗门王在耶路撒冷所建的圣殿中，黑白柱上的 B 与 J 字样，分别是 Boas 和 Jachin 的缩写，黑柱是阴而白柱是阳，两柱象征二元性，坐在中间的女祭司则不偏不倚，统合两者的力量。柱子上面的喇叭造型，代表女祭司敏锐的感受性，上面的百合花纹则象征纯洁与和平。两柱之间有帷幕遮着，帷幕上的石榴代表「阴」，棕榈代表「阳」。帷幕把后方的景色遮住了，仔细一看，依稀可见由水、山丘与的蓝天构成的背景。水象征情感与潜意识，这一片水平静无波，但其静止的表面下蕴藏深沉的秘密。整个图面呈现象征智慧的蓝色调，双柱的意象在后面的牌中重复出现。</p>
+<h3 id="对比与思考-2"><a href="#对比与思考-2" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>帽子没看懂，处女神祇更是不懂</li>
+<li>滚动条与 TORA 感觉是有深意，也没看懂</li>
+<li>耶路撒冷的圣殿又是什么，不造啊</li>
+<li>后面的石榴与棕榈也没认出来，想了好久都没想出来这是什么东西</li>
+</ul>
+<hr>
+<ul>
+<li>女祭司是不食人间烟火的「处女」和「圣母」，女祭司是一位不需要男人的女子，遗世而独立，律己严谨，不茍言笑，因此，在感情占卜上，女祭司通常代表单恋、暗恋或独身。</li>
+<li>抱持「以不变应万变」的态度</li>
+</ul>
+<h2 id="3-号-皇后"><a href="#3-号-皇后" class="headerlink" title="3 号 皇后"></a>3 号 皇后</h2><p><img lazyload="" alt="3号_皇后" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/3号_皇后.51dxvga8w7.webp"></p>
+<h3 id="我的感受-3"><a href="#我的感受-3" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>手持权杖，头顶皇冠，衣服上的图案（没看懂）<ul>
+<li>权力、地位</li>
+</ul>
+</li>
+<li>左下角爱心形状的石头<ul>
+<li>亲密关系</li>
+</ul>
+</li>
+<li>树林、河流、稻草，丰满的体态（相比女祭司）<ul>
+<li>世俗生活=&gt;新的生命、丰收与创造</li>
+</ul>
+</li>
+<li>数字 3<ul>
+<li>冲突的开始=&gt;1 代表男，2 代表女，3 由 1 和 2 组成，代表新的生命</li>
+</ul>
+</li>
+</ul>
+<h3 id="牌面解析-3"><a href="#牌面解析-3" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>丰收 生产 创造 自然 母爱 美 欢乐 主动 热情</p>
+<p>体态丰腴的皇后坐在宝座上，手持象征地球的圆形手杖，戴着由九颗珍珠组成的项链，象征九颗行星，也代表<strong>金星维纳斯</strong>。皇后头冠由十二个六角星组成，象征十二星座与一年的十二个月。更进一步，六角星本身是由一个正三角形和倒三角形组成，分别代表火要素和水要素。除了头冠之外，她还戴着香桃木叶作成的头环，象征<strong>金星维纳斯</strong>。她身穿的宽松袍子上面画满象征多产的石榴，宝座下方则是个绘有<strong>金星</strong>符号的心形枕头。她前方的麦田已经成熟，代表丰饶与多产；后方则是茂密的丝柏森林，与象征生命力的瀑布河流。</p>
+<h3 id="对比与思考-3"><a href="#对比与思考-3" class="headerlink" title="对比与思考"></a>对比与思考</h3><p>看不懂这张，没啥思路</p>
+<ul>
+<li>好多金星的象征：九颗珍珠，头环，金星符号（我以为在这里是表示女性的意思，没有想到还有占星符号的概念）的心形枕头</li>
+<li>手杖怎么就象征地球了</li>
+<li>正三角代表火要素，倒三角代表水要素</li>
+<li>袍子上的画是石榴，象征多产</li>
+</ul>
+<hr>
+<ul>
+<li>皇后是母性的原型，表现女性的感性面，主动且热情，重视感官的享受</li>
+<li>而因为皇后对应金星，因此传统上这张牌也可以代表婚姻</li>
+<li>在工作方面，表示收获丰硕，或是遇到一位热心帮助你的人，通常是女性</li>
+<li>在感情方面的占卜，可能表示结婚、快乐的恋情、女方采取主动，或是代表一位相当具有吸引力的女性，这位女性可能是自己，也可能是情敌，须配合周遭的牌解读</li>
+<li>皇后牌同时代表母亲与生产，延伸出去就是丰收与创造，通常是令人感到欢乐的牌</li>
+</ul>
+<h2 id="4-号-皇帝"><a href="#4-号-皇帝" class="headerlink" title="4 号 皇帝"></a>4 号 皇帝</h2><p><img lazyload="" alt="4号_皇帝" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/4号_皇帝.syqmas6ws.webp"></p>
+<h3 id="我的感受-4"><a href="#我的感受-4" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>红色的主题色<ul>
+<li>热情、主动、外向、积极</li>
+</ul>
+</li>
+<li>头顶皇冠，手持权杖，握着象征地球的宝珠<ul>
+<li>权力、地位、不可冒犯、尊贵</li>
+</ul>
+</li>
+<li>宝座上的四个羊头，穿着铁制的战靴<ul>
+<li>印象中羊在西方是恶魔的象征，数字 4 也是死亡的象征，可能这个表示“一将功成万骨枯”的意思</li>
+<li>武王、战争、死亡、杀戮</li>
+</ul>
+</li>
+</ul>
+<p>这种人物形象感觉都会自带上位者的威压</p>
+<h3 id="牌面解析-4"><a href="#牌面解析-4" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>父亲 权利 秩序 统治</p>
+<p>一国之尊的皇帝头戴皇冠，身着红袍，脚穿象征严格纪律的盔甲，左手拿着一颗球，右手持的是象征生命的古埃及十字架，自信满满的坐在王位上。 王位上有四个牡羊头作为装饰，如图所示，皇帝牌正是代表牡羊座的牌。牡羊座是十二星座的头一个，具有勇敢、积极、有野心、有自信的特质。红袍加上橙色的背景，呈现红色的主色调，与牡羊座的特性不谋而合。背景严峻的山象征前方险峻的路途。我们可以比较皇帝与皇后的背景，一个是严峻山川，一个是丰饶大地，形成互补的局面。</p>
+<h3 id="对比与思考-4"><a href="#对比与思考-4" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>没看懂的有：古埃及十字架，牡羊座</li>
+</ul>
+<hr>
+<ul>
+<li>从历史观点，正位的皇帝就像史上每个统驭万民的明君。以现代观点切入，皇帝就是总统或大老板，是让人臣服的角色</li>
+<li>它可以代表任何有权力、克己严谨、但缺乏情感交流的领导人物或权威人士</li>
+<li>皇帝也可代表一段稳定自律的时期，当事人能够秉持皇帝的态度，严以律己，一丝不茍，达成自己的目标</li>
+<li>情感占卜方面，皇帝牌可能暗示男性采取主动，或是两人相处缺乏情感交流。皇帝牌若代表丈夫或情人，但这位丈夫或情人虽有责任感，却不会甜言蜜语，反而取代严父角色，让人有点敬畏，情况不好时可能会想控制对方</li>
+</ul>
+<h2 id="5-号-教皇"><a href="#5-号-教皇" class="headerlink" title="5 号 教皇"></a>5 号 教皇</h2><p><img lazyload="" alt="5号_教皇" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/5号_教皇.wicr8embm.webp"></p>
+<h3 id="我的感受-5"><a href="#我的感受-5" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>红衣主教</li>
+<li>下面的听众衣服上的红玫瑰、白百合<ul>
+<li>热情、智慧</li>
+</ul>
+</li>
+<li>教皇右手指天<ul>
+<li>传达上天的旨意</li>
+</ul>
+</li>
+</ul>
+<h3 id="牌面解析-5"><a href="#牌面解析-5" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>宗教 传统 援助 仪式 教育 道德 社会规范</p>
+<p>教宗身穿大红袍子，端坐在信众前。他头戴象征权力的三层皇冠，分别代表身心灵三种层次的世界。 他的右手食中指指向天，象征祝福﹔左手持着主字形的权杖，象征神圣与权力。他耳朵旁边垂挂的白色小物，代表内心的声音。教宗前方放着两把交叉的钥匙，在很多版本的塔罗牌里，钥匙是金色银色各一把，象征阳与阴，日与月，外在与内在，我们的课题就是要学会如何结合两者，而钥匙本身可用以开启智慧与神秘之门。教宗前方的两位信众，左边的身穿象征热情的红玫瑰花纹衣裳，右边则穿象征性灵成长的白百合衣裳（红玫瑰与白百合在魔术师也曾出现过）。教宗与信众三人的衣服都有牛轭形（Ｙ字形）装饰，牛轭的用途是促使受过训练的动物去工作的，出现在教宗牌的道理值得深思。教宗后方则是曾经在女祭司中出现的两根柱子，不过在这里它们是灰色的，灰色象征由经验而来的智慧﹔另一说则是教宗后方虽无女祭司的帷幕将潜意识隔离，但暗沉的灰色代表通往潜意识之路仍未开启。柱子上的图案象征肉体结合。</p>
+<h3 id="对比与思考-5"><a href="#对比与思考-5" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>象征权力的三层皇冠</li>
+<li>右手食中指指向天，象征祝福</li>
+<li>牛轭形（Ｙ字形）装饰</li>
+<li>灰色象征由经验而来的智慧</li>
+</ul>
+<hr>
+<ul>
+<li>教宗则是提供心灵成长与道德教育的父亲</li>
+<li>教宗则代表内心的服从性</li>
+<li>教宗也代表学校教育，以及任何所谓「正统」的教育</li>
+<li>在教堂中，仪式是不可或缺的，所以教宗牌也象征仪式</li>
+<li>在占卜上，教宗常与教学与顾问相关，是学生最乐见的牌，表示学生在学校环境中如鱼得水，问考试必顺利。</li>
+<li>在感情占卜上，教宗通常指涉传统的恋情或婚姻，例如相亲，也可能是柏拉图式的精神恋爱，最好的情况则代表婚礼将近。</li>
+</ul>
+<h2 id="6-号-恋人"><a href="#6-号-恋人" class="headerlink" title="6 号 恋人"></a>6 号 恋人</h2><p><img lazyload="" alt="6号_恋人" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/6号_恋人.2dohuv8m0t.webp"></p>
+<h3 id="我的感受-6"><a href="#我的感受-6" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>左侧的苹果树与蛇<ul>
+<li>伊甸园故事</li>
+</ul>
+</li>
+<li>右侧树上好像是着火了<ul>
+<li>热情过度</li>
+</ul>
+</li>
+<li>上方的天使与太阳<ul>
+<li>对恋人的祝福</li>
+</ul>
+</li>
+<li>赤身裸体。女人看着天使，男人看着女人<ul>
+<li>最原始的感情</li>
+<li>有一点单相思的感觉</li>
+</ul>
+</li>
+<li>The Lovers<ul>
+<li>爱情属性</li>
+</ul>
+</li>
+</ul>
+<h3 id="牌面解析-6"><a href="#牌面解析-6" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>选择 爱情 性 结合 人际关系</p>
+<p>恋人牌背景在伊甸园，亚当与夏娃分站两边，两者皆裸身，代表他们没什么需要隐藏的。两人所踩的土地相当肥沃，生机盎然。 夏娃的背后是知识之树，生有五颗苹果，象征五种感官，有条蛇缠绕树上。蛇在世界文化中的象征丰富多元，此处可能象征智慧，也象征欲望与诱惑。牠由下往上缠绕在树上，暗示诱惑经常来自潜意识。亚当背后是生命之树，树上有十二团火焰，象征十二星座，也象征欲望之火。伟特说：「亚当与夏娃年轻诱人的躯体，象征未受有形物质污染之前的青春、童贞、纯真和爱」。两人背后的人物是风之天使拉斐尔（Raphael），风代表沟通，祂身穿的紫袍则是忠贞的象征，显示这个沟通的重要性。亚当看着夏娃，夏娃则望着天使，象征「意识 ─ 潜意识 ─ 超意识」与「身 ─ 心 ─ 灵」或是「理性 ─ 感性」之间的传导。天使之下，亚当夏娃中间有一座山，象征意义解读众多，主要有三种：一说是山代表阳性，水代表阴性，两者表现阴阳平衡，意味我们必须把阴与阳、理性与感性的能量调和。一说认为这座山象征正当思想的丰饶果实。另一说则认为它代表高峰经验与极乐。</p>
+<h3 id="对比与思考-6"><a href="#对比与思考-6" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>知识之树生有五颗苹果，树上只有四个，是故事里吃掉了一个来着？</li>
+<li>生命之树有十二团火焰</li>
+<li>风之天使拉斐尔</li>
+<li>意识-潜意识-超意识</li>
+</ul>
+<hr>
+<ul>
+<li>恋人对应占星学中的双子座，可能展现双方的结合沟通或对立。</li>
+<li>在更古老版本的塔罗牌，恋人更常见的意义是「选择」，也就是双方的对立</li>
+<li>与权杖二或圣杯七可不同，恋人毕竟是大牌，牵涉的是人生的转折点，不是短期的影响，不可不慎</li>
+<li>恋人牌也代表个人信仰与价值观</li>
+<li>恋人的爱情会是影响重大且维持长久的，一般会由爱生性</li>
+<li>在最好的情况下，恋人牌代表完美、和谐、互信的人际关系。</li>
+</ul>
+<h2 id="7-号-战车"><a href="#7-号-战车" class="headerlink" title="7 号 战车"></a>7 号 战车</h2><p><img lazyload="" alt="7号_战车" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/7号_战车.2vekbgxnvm.webp"></p>
+<h3 id="我的感受-7"><a href="#我的感受-7" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>第一眼看上去其实并没有感觉到战争的血腥，或许这张牌其实是象征主动、成功之类的</li>
+<li>手持权杖、身披铠甲、肩抗月牙、头顶皇冠，眼神坚毅</li>
+<li>战车是用石头做的，拉车的是某个神话（好像是埃及）里的角色。黑白配色很像女祭司牌里的黑白柱。</li>
+<li>战车上画着翅膀、太阳、盾牌还有陀螺。自由、动力、矢志不渝还有坚韧不拔。</li>
+<li>身后是城堡，大抵是战车要守护的对象。</li>
+</ul>
+<h3 id="牌面解析-7"><a href="#牌面解析-7" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>意志 自律 胜利 旅程 竞争</p>
+<p>一位英勇的战士驾着一座由两只人面狮身兽拉着的战车。人面狮身兽一只是黑的，代表严厉，另一只是白的，代表慈悲。两兽同时来看，也是阴阳平衡的象征。战车上有四根柱子（四个代表上帝的希伯来字母 YHWH 或火水风土四要素）支撑着蓝色车棚，车棚上饰以六角星花纹，象征天体对战士成功的影响。英勇的战士手持象征意志与力量的矛形权杖，头戴象征统治的八角星头冠和象征胜利的桂冠，身穿盔甲。盔甲上的肩章呈现弦月形，显示战车牌与属月亮的巨蟹座之关联。斜挂的腰带上有占星学符号，裙上有各种炼金术的符号。胸前的四方形图案代表土要素，象征意志的力量。战车前方的翅膀图案是古埃及的图腾，代表灵感。翅膀下面是一个小盾牌，其上的红色的图案是一种印度图腾，为男性与女性生殖器结合的象征，也是二元性与一元性，类似中国的阴与阳，可能暗示编号七的战车牌走过愚人之旅的三分之一，已达性成熟的阶段。战士身后的河流就是圣经创世纪中四条伊甸园之河其中的一条，与皇后、皇帝和、死神牌中的河是同一条。再后面就是一座高墙耸立的城市。战士背对城市，暗示他把物质置于身后，向前开展心灵上的旅程。他手上没有缰绳，表示他不是用肉体来控制那两头朝不同方向行进的人面狮身兽，而完全凭借他旺盛过人的意志力。值得注意的一点是他站在城墙外守御，而非进攻，所以这位战士是位守护者、防御者，而不是侵略者。他是尽他的本分，并努力做到最好。</p>
+<h3 id="对比与思考-7"><a href="#对比与思考-7" class="headerlink" title="对比与思考"></a>对比与思考</h3><ul>
+<li>六角星花纹、八角星头冠、桂冠。古埃及的图腾。伊甸园之河。</li>
+</ul>
+<hr>
+<ul>
+<li>六号的恋人牌有关选择，七号的战车则对他的选择采取实际行动，克服路途中的恐惧 ── 恐惧失败，恐惧选择错误。</li>
+<li>对于竞争，他怀有强烈的野心与专注力。对于设定的目标，他会全心全意去达成。</li>
+<li>自律、自我要求与情感控制也是战士具有的过人特质。</li>
+<li>战车也代表移动或改变，不过不一定是肉体方面的，因为刚在恋人牌中做出某种决定，此时生活必然因这个决定而经历某种改变。</li>
+<li>通常意味某种程度的挑战，而且此时放弃是不明智的。</li>
+<li>感情占卜方面，战车通常欠缺软性对话与情感交流。有可能出现竞争者，或者你就是那个竞争者。</li>
+</ul>
+<hr>
+<ul>
+<li>战车逆位，可能惨遭失败。也可能当事人野心过度旺盛、太过鲁莽或事情太多，而导致不好的下场。</li>
+</ul>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%A1%94%E7%BD%97%E7%89%8C%E7%89%8C%E4%B9%89/">#塔罗牌牌义</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/04/08/%E4%B9%A6%E7%B1%8D/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/%E8%9B%A4%E8%9F%86%E5%85%88%E7%94%9F%E5%8E%BB%E7%9C%8B%E5%BF%83%E7%90%86%E5%8C%BB%E7%94%9F/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">《蛤蟆先生去看心理医生》</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-%E5%8F%B7-%E6%84%9A%E4%BA%BA"><span class="nav-text">0 号 愚人</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E5%8F%B7-%E9%AD%94%E6%9C%AF%E5%B8%88"><span class="nav-text">1 号 魔术师</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-1"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-1"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-1"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%8F%B7-%E5%A5%B3%E7%A5%AD%E5%8F%B8"><span class="nav-text">2 号 女祭司</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-2"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-2"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-2"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%8F%B7-%E7%9A%87%E5%90%8E"><span class="nav-text">3 号 皇后</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-3"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-3"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-3"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%8F%B7-%E7%9A%87%E5%B8%9D"><span class="nav-text">4 号 皇帝</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-4"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-4"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-4"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E5%8F%B7-%E6%95%99%E7%9A%87"><span class="nav-text">5 号 教皇</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-5"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-5"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-5"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-%E5%8F%B7-%E6%81%8B%E4%BA%BA"><span class="nav-text">6 号 恋人</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-6"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-6"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-6"><span class="nav-text">对比与思考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-%E5%8F%B7-%E6%88%98%E8%BD%A6"><span class="nav-text">7 号 战车</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-7"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-7"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E6%AF%94%E4%B8%8E%E6%80%9D%E8%80%83-7"><span class="nav-text">对比与思考</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
