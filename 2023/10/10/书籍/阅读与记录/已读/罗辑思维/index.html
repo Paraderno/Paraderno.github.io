@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            《罗辑思维》 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":"恐惧使人自律","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">《罗辑思维》</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2023-10-10 22:00:00</span>
+        <span class="mobile">2023-10-10 22:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-06-02 13:59:42</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E4%B9%A6%E7%B1%8D/">书籍</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">阅读与记录</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%B7%B2%E8%AF%BB/">已读</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.3k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>2023 年 9 月~2023 年 12 月</p>
+<h2 id="突破“元无知”"><a href="#突破“元无知”" class="headerlink" title=" 突破“元无知”"></a><span id="more"></span> 突破“元无知”</h2><blockquote>
+<p>百度的搜索框就放在那里，人类的大部分成型知识，都可以通过搜索找到。<br>但是在搜索框里搜索什么呢？输入一个什么词，成为我们的第一个起点呢？</p>
+</blockquote>
+<p>《知识大迁移》里提出的“元无知”的概念，就是我们不知道<strong>自己不知道</strong>的无知。</p>
+<p>在《知识大迁移》这本书中举了一个例子。<br>古希腊的元老院有一个职业叫“助记员”。他们的工作是给元老们提供所需的事实，供元老们辩论所用。<br>元老们搞政治辩论，真正的竞争在于，他们能向“助记员”问出什么样的问题。</p>
+<p>这和我们今天面对搜索引擎是相似的情境。<br>我们需要的不是体系性的知识，而是一个可以追索下去的线头。只要这个线头存在，就摆脱了“元无知”。<br>我们仍然是无知的，但是没关系，互联网上的那些知识工具会帮助我们解决后面的问题。<br>【现在还有更厉害的搜索引擎 ChatGPT】</p>
+<p>在真实世界里，零星但维度丰富的知识比体系化的知识要重要得多，那么怎么去找这种零星、维度丰富的知识？</p>
+<ul>
+<li>人是万物的尺度，人也是零星知识的最好的线头。<br>  遇到“元无知”时，第一反应是找谁去请教一下。各个领域的人，都要认识一点。有很高知识价值的人，要有把他们识别出来，保持弱连接的能力。<br>  有一个说法，一个人在一个城市里生活，至少要认识四种人：公务员、江湖人、教师、医生。并不是因为它们有特定资源，而是他们有特定的知识线头。这四个领域，都有独特的内部逻辑和话语系统。</li>
+<li>有自己的观测复杂现象的仪表系统。<br>  要有从一个特别显而易见的表象中看出背后一大堆信息的工具。</li>
+</ul>
+<h2 id="做刺猬还是当狐狸"><a href="#做刺猬还是当狐狸" class="headerlink" title="做刺猬还是当狐狸"></a>做刺猬还是当狐狸</h2><blockquote>
+<p>当一只现实主义的狐狸，但是在现实主义的世界里，也给理想主义的刺猬留一份尊重。</p>
+</blockquote>
+<p>哲学家以赛亚·柏林说，“刺猬知道一件大事，狐狸知道许多小事”。<br>知道一件大事的刺猬，它心里只有一个念头，拿着锤子看什么都是钉子，以不变应万变，很亢奋，也很狭隘。要是碰对了，能做很大的事，能做很大的事，若是碰错了，就可能造成很大的灾难。<br>狐狸不一样，它是现实主义者，它知道许多件小事，它心里没有什么宏大叙事，也不急于找到根本答案，兵来将挡，水来土掩，走一步看一步，根据反馈决定下一步，以不变应万变。</p>
+<hr>
+<p>简单规则，其实得靠复杂的操作才能支撑。简单原则大多数时候就是个口号，落不了地。<br>每个世界的原则背后，都有悖论，需要动用世俗智慧将它补齐。<br>哲学家叔本华说过，每个人都把自己视野的极限当成世界的极限。<br>但凡认识到这一点的人，都不肯当刺猬。刺猬只知道一件事，一件事不可能是全世界。<br>世界是不确定的，因果链条是杂乱纠缠的，社会系统是动态的，我们都不肯像刺猬一样，宣布自己知道终极答案。</p>
+<hr>
+<p>狐狸的生活方式，其实就是“多元思维模型”。他们根据世界给他们的反馈行动。我们接受世界反馈的来源主要有三种：</p>
+<ul>
+<li>第一种反馈，是得失，赢就继续，输就变化。</li>
+<li>第二种反馈，是榜样，跟榜样一样就继续，不一样就变化。</li>
+<li>第三种反馈，是环境，适应就存活，不适应就淘汰。<br>  根据这三种反馈学习，本质就是适应性学习。而所有的适应性学习，都是短视的，都只能给你局部的和当下的反馈，根据这个做出来的调整，当然也是局部的和短暂的。</li>
+</ul>
+<hr>
+<p>当狐狸，但同时搭刺猬的便车。</p>
+<ul>
+<li>我们自己要是一只狐狸、一个现实主义者，敏锐地感知环境的反馈，不断地调整自己，不断地使用新工具。</li>
+<li>对这个世界上的刺猬好一点。刺猬本身的下场也许会很惨，但是他们有一项独特的本事，是着眼于长期，总是会给我们发来长期主义的信号，这是现实主义的狐狸世界里最稀缺的东西。</li>
+<li>看好、警惕那些刺猬，听他们说的话，但是小心他们把你带到沟里去。</li>
+</ul>
+<p>当一只现实主义的狐狸，但是在现实主义的世界里，也给理想主义的刺猬留一份尊重，留一个有边界的位置。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">#阅读与记录</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%B7%B2%E8%AF%BB/">#已读</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2023/10/20/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E6%AF%94%E8%B5%9B/2023_10_20_2023%E5%B9%B4ICPC%E8%A5%BF%E5%AE%89%E7%AB%99/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">2023年ICPC西安站</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2023/08/15/%E4%B9%A6%E7%B1%8D/%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E5%8F%B2/2023_08_15_%E4%B8%AD%E5%9B%BD%E5%8E%86%E5%8F%B2%E6%A6%82%E8%BF%B0%EF%BC%88%E5%9B%9B%EF%BC%89%E9%9A%8B/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">中国历史概述（四）隋</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AA%81%E7%A0%B4%E2%80%9C%E5%85%83%E6%97%A0%E7%9F%A5%E2%80%9D"><span class="nav-text"> 突破“元无知”</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%81%9A%E5%88%BA%E7%8C%AC%E8%BF%98%E6%98%AF%E5%BD%93%E7%8B%90%E7%8B%B8"><span class="nav-text">做刺猬还是当狐狸</span></a></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

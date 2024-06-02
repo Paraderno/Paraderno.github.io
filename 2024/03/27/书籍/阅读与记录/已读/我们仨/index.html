@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            《我们仨》 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":"恐惧使人自律","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">《我们仨》</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2024-03-27 11:30:00</span>
+        <span class="mobile">2024-03-27 11:30</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-06-02 14:02:38</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E4%B9%A6%E7%B1%8D/">书籍</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">阅读与记录</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/%E5%B7%B2%E8%AF%BB/">#已读</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>1.9k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <p>2024 年 2 月~2024 年 5 月</p>
+<span id="more"></span>
+<h2 id="第-2-部-我们仨失散了"><a href="#第-2-部-我们仨失散了" class="headerlink" title="第 2 部 我们仨失散了"></a>第 2 部 我们仨失散了</h2><p>晨光熹微，背后远处太阳又出来了。我站在乱山顶上，前面是烟雾蒙蒙的一片云海。隔岸的山，比我这边还要高。被两山锁住的一道河流，从两山之间泻出，像瀑布，发出哗哗水声。我眼看着一叶小舟随着瀑布冲泻出来，一道光似的冲入茫茫云海，变成了一个小点；看着看着，那小点也不见了。</p>
+<p>我但愿我能变成一块石头，屹立山头，守望着那个小点。我自己问自己：山上的石头，是不是一个个女人变成的“望夫石”？我实在不想动了，但愿变成一块石头，守望着我已经看不见的小船。</p>
+<p>但是我只变成了一片黄叶，风一吹，就从乱石间飘落下去。我好劳累地爬上山头，却给风一下子扫落到古驿道上，一路上拍打着驿道往回扫去。我抚摸着一步步走过的驿道，一路上都是离情。</p>
+<p>还没到客栈，一阵旋风把我卷入半空。我在空中打转，晕眩得闭上眼睛。我睁开眼睛，我正落在往常变了梦歇宿的三里河卧房的床头。不过三里河的家，已经不复是家，只是我的客栈了。</p>
+<blockquote>
+<p>看到这一段时，不知怎滴视线有些模糊</p>
+</blockquote>
+<h2 id="第-3-部-我一个人思念我们仨"><a href="#第-3-部-我一个人思念我们仨" class="headerlink" title="第 3 部 我一个人思念我们仨"></a>第 3 部 我一个人思念我们仨</h2><h3 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h3><p>我们和不相投的人保持距离，又好像是骄傲了。我们年轻不谙世故，但是最谙世故、最会做人的同样也遭非议。钟书和我就以此自解。</p>
+<h3 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h3><p>还有活虾。我很内行地说：“得剪掉须须和脚。”我刚剪得一刀，活虾在我手里抽搐，我急得扔下剪子，扔下虾，逃出厨房，又走回来。钟书问我怎么了。我说：“虾，我一剪，痛得抽抽了，以后咱们不吃了吧！”钟书跟我进道理，说虾不会像我这样痛，他还是要吃的，以后可由他来剪。</p>
+<h3 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h3><p>钟书谆谆嘱咐我：“我不要儿子，我要女儿——只要一个，像你的。”我对于“像我”并不满意。我要一个像钟书的女儿。女儿，又像钟书，不知是何模样，很费想像。我们的女儿确实像钟书，不过，这是后话了。</p>
+<hr>
+<p>我说“不要紧”，他真的就放心了。因为他很相信我说的“不要紧”。</p>
+<h3 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h3><p>他觉得为一个学位赔掉许多时间，很不值当。他白费功夫读些不必要的功课，想读的许多书都只好放弃。因此他常引用一位曾获牛津文学学士的英国学者对文学学士的评价：“文学学士，就是对文学无识无知。”</p>
+<h3 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h3><p>我想，一个人的出处去就，是一辈子的大事，当由自己抉择，我只能陈说我的道理，不该干预；尤其不该强他反抗父母。我记起我们夫妇早先制定的约，决计保留自己的见解，不勉强他。</p>
+<h3 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h3><p>她晚上盼妈妈跟她玩，看到我还要改大叠课卷（因为我兼任高三的英文教师），就含着一滴小眼泪，伸出个嫩拳头，作势打课卷。这已经够我心疼的。《苦儿流浪记》害她这么伤心痛哭，我觉得自己简直在虐待她了。我只好把书藏过，为她另买新书。</p>
+<h3 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h3><p>两年不见，她好像已经不认识了。她看见爸爸带回的行李放在妈妈床边，很不放心，猜疑地监视着，晚饭后，圆圆对爸爸发话了。</p>
+<p>“这是我的妈妈，你的妈妈在那边。”她要赶爸爸走。</p>
+<p>钟书很窝囊地笑说：“我倒问问你，是我先认识你妈妈，还是你先认识？”</p>
+<p>“自然我先认识，我一生出来就认识，你是长大了认识的。”这是圆圆的原话，我只把无锡话改为国语。我当时非常惊奇，所以把她的话一字字记住了。</p>
+<h3 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h3><p>钟书曾说：“一个人二十不狂没志气，三十犹狂是无识妄人。”他是引用桐城先辈语：“子弟二十不狂没出息，三十犹狂没出息”；也是“夫子自道”。</p>
+<hr>
+<p>一次朱家骅许他一个联合国教科文的什么职位，钟书立即辞谢了。我问钟书：“联合国的职位为什么不要？”他说：“那是胡萝卜！”当时我不懂“胡萝卜”与“大棒”相连。压根儿不吃“胡萝卜”，就不受大棒驱使。</p>
+<hr>
+<p>郑振铎先生、吴晗同志，都曾劝我们安心等待解放，共产党是重视知识分子的。但我们也明白，对国家有用的是科学家，我们却是没用的知识分子。</p>
+<p>我们如要逃跑，不是无路可走。可是一个人在紧要关头，决定他何去何从的，也许总是他最基本的感情。我们从来不唱爱国调。非但不唱，还不爱听。但我们不愿逃跑，只是不愿去父母之邦，撇不开自家人。我国是国耻重重的弱国，跑出去仰人鼻息，做二等公民，我们不愿意。我们是文化人，爱祖国的文化，爱祖国的文学，爱祖国的语言。一句话，我们是倔强的中国老百姓，不愿做外国人。我们并不敢为自己乐观，可是我们安静地留在上海，等待解放。</p>
+<h3 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h3><p>后来清华废了旧规，系主任请我当专任，我却只愿做“散工”。因为我未经改造，未能适应，借“散工”之名，可以逃会。妇女会开学习会，我不参加，因为我不是家庭妇女。教职员开学习会，我不参加，因为我没有专职，只是“散工”。我曾应系里的需要，增添一门到两门课，其实已经够专任的职责了，但是我为了逃避开会，坚持做“散工”，直到“三反运动”。</p>
+<hr>
+<p>钟书与世无争，还不免遭人忌恨，我很忧虑。钟书安慰我说：“不要愁，他也未必能随心。”钟书的话没错。这句话，为我增添了几分智慧。</p>
+<h3 id="（十四）"><a href="#（十四）" class="headerlink" title="（十四）"></a>（十四）</h3><p>《管锥编》是干校回来后动笔的，在这间办公室内完成初稿，是“文化大革命”时期的产物。有人责备作者不用白话而用文言，不用浅易的文言，而用艰深的文言。当时，不同年龄的各式红卫兵，正逞威横行。《管锥编》这类著作，他们容许吗？钟书干脆叫他们看不懂。他不过是争取说话的自由而已，他不用炫耀学问。</p>
+<hr>
+<p>他曾和我说：“有名气就是多些不相知的人。”我们希望有几个知已，不求有名有声。</p>
+<h3 id="（十五）"><a href="#（十五）" class="headerlink" title="（十五）"></a>（十五）</h3><p>我们读书，总是从一本书的最高境界来欣赏和品评。我们使用绳子，总是从最薄弱的一段来断定绳子的质量。坐冷板凳的书呆子，待人不妨像读书般读；政治家或企业家等也许得把人当做绳子使用。</p>
+<h3 id="（十六）"><a href="#（十六）" class="headerlink" title="（十六）"></a>（十六）</h3><p>一九九七年早春，阿瑗去世。一九九八年岁末，钟书去世。我们三人就此失散了。就这么轻易地失散了。“世间好物不坚牢，彩云易散琉璃脆”。现在，只剩下了我一人。<br>我清醒地看到以前当做“我们家”的寓所，只是旅途上的客栈而已。家在哪里，我不知道，我还在寻觅归途。</p>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/">#阅读与记录</a>&nbsp;
+                        </li>
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%B7%B2%E8%AF%BB/">##已读</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2024/04/02/%E4%B9%A6%E7%B1%8D/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/%E5%B7%B2%E8%AF%BB/%E6%88%91%E6%9B%BE%E8%B5%B0%E5%9C%A8%E5%B4%A9%E6%BA%83%E7%9A%84%E8%BE%B9%E7%BC%98/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">《我曾走在崩溃的边缘》</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/03/27/%E4%B9%A6%E7%B1%8D/%E9%98%85%E8%AF%BB%E4%B8%8E%E8%AE%B0%E5%BD%95/%E5%9C%A8%E8%AF%BB/%E5%BE%AE%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">《微观经济学》</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC-2-%E9%83%A8-%E6%88%91%E4%BB%AC%E4%BB%A8%E5%A4%B1%E6%95%A3%E4%BA%86"><span class="nav-text">第 2 部 我们仨失散了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC-3-%E9%83%A8-%E6%88%91%E4%B8%80%E4%B8%AA%E4%BA%BA%E6%80%9D%E5%BF%B5%E6%88%91%E4%BB%AC%E4%BB%A8"><span class="nav-text">第 3 部 我一个人思念我们仨</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89"><span class="nav-text">（一）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89"><span class="nav-text">（二）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89"><span class="nav-text">（三）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89"><span class="nav-text">（四）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89"><span class="nav-text">（五）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89"><span class="nav-text">（六）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B8%83%EF%BC%89"><span class="nav-text">（七）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E4%B9%9D%EF%BC%89"><span class="nav-text">（九）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%8D%81%EF%BC%89"><span class="nav-text">（十）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89"><span class="nav-text">（十四）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89"><span class="nav-text">（十五）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%EF%BC%88%E5%8D%81%E5%85%AD%EF%BC%89"><span class="nav-text">（十六）</span></a></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>

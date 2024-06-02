@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            小阿尔克纳——权杖 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/背景图片.2krow3qjvy.webp","description":"恐惧使人自律","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">小阿尔克纳——权杖</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2024-05-27 15:00:00</span>
+        <span class="mobile">2024-05-27 15:00</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-06-02 14:42:24</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%A1%94%E7%BD%97%E7%89%8C/">塔罗牌</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%A1%94%E7%BD%97%E7%89%8C%E7%89%8C%E4%B9%89/">塔罗牌牌义</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>4.9k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id=""><a href="#" class="headerlink" title=""></a><span id="more"></span></h1><blockquote>
+<p>牌面解析与牌义推演引用自《塔罗葵花宝典》</p>
+</blockquote>
+<h2 id="权杖首牌"><a href="#权杖首牌" class="headerlink" title="权杖首牌"></a>权杖首牌</h2><h3 id="我的感受"><a href="#我的感受" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>从云中伸出一只手握着权杖，手势似乎在竖起拇指。</li>
+<li>权杖上有很多叶子，但也掉落了很多叶子飘在空中。权杖是阳性中的阳性，代表权力。</li>
+<li>远景是一条河流，山上有一座城堡，也许这座城堡里居住着权杖宫廷牌</li>
+<li>数字 1 代表开始，充满可能性。</li>
+</ul>
+<h3 id="牌面解析"><a href="#牌面解析" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>新行动 创造 机会 灵感</p>
+<p>一只手从云中伸出，强而有力，握住一根长满绿叶的权杖。那根权杖是如此茂盛，以致鲜嫩的绿叶几乎从杖上「爆」开，有八片叶子脱离权杖，在空中飞舞。遍地青草溪流。远方的城堡似乎暗示着未来成功的可能。</p>
+<h3 id="牌义推演"><a href="#牌义推演" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>无论大牌小牌，所有的一都代表一个新开始。</li>
+<li>权杖充满创意与热忱，充满源源不绝的能量，可以激发人们的潜能。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖一就像一个火种，不管它的未来如何，潜力总是存在。在某些情况下，权杖一甚至可以表示新生命的到来。</li>
+<li>权杖一通常代表一个计划或行动的开端。如果最近有新计划、新念头、新行动、新方向，权杖一出现，表示前景光明，可以大胆去做。</li>
+<li>如果以前曾经很想去做某事，却迟迟不敢，权杖一提供梦想实现的好时机。</li>
+<li>权杖一是火要素的源头，像一颗火花，其未来难以预料。然而火花的威力可以无限大，有行动就有希望，切莫蹉跎。权杖一也可能代表新的机会，无论成功与否，放弃都是最不明智的抉择。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖一逆位表示这个新行动的失败面较大，有困难或延迟的可能。自私、缺乏计划或决心，都可能造成阻碍。</li>
+<li>权杖一逆位提醒你要审视自己可能忽略的地方，方能提升成功的机会。也许必须审慎考虑这个行动或机会该不该执行。</li>
+<li>如果权杖一在牌阵中代表新生命的降临，则逆位可能表示流产或堕胎，与皇后牌相同。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>权杖一带给我们新创意、新机会、新想法、新行动，当这些火花出现在生活中时，你辨认出来了吗？ 当权杖一和其他一号牌同时出现时，新开始的意味更浓厚，你一定知道它们在告诉你什么，问题是你能否妥善决定这件事可不可行？如果可行，你敢大胆抓住机会吗？ 每个人一定都经历过权杖一提供的机会、创意或冲动，例如上司突然给你一个表现的大好机会，或是自己某天突然有股想要计划旅行的冲动。想出一个自己曾经体验过的权杖一事件，回忆当时的情景，再度感受它带给你的活力。</p>
+</blockquote>
+<h2 id="权杖二"><a href="#权杖二" class="headerlink" title="权杖二"></a>权杖二</h2><h3 id="我的感受-1"><a href="#我的感受-1" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>一个人站在城墙上眺望远方。左手拿着一只权杖，右手捧起一个地球仪似的的东西。头戴红色帽子、身披暗红色长袍、内穿黄色长服。</li>
+<li>另一只权杖放在身侧，特别的，这只权杖在下端有一个环状物体。</li>
+<li>远方是湖泊、山脉，近处是山庄、森林。让我好奇的是这人是望向城内还是城外。</li>
+<li>城墙上有花朵样的画，似乎是 1 号魔术师中出现红玫瑰与白百合，象征热情与智慧。</li>
+</ul>
+<h3 id="牌面解析-1"><a href="#牌面解析-1" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>权利 胆识 计划 决定</p>
+<p>一位身穿领主服装的男子，站在他的城墙上，俯视他的辽阔领土，遥望远方海洋。他右手拿着一颗类似地球仪的球体，左手扶着一根权杖。右边的权杖则是被铁环系在墙上。城墙上有个白百合与红玫瑰交叉的图案，白百合象征纯洁的思想，红玫瑰象征热情，暗示两者之间必须取得平衡。</p>
+<h3 id="牌义推演-1"><a href="#牌义推演-1" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>乍看之下，权杖二与权杖三颇有相同之处，都是男子遥望远方海洋的构图，而且权杖二的领主与权杖三的商人，都是成功的领袖人物，拥有相当的权力，但请注意他们姿态的差异。权杖三的商人遥望远方出海的船，他刚刚成功的实现一项伟大的交易，而权杖二领主的视线却复杂许多，他看似俯瞰他所拥有的傲人领地，又看似默默低头研究球体，彷佛在盘算什么，思索什么。伟特将其比喻成亚历山大大帝－－站在世界的顶端，却难免悲伤折磨。</li>
+<li>领主对着球体思索，是为了做出一项大胆而成功的计划或决策，因此我们可以将权杖二视为合宜计划与大胆决策所带来的成功开始，在权杖三达到成功的高峰。</li>
+</ul>
+<hr>
+<ul>
+<li>矛盾的是，权杖二同时表现「成功」与「虚无」。这位领主已经拥有全世界，但仍然在城墙内盘算下一歩的行动，他看来很烦闷，因为他被自己的成功困住了，无法继续充分展现当年开疆辟土的「权杖式」行动。也许此时当事人拥有足够的资源，可供他完成所愿，然而他却心灰意懒；或者是达到成功之后，却发觉这根本不是自己当初所想要的。这个问题急须解决，请扪心自问，自己真正想要的究竟是什么？</li>
+</ul>
+<hr>
+<ul>
+<li>权杖二逆位，领主可能失去权力与胆识，懦弱无能，计划错误，事情将会变得不顺利，也可能好的开始竟得到坏结局。</li>
+<li>另一方面，权杖二逆位也可以表示当事人终于停止思索，继续下一歩行动。</li>
+<li>比起其它的牌，权杖二的牌义解读分歧较大。欧美书籍主流牌义通常偏向上述成功的意义，但也有不少人强调权杖二「犹豫不决」的含意，并且认为逆位的权杖二反而较快下决定。其实两种牌义解读没有对错优劣之分，也不会影响准确度，只要以自己能够认同的牌义为准即可，塔罗牌自然会照着自己下的定义来运作。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>权杖二通常表示你最近在计划或考虑什么，也许让你很犹豫不决，但是，别忘了你起码还有选择的自由，以及对此事的掌控力。 权杖二是权杖牌组中较为静态的牌，事情发展有延迟的可能。</p>
+</blockquote>
+<h2 id="权杖三"><a href="#权杖三" class="headerlink" title="权杖三"></a>权杖三</h2><h3 id="我的感受-2"><a href="#我的感受-2" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>有三根权杖插在地上</li>
+<li>图中的人物身穿红色长袍，右手握着一只权杖，望向大海。不知为何他的身后没有其他人，像是守望者。</li>
+<li>海上有几艘小船。</li>
+</ul>
+<h3 id="牌面解析-2"><a href="#牌面解析-2" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>贸易 领导 远见 合作 探索</p>
+<p>山巅上站着一个成功的商人，三根权杖笔直地竖立在地面上，商人右手握着其中一根，目送自己的贸易船出海。天空是鲜明的黄色，海映着天，也是黄色。</p>
+<h3 id="牌义推演-2"><a href="#牌义推演-2" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>三这个数字结合了一和二，在数字学中代表「合作」与「成就」。</li>
+<li>我们可以把权杖三和愚人、隐士做比较，这三张牌的人物都站在山巅悬崖上，三张牌都有某种程度的探索意味。愚人像刚出生的婴儿般，迫不及待踏出脚步，探索这世界﹔隐士默默站在无人雪山上，探索自己的内心﹔而权杖三的商人是往「前」目送他的船远航，前往一个未知的世界。他不像愚人般欠缺思考，也不像隐士般享受孤独，他深深明白自己在做什么，且随时准备走出下一步，不过那必得是经过缜密思考计划之后。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖三正显示了权杖牌组的初步成功，呈现在事业上的成就，和商业与贸易有强烈的关联。</li>
+<li>这位商人拥有庞大的事业，他居于领导地位。因此权杖三也代表领导，表示当事人具有足够的能力来领导他的工作团队。</li>
+<li>权杖三也可能是提醒当事人勿急躁，勿短视近利，要学习这位商人的长处，往远处思考。</li>
+<li>权杖三也代表合作。看图中几艘船各司其职，前往他们的目的地交易，这个庞大的商业帝国无法靠领导者一人之力建造，必须要许多人通力合作才能完成，因此合作绝对是重点。</li>
+<li>权杖三表示这是个探索新领域的好时机。</li>
+<li>感情方面的占卜，权杖三可能代表成功的远距恋爱，或是探索新对象。</li>
+<li>旅行占卜，权杖三通常表示出国进修或出差。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖三逆位，可能表示欠缺合作、不好的伙伴、缺乏远见、欠缺领导力、贸易失败，原因可能出在当事人过度自信、野心太大、计划不周。</li>
+<li>权杖三逆位也可能代表延迟。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>你曾经当过领导者吗？写下一些你认为领导者应该具备的特质，这些特质就是权杖三主角所具备的特质。 如果近期有新的合作，进修计划或贸易机会，权杖三表示将会成果丰硕。 权杖三表示的人际关系，虽然不是如胶似漆，但通常都合作无间，有一定程度的成果。 如果权杖三出现在牌阵中代表环境的位置，可能表示合作良好的环境、探索新领域，或是当事人身边的一位领导人物。</p>
+</blockquote>
+<h2 id="权杖四"><a href="#权杖四" class="headerlink" title="权杖四"></a>权杖四</h2><h3 id="我的感受-3"><a href="#我的感受-3" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>图中的城堡似乎是权杖首牌中出现过的那个。</li>
+<li>四根权杖插在地上，上端装饰着蔬果的藤蔓</li>
+<li>人们似乎在庆祝着什么，身穿白衣、肩披蓝色紫色衣服的人们高举花团。充满平静与祥和。</li>
+</ul>
+<h3 id="牌面解析-3"><a href="#牌面解析-3" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>稳固 欢庆 和谐 繁荣</p>
+<p>四根巨大的权杖耸立在前方，其上挂着象征胜利的花环。两位女子手持花束高举头顶欢庆舞蹈着，远方隐约可见庆祝的人群，呈现一幅和谐且繁荣的景象。右边有护城河上有座桥，通往远方的表示稳固庄园城堡。</p>
+<h3 id="牌义推演-3"><a href="#牌义推演-3" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>相较于权杖三的远航出海，塔罗牌所有的四号牌都表示稳固与休憩，有一种「回家」的感觉，同时也代表该牌组的初步完成，权杖四兼具以上意义。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖四的一个主要牌意就是稳固，也就是基础很稳的意思。</li>
+<li>学生抽到权杖四，表示他以前的学业基础打得很好；</li>
+<li>恋爱占卜抽到权杖四，表示恋情稳定。</li>
+<li>在权杖之上挂着花圈，跳舞的女子手上也捧着花束，而且上面都有果子呢！这正是象征繁荣与富裕的典型，表示这是个丰收的时节，而因为丰收，所以人们可以大肆庆祝，和乐融融。</li>
+<li>权杖四是一张非常正面的牌，可以代表生意的成功、好的开始、目标达成、爱情或友谊的萌芽、婚礼、生产、庆功宴、庆生会等令人欣喜的事件。</li>
+<li>另外，权杖四的场景在乡村，所以也与乡村或美满的家居生活有关。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖四逆位，伟特书中解为意义不变，也许快乐的涵义没有正位时明显，或者是由于当事人贪得无餍，无法感到满足或感激。</li>
+<li>现今诠释通常解为基础不稳、不和谐、目标不一致、人际关系不稳定等，视占卜的问题而定。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>权杖四显示你过往的稳扎稳打到此已结成果实，可以坐下来好好庆祝了。你可能有机会参加各种宴会或典礼。 享受乡间生活是个不错的主意。也许此时你会想布置房子，让你的居所更「稳固」。 权杖四不管出现在牌阵中的什么位置，通常都是很好的讯号。 权杖四、圣杯三和教宗都可以代表仪式，但中间有些细微的差异。权杖四偏向经过一阵辛劳之后的欢欣收成，圣杯三近似结盟宴饮等情感交流旺盛的场合，教宗则偏向宗教与社会性的庄重仪式。</p>
+</blockquote>
+<h2 id="权杖五"><a href="#权杖五" class="headerlink" title="权杖五"></a>权杖五</h2><h3 id="我的感受-4"><a href="#我的感受-4" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>图中的五个人手持权杖在争执着什么，有一些混乱。人们的神态各异，蓝色衣服的在生气、褐色衣服的在欢呼、绿色衣服的在惶恐与担忧。</li>
+<li>红色衣服的人手持的权杖上并没有叶子，是所有权杖里最特殊的一根。</li>
+<li>发生在郊外的平原上，并没有什么建筑，或许是因为争执而没有产出，也可能是因为争执而毁掉了原有的事物。</li>
+</ul>
+<h3 id="牌面解析-4"><a href="#牌面解析-4" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>冲突 竞争 奋斗 混乱 模仿</p>
+<p>迥异于权杖四的和谐稳定局面，权杖五呈现一群年轻人混战的场面。每个人手上都拿着一根杖，彼此僵持不下，谁也不让谁。伟特说：这是一场模仿的战役。</p>
+<h3 id="牌义推演-4"><a href="#牌义推演-4" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>塔罗牌中每张五号牌都与冲突或失落有关。</li>
+<li>我们也可以把权杖五拿来和宝剑五相比，两张牌乍看类似，但重心不同。权杖五的重点是热血激战的局面，这和火元素的特质相关。而宝剑五着重的是战争结束后，无论胜利或失败都没好处的教诲。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖的火相特性，自然就以竞争为主题来表现。具有权杖特质（即火特质）的人很容易将人生看作是一场战争，因此权杖五的中心主题就是竞争的局面。</li>
+<li>「打架」在一般人眼中总是不好的事情，因为这通常和人与人之间的冲突有关，如果当事人身处这种局面中，请记得宰相肚里能撑船。</li>
+<li>从更广义的角度来看，其实权杖五可以代表人生的战争与挑战。这场战争可能很辛苦很费力，也许赢了之后，随之而来的利益与好处让人感到相当值得也不一定。</li>
+<li>除了外在的冲突之外，权杖五也可能代表内心的冲突与矛盾，通常是出现在面临困难的抉择或挑战时。这时候应该要保持冷静，找到令你困扰的源头，并加以破除。</li>
+<li>仔细看这张牌，里头大伙儿都打成一团，没人在劝架，也没人冷眼旁观。每个人都在模仿别人的所作所为。权杖五出现，可能在暗示当事人要模仿。或者，更进一步，要下去打场轰轰烈烈的战争。</li>
+</ul>
+<hr>
+<ul>
+<li>正位的权杖五代表这起码是场公平的竞赛，逆位的时候就不一定了。欺诈、作弊等奸诈技俩可能会出现。伟特本人对权杖五逆位的解释为：「诉讼，争执，欺诈，矛盾」。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>冲突与竞争是权杖五的中心主题。问问自己是在哪方面遭逢这种状况，是人际、利益、感情还是意气之争呢？甚或是内心的天人交战？ 在冲突或竞争中，弄清楚自己的目的是很重要的。 有时候牌阵中其他的牌可以显示出冲突的矛盾所在，要特别注意相反牌透露的讯息。</p>
+</blockquote>
+<h2 id="权杖六"><a href="#权杖六" class="headerlink" title="权杖六"></a>权杖六</h2><h3 id="我的感受-5"><a href="#我的感受-5" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>一个人骑在白马上，手持的权杖上有象征胜利的花环。</li>
+<li>周围的人们也手持权杖。</li>
+<li>白马身披绿色袍子</li>
+<li>似乎是胜利之后返程，回到权杖四中的城堡中</li>
+</ul>
+<h3 id="牌面解析-5"><a href="#牌面解析-5" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>胜利 进展 自信 好消息</p>
+<p>一位年轻男子，戴着胜利的桂冠，骑着白马凯旋而归。四周都是围绕簇拥着他的群众。白色代表纯洁，马象征力量。红色的外衣象征积极主动与热忱。男子手持的权杖饰以胜利花环。艰辛奋斗已然过去，他现在抬头挺胸，享受属于他的荣耀时刻。</p>
+<h3 id="牌义推演-5"><a href="#牌义推演-5" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>我们可以把权杖六看成战车的小牌版本，两张都代表经由努力获得的胜利。</li>
+</ul>
+<hr>
+<ul>
+<li>权杖六很明显的是张代表胜利的牌，通常是形于外的胜利，比方说金榜题名、衣锦还乡。因为世俗的胜利才有众人为你欢呼，这时必定享受各方荣耀与赞美。</li>
+<li>相反的，精神、性灵、心灵成长方面的进展，只有自己知道。不过，当周围伴随表示心灵成长的牌时（例如女祭司、隐士、太阳等），权杖六也可以显示当事人的心灵成长方面获得显著的进展，也就是灵性的胜利。</li>
+<li>仔细看男子的姿态，他是多么抬头挺胸，充满自尊、自爱与自信。自信的获致不是偶然，他深知自己的出色能力，更明白自己身为领导人物，是众人的仰望的对象。他野心勃勃，而眼前他的目标已经达成，这使得他的自信更加深刻。</li>
+<li>另一方面，我们也可以把凯旋男子骑着白马当成好消息的到来。成功与进展也可能以好消息的方式来呈现。</li>
+</ul>
+<hr>
+<ul>
+<li>胜利的骑士跌到马下，变成失败者。</li>
+<li>自信演变为骄傲，而骄者必败。</li>
+<li>好消息变成不利当事人的坏消息。</li>
+<li>迟来的成功。</li>
+<li>权杖六带来的重要课题就是，即使成功，也要懂得谦抑，因为有一个成功者，必定有许多失败者，谁知道自己不会是下一个呢？</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>权杖六和权杖三的主角都是领导人物。试着找出他们的相同点与相异点。例如，两位都很有自信，但权杖六的主角自信更强，可能有点骄傲，而权杖三的主角更注重团队合作。 权杖六的自信来自过去的成果，他对自己的能力信心十足，现在他的课题是要运用这股信心来鼓舞他人，不要只专注在自己的成功，更要注意同事或下属的情况。你曾经在学业、事业或爱情上像权杖六一样凯旋而归吗？逼真回忆当时的情景，你就能体验权杖六的精神。 权杖六在感情占卜上，可能表示当事人有抱得佳人归的信心，也可能表示太注重面子，放不下身段。</p>
+</blockquote>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%A1%94%E7%BD%97%E7%89%8C%E7%89%8C%E4%B9%89/">#塔罗牌牌义</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2024/06/02/WXG%E5%AE%9E%E4%B9%A0/Week%202/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">WXG实习 Week 2</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/05/26/WXG%E5%AE%9E%E4%B9%A0/Week%201/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">WXG实习 Week 1</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E6%9D%96%E9%A6%96%E7%89%8C"><span class="nav-text">权杖首牌</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E6%9D%96%E4%BA%8C"><span class="nav-text">权杖二</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-1"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-1"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-1"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E6%9D%96%E4%B8%89"><span class="nav-text">权杖三</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-2"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-2"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-2"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E6%9D%96%E5%9B%9B"><span class="nav-text">权杖四</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-3"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-3"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-3"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E6%9D%96%E4%BA%94"><span class="nav-text">权杖五</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-4"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-4"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-4"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%83%E6%9D%96%E5%85%AD"><span class="nav-text">权杖六</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-5"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-5"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-5"><span class="nav-text">牌义推演</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
