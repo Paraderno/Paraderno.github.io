@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="儒烏風亭いおり">
+    
+    <title>
+        
+            小阿尔克纳——圣杯 |
+        
+        いおり的博客
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp">
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.xml"}
+    KEEP.theme_config = {"toc":{"enable":true,"number":false,"expand_all":true,"init_open":true},"style":{"primary_color":"#9966FF","logo":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","favicon":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","avatar":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでん.1755pmhfsb.webp","font_size":null,"font_family":null,"hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"header_transparent":true,"background_img":"https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/らでんさん.4ckr96h8ih.webp","description":"恐惧使人自律","font_color":null,"hitokoto":{"enable":false}},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{},"code_block":{"tools":{"enable":true,"style":"default","code_block_collapse":true},"highlight_theme":"default"},"side_tools":{},"pjax":{"enable":false},"lazyload":{"enable":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.7"},"waline":{"server_url":null,"reaction":null,"version":2}},"post":{"img_align":"center","word_count":{"enable":true,"wordcount":true,"min2read":false},"author_label":{"enable":false},"auto":false,"custom_label_list":[]},"version":"3.6.1"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 6.3.0"><style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                </a>
+            
+            <a class="logo-title" href="/">
+               いおり的博客
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="post-page-container">
+        <div class="article-content-container">
+
+            <div class="article-title">
+                <span class="title-hover-animation">小阿尔克纳——圣杯</span>
+            </div>
+
+            
+                <div class="article-header">
+                    <div class="avatar">
+                        <img src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/%E3%82%89%E3%81%A7%E3%82%93.1755pmhfsb.webp">
+                    </div>
+                    <div class="info">
+                        <div class="author">
+                            <span class="name">儒烏風亭いおり</span>
+                            
+                        </div>
+                        <div class="meta-info">
+                            
+<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        
+            <i class="fa-regular fa-calendar-plus"></i>&nbsp;
+        
+        <span class="pc">2024-06-17 22:30:00</span>
+        <span class="mobile">2024-06-17 22:30</span>
+    </span>
+    
+        <span class="article-update-date article-meta-item">
+        <i class="fas fa-file-pen"></i>&nbsp;
+        <span class="pc">2024-06-28 22:57:55</span>
+    </span>
+    
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%A1%94%E7%BD%97%E7%89%8C/">塔罗牌</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/%E5%A1%94%E7%BD%97%E7%89%8C%E7%89%8C%E4%B9%89/">塔罗牌牌义</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>10.5k 字</span>
+        </span>
+    
+    
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="article-content keep-markdown-body">
+                
+
+                <h1 id=""><a href="#" class="headerlink" title=""></a><span id="more"></span></h1><blockquote>
+<p>牌面解析与牌义推演引用自《塔罗葵花宝典》</p>
+</blockquote>
+<h2 id="圣杯首牌"><a href="#圣杯首牌" class="headerlink" title="圣杯首牌"></a>圣杯首牌</h2><p><img lazyload="" alt="圣杯首牌" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯首牌.8z6e2r0xqw.webp"></p>
+<h3 id="我的感受"><a href="#我的感受" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>也是从云中穿出来的手</li>
+<li>白鸟叼着基督教？符号的球，圣杯中源源不断的向外涌出水流，形成湖泊</li>
+</ul>
+<h3 id="牌面解析"><a href="#牌面解析" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>新感情 爱 喜悦 感受 直觉</p>
+<p>圣杯一是所有小牌的一号牌中最富象征意义的。图中的圣杯就是耶稣在最后晚餐中使用的杯子，杯上有个倒立的Ｍ字母。</p>
+<p>据说，在耶稣死后，他的鲜血就是由这个圣杯所承装着。白鸽是天主教中圣灵的象征，牠衔着象征耶稣身体的圣饼，自上而下彷佛要进入杯中，象征灵魂进入物质世界。另一方面，在天主教仪式中，也经常将祝圣之后的圣饼和杯中的酒混合，藉由耶稣身体和鲜血的结合，象征耶稣的复活。杯中有五道水涌出，象征人类的五种感官。下方的水面平静，只有少许涟漪，睡莲处处，而既是睡莲，则水必有一定的深度，显示出感情的深广丰沛。睡莲茎长，向上伸展至水面，象征人类灵魂的觉醒。二十五滴水珠从四面落下，飘浮在空中，暗示藏在小牌背后的意义深远。一只手从云中伸出，这只手和权杖一与宝剑一中的手截然不同，它是轻轻的捧着圣杯，而非用力抓住圣杯，因为爱只能细心呵护，越用力想抓住，只会让它窒息。</p>
+<h3 id="牌义推演"><a href="#牌义推演" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>圣杯一经常代表新感情的开端，对于人际关系是非常好的征兆。</li>
+<li>圣杯一也可能代表一段快乐满足的时光，当事人能敞开胸怀，拥抱喜悦，尽情付出爱与关怀。圣杯一请你保持慷慨，了解施与受的福气。</li>
+<li>在某些情况下，圣杯一可能表示直觉的开启，对神秘事物开始产生兴趣或是开窍，感受性敏锐。圣杯一是精神生活富足的象征，也可能是灵性成长的开始。</li>
+<li>通常在人际关系占卜中，圣杯一都代表美好的开始，当事人能从中获得喜悦与满足。如果是占卜已经维系很久的感情，出现圣杯一，最好仔细审视周遭的牌，看看是否有外遇迹象。</li>
+<li>若是在无关感情的占卜中，出现圣杯一，可能表示这个局势需要用爱来化解，请散播善意，为对方着想；如果对方向你传达善意，请欣然接受。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯一逆位，杯中的水就流出来，杯子变成空的。通常代表情感上的挫折，也许当事人会在情感上遭遇失落、分离、失望或不满足。可能会感到被否定、被拒绝、被背叛或寂寞，因而感到抑郁悲伤。可能感到对方不是真心，或者自己无法付出真心。</li>
+<li>新感情可能迟迟不开始。人际关系也变得虚伪、不稳定。这时候当事人往往有强烈的不安全感。有时候圣杯一逆位的症结在于当事人自己的心态，不愿付出，自己也不会有回报。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯一是人际关系最好的开始，请辨认出身旁的情感机会，你可能此从得到一位好朋友或情人。 圣杯一告诉我们，此时自由地付出与接受感情是最好的策略。</p>
+</blockquote>
+<h2 id="圣杯二"><a href="#圣杯二" class="headerlink" title="圣杯二"></a>圣杯二</h2><p><img lazyload="" alt="圣杯二" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯二.5fkgcxy7yl.webp"></p>
+<h3 id="我的感受-1"><a href="#我的感受-1" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>数字 2 代表竞争，图中右侧的人伸出右手，想要拿走左侧的人手中的圣杯。</li>
+<li>两个人闭着眼，头饰、服装、身体动作都有点暗示一个竞争、一个不喜动。</li>
+<li>中间有一个狮子头，却有一对翅膀。</li>
+</ul>
+<h3 id="牌面解析-1"><a href="#牌面解析-1" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>恋情 友谊 合作 结合</p>
+<blockquote>
+<p>啊？不是？！我！？数字 2 不是代表竞争吗？？？！！！数字 3 才是合作啊！！</p>
+</blockquote>
+<p>一男一女面对彼此，向对方持杯致意。两人头上都戴着花环，男人身躯微微向前，左脚踏出，右手也伸向女人，而女人站姿端凝如山。</p>
+<p>他们中间浮着一根两条蛇缠绕的杖，称为「赫米斯之杖」，是治疗的象征。杖上的狮子头象征沟通，而两片翅膀象征圣灵，使人联想到恋人牌中的天使。远方是一座城镇。</p>
+<h3 id="牌义推演-1"><a href="#牌义推演-1" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>圣杯二经常被视为恋人的小牌版本。两张牌都与爱情产生强烈的关联，而且圣杯二中的两人更像心心相印的金童玉女，深情相对，不若恋人牌中的隐隐犹疑的夏娃。</li>
+<li>但恋人牌毕竟是大牌，所表现的恋情影响较深远，为期较长久，也常指涉肉体上的亲密关系。</li>
+<li>而圣杯二的恋情在实占上，比较近似初期的热恋状态。</li>
+<li>看图中男女相敬如宾，他们之间不是钱币六的上下阶层关系，也不是圣杯六的单方付出，他们是互敬互爱的平等关系。</li>
+</ul>
+<hr>
+<ul>
+<li>更广义而言，圣杯二不只局限于男女情感，也可以指涉友谊，以及任何人际关系。</li>
+<li>通常圣杯二的人际关系都是和谐、对等、沟通良好、合作愉快、互相敬重的。圣杯二都代表双方的结合将会非常愉快。</li>
+<li>异性的组合象征圣杯二也可以表示不同特质的结合，无论是人、事、物，甚或才能与天份，有时我们必须将不同的东西结合在一起。</li>
+<li>实际上，圣杯二讲的就是这两种力量的结合，若能同时拥有这两种力量，且融合良好，会比单一力量更强大。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯二逆位，表示在结合的过程中出现问题。建议当事人多体会圣杯二的含义，要学习如何结合相异之人事物，并维持双方的平等，方能建立和谐的人际关系。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>你知道是谁跟你臭味相投或心心相印吗？请仔细维护这段关系。圣杯二强调沟通、尊重、平等与合作的重要，如果出现在牌阵中代表建议的位置，代表你应该采行这些态度。 请拿出圣杯二与圣杯六、钱币六相比较。想想看你和你的好友或情人之间的关系，比较接近哪一张牌？</p>
+</blockquote>
+<h2 id="圣杯三"><a href="#圣杯三" class="headerlink" title="圣杯三"></a>圣杯三</h2><p><img lazyload="" alt="圣杯三" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯三.1lbotzga1g.webp"></p>
+<h3 id="我的感受-2"><a href="#我的感受-2" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>三位贵妇举杯庆祝，大抵是因为蔬果菜园的丰收吧。</li>
+<li>怎么看都是合作，不可能是竞争！</li>
+</ul>
+<h3 id="牌面解析-2"><a href="#牌面解析-2" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>欢庆 结盟 团体 宴会 成功</p>
+<p>三个女子紧靠彼此，围成圆圈，高举圣杯互相庆贺。她们头上都戴着象征丰收的花圈，穿着色彩艳丽的袍子，脸上幸福洋溢。四周有藤蔓、葫芦及南瓜，一位女子手上提着一串葡萄……这些植物很容易让人联想到丰收的时节。</p>
+<p>这三位女子分别有不同颜色的头发与眼珠，穿戴的衣服花环也都各有不同，代表她们都是独立的个体，有独立的个性，但是，在这个团体中，她们都能尊重彼此，敬爱彼此。三人围成圆圈的型态，表示她们之间没有尊卑之分，在这个欢庆的场合里，每个人都是如此平等。</p>
+<h3 id="牌义推演-2"><a href="#牌义推演-2" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>圣杯三通常表示团体，而且是以情感作为联系的团体。与钱币三的工作团队，和教宗的社会机构略有不同。</li>
+<li>此时通常表示当事人在情感上拥有足够的支持，有人对他付出爱与关怀，一同分享悲喜。</li>
+<li>再者，圣杯三也常表示结盟与合作的关系，是友谊的象征。</li>
+</ul>
+<hr>
+<ul>
+<li>女性通常象征柔性与阴性的能量，女性通常表现情感与分享，而非野心与竞争。</li>
+<li>圣杯三也经常代表欢庆的场合。其丰收的涵义表示事情有了好的结果。</li>
+<li>在占算感情时，圣杯三通常代表团体中认识的情侣，然而，三人行的意象有时暗示这是感情路上的三人行，还是谨慎为妙。</li>
+<li>另外，伟特解释圣杯三可能代表计划中的怀孕。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯三逆位，表示过度的欢乐导致乐极生悲、享乐过度、暴饮暴食，宜多加节制。</li>
+<li>在人际关系方面，可能团体失和、结盟或合作失败、友谊破裂、朋友背叛、失去亲友的支持。</li>
+<li>事情发展也没有预料中的好结果，成功化为泡影。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>除了圣杯三之外，钱币三、教宗、太阳、圣杯十、钱币十也都有团体的牌义，圣杯十代表情感团体，钱币代表工作或事业团队，教宗代表宗教、教育或社会机构，太阳则泛指成功的团体。你能不能区分出更细微的差别？ 圣杯三出现在环境的位置，可能显示当事人身处一段欢庆丰收的时光或感情融洽的团体内。 圣杯三出现在建议的位置，显示当事人应该以乐群的态度处理此事，或者提醒你该好好享受一番，把握与朋友出游的机会。</p>
+</blockquote>
+<h2 id="圣杯四"><a href="#圣杯四" class="headerlink" title="圣杯四"></a>圣杯四</h2><p><img lazyload="" alt="圣杯四" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯四.9kg1p1ve1l.webp"></p>
+<h3 id="我的感受-3"><a href="#我的感受-3" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>一个男子坐在树下，望向三个圣杯。侧边有一只云中手拿着一个圣杯。</li>
+<li>这是想不劳而获吗？等着云中手不停拿来圣杯？</li>
+</ul>
+<h3 id="牌面解析-3"><a href="#牌面解析-3" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>不满 拒接 冷淡 退缩 外遇</p>
+<p>一个男人百无聊赖地坐在树下，双眼紧闭，双手双脚合在一起，形成防御的姿态。</p>
+<p>他前方三个杯子象征他过去的经验。云中伸出一只手给他第四个杯子，他却视而不见，独自沉浸在自己的世界中。</p>
+<h3 id="牌义推演-3"><a href="#牌义推演-3" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>云中手握着的那第四个杯子代表新的机会，而且可能是如同圣杯一相同的大好机会。然而，这位消极退缩的男子丝毫不满足，生活对他而言，似乎一点乐趣都没有。这世界上好像完全没有任何事值得他去做，没有任何人值得他关心。</li>
+<li>在数字学中，四代表稳定与秩序。然而，稳固经常导致无趣。反映在圣杯四，在情感上感到无趣，对外界事物漠不关心，缺乏动力，不想参加社交，觉得没人了解他。</li>
+<li>圣杯四在实占上，有时也代表外遇。</li>
+<li>抽到圣杯四时，建议当事人三思而后行。在一段深思之后，重新投入原来的生活，不要完全切断自己与外界的联系。最重要的是，要好好珍惜你所拥有的，并把握眼前的机会，以免稍纵即逝。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯四逆位时与宝剑四类似，代表不满足即将结束。跟正位比起来，逆位的圣杯四较能把握眼前的机会，也表现出对生命的热忱，愿意展开行动。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯四的症结在于无法得到满足，对环境提供的机会也不感兴趣。这个时候应该自问你对什么感到不满足，并且重新审视它。 圣杯四的男人在兴趣缺缺时，一个人躲到树下沉思，你又是到哪里去找寻宁静呢？ 如果在感情占卜中出现圣杯四，除了外遇的可能外，也可能表示当事人对目前的情感机会感到不满意，即使有很多追求者，也不是他心目中的理想。如果他已经有固定对象，则他可能感到不满，而重新衡量这段感情。 如果圣杯四出现在牌阵中代表建议的位置，这是提醒你要采取圣杯四的态度，此事隐藏起来，好好思索，先对新机会抱持观望态度，考虑充分之后就好好把握，对你比较有利。</p>
+</blockquote>
+<h2 id="圣杯五"><a href="#圣杯五" class="headerlink" title="圣杯五"></a>圣杯五</h2><p><img lazyload="" alt="圣杯五" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯五.b8rnnyaqm.webp"></p>
+<h3 id="我的感受-4"><a href="#我的感受-4" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>五只杯子放在地上，三只倒着两只立起来。</li>
+<li>身穿蓝色衣服，灰色头发的人，低下头，望向河流。</li>
+</ul>
+<h3 id="牌面解析-4"><a href="#牌面解析-4" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>悲伤 忧郁 失落 失望</p>
+<p>圣杯五是一张代表悲伤、失落与失望的牌。在灰暗的天空底下，有一个人身着黑色斗篷，低头哀悼地上三个倾倒的杯子，里头五颜六色的酒流了出来。</p>
+<p>他的前方是一条河，象征悲伤之流，但河上有座象征意识与决心的桥，通往远处的房子。灰暗的天色反映牌中人的沮丧的内心世界。从图面上无法分辨出这人是男是女，显示悲伤的情绪无论男女皆能体验。</p>
+<h3 id="牌义推演-4"><a href="#牌义推演-4" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>这张牌与宝剑三的意义相当近似，两者都代表一定程度的悲伤与失落，但是圣杯牌毕竟是圣杯牌，杯子即使倒了，也不会像宝剑般造成具体的伤害，因此圣杯五虽有一定程度的失落感，却没有宝剑三那样的椎新刺骨之痛。</li>
+</ul>
+<hr>
+<ul>
+<li>三个杯子倒了，但仍有两个留下，图面中的人物只要转过身，就知道他并非孤立无援，并非一无所有，但他目前却没有意识到这点。等他哀悼够了，他可以拾起剩下的两个杯子，跨过通往外界的桥，继续他的生活。远处的房子象征稳固安全的生活，里头可能有他的亲人支持，而桥一直都在，他随时可以回去。</li>
+<li>人生的不如意十常八九。没有人能保证自己总是能随心所欲，难免有失望的时候。当我们处在低潮时，花一点时间来自怨自艾一番，是人之常情。</li>
+<li>圣杯五带给我们的启示是：不要看自己失去的，要珍惜自己所拥有的，无论是物质，还是给你关怀的亲友。经历一阵哀悼期之后，别忘了重新拾起希望，热切的生活下去。</li>
+</ul>
+<hr>
+<ul>
+<li>第一，根据伟特，逆位可以代表错误的计划。</li>
+<li>再者，从图面上来看，圣杯五逆位，剩下的两个杯子也倒了，当事人什么也不剩，所以悲伤的程度比正位更加严重。</li>
+<li>另一种可能则是当事人拒绝承认悲伤，因而压抑自己的情绪。最好的情况则是当事人意识到他还保有的部分，例如亲友的关怀，那三个倒掉的杯子就显得没那么重要了。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯五出现时，你应该知道自己是为何悲伤，给自己一段哀悼期，但别忘了你还有两个圣杯未倾倒，请考虑接受旁人的关怀与支持，也别忘记还有别的人或事值得你关注。 圣杯五和宝剑三意义近似，但圣杯五强调「失落」，宝剑三则着重「伤害」与「痛苦」，破坏力更强。 实占上，圣杯五也可以代表延迟。 圣杯五也可以代表遗产，因为图中人物一方面哀悼失去的亲人（三个倒掉的杯子），一方面又得到亲人遗留下来的财务（未倾倒的两个杯子）。</p>
+</blockquote>
+<h2 id="圣杯六"><a href="#圣杯六" class="headerlink" title="圣杯六"></a>圣杯六</h2><p><img lazyload="" alt="圣杯六" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯六.5j42anraog.webp"></p>
+<h3 id="我的感受-5"><a href="#我的感受-5" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>六只圣杯装着白百合（分不清百合与牵牛花？）</li>
+<li>一位女子将一只圣杯递给另一位</li>
+<li>身后有一位手持长矛的人，好像在维持环境的稳定与安全</li>
+</ul>
+<h3 id="牌面解析-5"><a href="#牌面解析-5" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>童年 回忆 思想 照顾 馈赠</p>
+<p>在一座宁静安详的庄园里，有六个盛装五角星花朵的圣杯。一个小男孩捧着圣杯，似乎在嗅着花香，又好像把圣杯献给小女孩。背景充斥代表快乐的鲜黄色，而天气晴和。让人彷佛有置身童话世界的感受。</p>
+<h3 id="牌义推演-5"><a href="#牌义推演-5" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>在经过圣杯五的悲伤之后，有时我们需要遁入回忆来重新发觉自己，才能继续向前走。藉由省思过去的经验，可以获得灵感和再生的力量。</li>
+<li>感情方面：对照圣杯二，我们可以发现这样的关系其实并不平等，而且保护与控制只是一线之隔。一方替另一方构筑一座安全的庄园，但却使他失去探索世界的机会，让他成为温室里的花朵，有朝一日甚至会成为钱币六中的乞丐，这种情况在逆位时尤为可能。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯六代表与过去有关的人事物。</li>
+<li>圣杯六有时代表思乡情怀。</li>
+<li>圣杯六也可以表示照顾以及馈赠，或者是得到遗产。你可能获得某人的特别关照，好像他把你放到这个安全的庄园中。也可能代表送礼或收礼。更广义来说，提供经验与教育，也是馈赠的一种形式。</li>
+<li>圣杯六的快乐很简单，就像儿时一般天真，有时只是好友帮你泡的一杯咖啡，就能感到无上的喜悦。</li>
+<li>有时圣杯六也提醒我们，要像男孩一样慷慨大方，乐于付出。如果你有仇恨，请你放下与原谅，才能得到真正的和谐。</li>
+<li>圣杯六在感情方面，可以代表如初恋般单纯的恋情，或者与旧日情人重逢。也可能表示一方照顾另一方的关系。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯六逆位，童年的美好回忆不再，反而充斥惨痛的记忆，似乎一直在拉扯着你。当事人可能无法获得适当的照顾、被忽略、被遗弃、甚至受虐。当圣杯六的特质发展过度，逆位代表沉溺于过去，不肯尝试新事物，使生活停步不前。</li>
+<li>从另一方面来看，圣杯六逆位也可能表示当事人回忆够了，准备向前看，反而会把重心放在未来。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>你最近跟什么旧时人物搭上线了吗？留心它们提供给你的经验与洞见。 圣杯六也可能代表跟小孩游玩，或是儿童玩接触的机会。 此时可能有亲友给你情感或馈赠，开心接受之余，别忘了回馈。</p>
+</blockquote>
+<h2 id="圣杯七"><a href="#圣杯七" class="headerlink" title="圣杯七"></a>圣杯七</h2><p><img lazyload="" alt="圣杯七" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯七.54xmjsiztd.webp"></p>
+<h3 id="我的感受-6"><a href="#我的感受-6" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>云上放着七个圣杯，装着不同的东西，智慧、财富、成功、高塔、火蜥蜴？中间的是天使吗？</li>
+<li>装着成功花环的圣杯上有一只骷髅，它是画中主人公的写照吗</li>
+</ul>
+<h3 id="牌面解析-6"><a href="#牌面解析-6" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>迷惘 幻觉 想像 梦境 选择</p>
+<p>七个圣杯飘浮在云雾弥漫的半空中，杯中分别装着城堡（象征冒险）、珠宝（财富）、桂冠（胜利）、龙（恐惧，另一说是诱惑）、人头、盖着布发光的人（自己）以及蛇（智慧，另一说是嫉妒）。请注意桂冠的下方有颗不显眼的骷髅头，成功与死亡并存，似乎在给人什么警惕。有个人面对着这些圣杯，不知该如何选择，他的身体姿态似乎流露出些微恐惧。</p>
+<h3 id="牌义推演-6"><a href="#牌义推演-6" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>圣杯七代表的是生活中的非现实层面，一般人不会真的把这些幻想付诸行动，因此圣杯七不是一张代表行动的牌，而只是一种个人想象的心理状态而已。</li>
+<li>如果当事人目前有很想进行的计划，感觉未来前景一片大好，圣杯七警告：这可能只是自己虚拟的想象罢了。</li>
+<li>如果在恋爱占卜中，当事人觉得对方似乎对他有意，圣杯七出现，代表这恐怕只是一场一厢情愿的白日梦。圣杯七可以代表虚幻的恋情、不踏实的人际关系，与不切实际的打算。</li>
+<li>太多选择，往往令人无所适从，圣杯七中的男子正面对这样的窘境。这七个杯中装着世上人们最渴求的梦想，但他似乎并不知道，这一切其实都是幻觉。</li>
+<li>圣杯七甚至可能暗示各种上瘾症状，患者逃避现实，进入自己的幻想世界。</li>
+<li>在比较不好的情况下，圣杯七可能代表被欺骗，也许是自己的幻想骗了自己。此时即使得到成功，那也只是南柯一梦，多半是当事人自我膨胀，并非真正的成功。</li>
+</ul>
+<hr>
+<ul>
+<li>不再停滞不前，此时云雾即将散开，反而容易做出决定，实际把自己的梦想付诸行动。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯七经常表示你沉迷某些人事物当中，包括白日梦。 神秘经验和宗教体验也是圣杯七可能的意义，也许你会经历通灵、预知梦、眠、灵魂出体、神迹显现等奇妙机缘。 圣杯七若出现在牌阵中建议的位置，正位时显示你可以从这些想像、梦境或神秘经验中获得难得的启示，但逆位时就是提醒你该醒醒了。 除了圣杯七，还有哪些牌可以代表上瘾呢？试着把它们找出来。如果你正处于上瘾状态，请善用死神牌或审判牌的力量，洗心革面。</p>
+</blockquote>
+<h2 id="圣杯八"><a href="#圣杯八" class="headerlink" title="圣杯八"></a>圣杯八</h2><p><img lazyload="" alt="圣杯八" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯八.1zi4kuokwa.webp"></p>
+<h3 id="我的感受-7"><a href="#我的感受-7" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>下五上三的圣杯排列，看着好奇怪</li>
+<li>这月亮的脸看着好拽</li>
+<li>身穿红衣的人，手持拐杖往外走</li>
+<li>幽静、寂寞的感觉</li>
+</ul>
+<h3 id="牌面解析-7"><a href="#牌面解析-7" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>抛弃 不满足 行动 牺牲</p>
+<p>身穿红衣红鞋的男子在暮色中，手持长杖，离开他先前辛苦建立的的八个杯子，越过河川，转身而去。四周沼泽密布，象征淤塞的情感，如同一滩死水。</p>
+<h3 id="牌义推演-7"><a href="#牌义推演-7" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>要搭起那八个杯子，起码需要一阵辛劳，他却发现八个圣杯中间的一个缺口，所以毅然转身离去。他的红色衣鞋以及长杖象征他的行动力，而现在他把这些精力从他过去构筑起的欢乐与成就 ── 也就是那八个圣杯 ── 里移开，转而寻找失落的那一个圣杯。为了失落的一个圣杯，而抛弃原有的八个圣杯，说他傻吗？似乎不傻。说他不傻吗？也不像。这是个见仁见智的问题。他其实可以带着原来的八个杯子一起走，他却选择不要，由此可见圣杯八的中心题旨「抛弃」。</li>
+<li>当身处在沼泽般僵化的局势中，圣杯八的表现是以行动打破陈规，拿起你的杖，放下眷恋，勇敢前行。</li>
+<li>在感情占卜上，显而易见，代表放弃现有的感情，转而追寻自己希冀的幸福。那幸福不一定是另一个对象，更有可能是自己的理想与坚持。若与隐士牌或女祭司牌共同出现，更加彰显此一主题。</li>
+<li>八个圣杯中间缺少的那一杯，指出过往拥有的成就总是有美中不足。世上原无十全十美之事，我们可以全盘接受，也可能像圣杯八的这个男子一样，把焦点放在残缺之处，心怀失望，毫不满足，于是出发去寻找失落的部份。成功与否，没有把握，他可能果真找到，也可能全盘皆输。但，起码他有勇气行动。</li>
+<li>圣杯八也可以代表牺牲，亦即象征放弃现有的物质快乐，以追寻性灵成长，和隐士与吊人的概念隐隐相通。</li>
+</ul>
+<hr>
+<ul>
+<li>当事人可能不愿或不敢采取圣杯八的行动，不愿意突破，而处于现状。</li>
+<li>当事人可能贸然采取圣杯八的行动，但他抛弃的事物却十分有价值，且大有可为，因而事后感到后悔。</li>
+<li>伟特提供的圣杯八牌义是「极乐、幸福、宴会」，看来圣杯八的男子已经成功脱离淤积的沼泽，找到他人生的春天了。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯八所抛弃的不只是实质的人或物，也可以抛弃旧有的信仰或价值观。 圣杯八提醒你要留意生活中什么事情是不需要的，现在就是清理「垃圾」的好时机。</p>
+</blockquote>
+<h2 id="圣杯九"><a href="#圣杯九" class="headerlink" title="圣杯九"></a>圣杯九</h2><p><img lazyload="" alt="圣杯九" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯九.77df7uhkun.webp"></p>
+<h3 id="我的感受-8"><a href="#我的感受-8" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>好得意，像是彰显自己的成就</li>
+<li>黄色和蓝色的主色调，对比有点强烈。黄色记得有成功的含义，蓝色有一些冷静的含义</li>
+</ul>
+<h3 id="牌面解析-8"><a href="#牌面解析-8" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>享乐 得意 美梦成真</p>
+<p>一个财主装扮的的男子坐在小凳上，双手抱胸，神情怡然自得。他身后的高桌上，覆盖蓝色桌布，九个圣杯排排站。背景则是一片光明的鲜黄色。</p>
+<h3 id="牌义推演-8"><a href="#牌义推演-8" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>这张牌也可以与钱币六做个比较，在钱币六中，我们看到手心向下的财主，与手心向上的乞丐；圣杯九的财主则抱胸端坐，展现一种单纯的满足，无形中与外界隔绝，甚至隐约流露出某种炫示意味。</li>
+<li>相较于与大自然亲近的钱币九，也许圣杯九代表的享受很肤浅，但是在身心疲惫之余，没什么能比圣杯九这样的享受更让人得到舒展的了。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯九的昵称叫做美梦成真，代表当事人的愿望极有可能实现，无论是精神或是物质方面。所谓的「情场得意，赌场失意」定律，并不适用圣杯九，圣杯九可是要「人财两得」的。财主非常满意于他的现状，他洋洋得意的抱胸姿态，显示出某种程度的自负。</li>
+<li>如果将桌子的摆设看作一场饮宴，不难推测出圣杯九也代表享乐，而且通常是物质感官上的享受。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯九逆位，伟特给予的解释是「真相，忠实，自由」。其实是表示当事人可以超越感官享受的阶段，转而追求更高层次的快乐，也许是透过禅修、瑜伽，或是任何自我充实的方式。美食和声光刺激此时已经无法娱乐他，他要的是更长远的快乐。这其实是对自己忠实的表现，能使人获致最终的解放与自由。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯九表示你最近达成愿望，或是体验一场宜人的享受。 圣杯九如果代表人物，他通常对自己拥有的感到很满足，但他双手抱胸的姿势显示他不见得愿意与别人分享，也不见得能敞开心怀与人沟通。 圣杯九和钱币九都代表成就之后的享受，但两位人物都是孤独的，我们可以拿这两张牌和圣杯三、权杖四做一个对照。 圣杯九在健康方面的占卜，代表身体很好，逆位时，主要不要休闲过度，关闭电视，少吃一些吧。</p>
+</blockquote>
+<h2 id="圣杯十"><a href="#圣杯十" class="headerlink" title="圣杯十"></a>圣杯十</h2><p><img lazyload="" alt="圣杯十" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯十.2vem0ay9cl.webp"></p>
+<h3 id="我的感受-9"><a href="#我的感受-9" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>家庭和睦、大圆满</li>
+</ul>
+<h3 id="牌面解析-9"><a href="#牌面解析-9" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>情感团体 家庭 满足 和谐</p>
+<p>在图中我们看到一家四口和乐融融，父母亲搂抱对方，各举一只手迎向圣杯彩虹，两个孩子快乐的手牵手跳舞，背景是清翠的树木河流，和一栋房屋。</p>
+<h3 id="牌义推演-9"><a href="#牌义推演-9" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>圣杯九指的是个人的成就与满足，圣杯十表现的就是在人际关系中的快乐和满足。诚然，独乐乐不如众乐乐，快乐不会因与别人分享而减少，相反的，快乐是越分享越多。</li>
+<li>与追求事业成功的钱币十家庭相较，圣杯十在意的是家庭生活中的和谐与快乐，金钱事业上的成功不是他们的主要目标。他们乐于分享爱，付出关怀，简单的家庭生活就让他们感到无比富足。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯十主要表现情感联系的团体。在这其中我们可以得到充份的情感交流与支持，就像是在背后支撑我们的力量，我们知道自己并不孤独。</li>
+<li>欢乐、喜悦和满足充满在四周，我们还可将这些幸福与所爱之人分享。敌对不再，而和谐与宁静取而代之。如果之前经历一段人际冲突，圣杯十出现，代表和解指日可待。</li>
+<li>在感情方面的占卜，圣杯十代表两人已经超越圣杯二的热恋阶段，他们不再只是含情脉脉看着对方，而是共同看着彩虹，迎向璀璨的未来。为了寻求更稳定更恒久的关系，共组家庭是很有可能的决定。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯十逆位，代表情感团体可能出现某种程度的不和。耐心是必须的，勿因冲动而坏事。</li>
+<li>有时圣杯十逆位可能表示当事人不肯承认或接受生活中的快乐，对他人付出的关爱置之不理。</li>
+</ul>
+<blockquote>
+<p>葵花锦囊</p>
+<p>圣杯十代表学生社团的典型，因为学生社团主要以情感维系，且不以盈利为目的。 圣杯十如果出现在牌阵中代表环境的位置，表示当事人有坚强的精神支持后盾，通常是家人。钱币十的家庭则提供经济上或实质上的帮助。 圣杯十如果出现在建议的位置，表示你可以充分运用家人或情感团体的支持，同时建议你尽情付出爱与关怀，因为他们会给你更多。</p>
+</blockquote>
+<h2 id="圣杯侍从"><a href="#圣杯侍从" class="headerlink" title="圣杯侍从"></a>圣杯侍从</h2><p><img lazyload="" alt="圣杯侍从" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯侍从.67xbuoetp2.webp"></p>
+<h3 id="我的感受-10"><a href="#我的感受-10" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>海边、杯中的鱼、帽子有点像鲸鱼</li>
+<li>养鱼、掌控之中</li>
+</ul>
+<h3 id="牌面解析-10"><a href="#牌面解析-10" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>好奇的小孩 好朋友</p>
+<p>圣杯侍者穿着花朵图案的衣服，用好奇的眼光，没有任何压力地看着杯中蹦出的一条鱼，鱼象征想象力，从杯中探出头来，代表圣杯侍者拥有过人的想象力。</p>
+<p>圣杯侍者身体很轻松地站着，左手叉腰，面带微笑，不难让人发现他个性友善。背景是波浪起伏的海面。因为圣杯牌组属于水要素，所以每张宫廷牌的背景都有水。</p>
+<h3 id="牌义推演-10"><a href="#牌义推演-10" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>相较于权杖侍者带着好奇心四处探索游玩，圣杯侍者对于有兴趣的事物，则会认真搞懂。他对文学、音乐、艺术可能很有兴趣，前途光明。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯侍者是想象力最丰富的孩子，常常问一些让人想都想不到的问题。他很随和，合作性高，可靠，关心别人的感受，也乐意为他人服务。</li>
+<li>通常代表一位愿意帮助你的朋友，他愿意无条件支持你、倾听你、帮你想办法，反过来说，他其实也需要别人的关怀。另一方面，他是个好学的小孩子，通常表现得有点害羞内向。</li>
+<li>如果他是男生，则女人气偏重。如果他是成人，则如孩童般纯真善良。</li>
+<li>他的缺点是情感上有些依赖。因为他的顺从度高，可能容易受环境或朋友影响。</li>
+<li>侍者拿着装有鱼的杯子，好像在送人东西，因此代表馈赠或人际关系的新讯息，你可以藉此认识新朋友，把握恋爱机会。</li>
+<li>圣杯侍者可能表示刚萌芽或纯真的恋情，但更常见的情况是代表交到好朋友。</li>
+<li>他也可以代表一段适合沉思、冥想或幻想的时期，此时你可以尽情发挥创意和想象力，多做一些冥想的练习。</li>
+<li>在健康方面，表示怀孕或新生儿诞生。</li>
+</ul>
+<hr>
+<ul>
+<li>可能表示当事人拒接接受圣杯侍者提供的讯息或机会，或是不愿对他人付出，他可能拒绝别人的善意或邀请。</li>
+<li>另一方面，可能代表他的想法太过天马行空，脱离常轨，不做还好，做了可能会导致麻烦。也许他过度敏感，容易受伤。</li>
+<li>如果代表事件，则可能得到坏消息，或得到取消延迟的通知。</li>
+</ul>
+<h2 id="圣杯骑士"><a href="#圣杯骑士" class="headerlink" title="圣杯骑士"></a>圣杯骑士</h2><p><img lazyload="" alt="圣杯骑士" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯骑士.3yebb6u383.webp"></p>
+<h3 id="我的感受-11"><a href="#我的感受-11" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>好帅的白马</li>
+<li>地面有些干枯，河边有几棵树</li>
+<li>铠甲上有水和鱼的图案</li>
+</ul>
+<h3 id="牌面解析-11"><a href="#牌面解析-11" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>白马王子 浪漫诗人</p>
+<p>不同于权杖骑士或宝剑骑士的迅捷骑马姿态，圣杯骑士的白马很有绅士风度，优雅地行进，跟主人一样。圣杯骑士平举着圣杯，他的眼光很有些梦幻，深深注视着圣杯。</p>
+<p>他的衣服上有红鱼图案，鱼象征想象力、创意和精神，红色则指出骑士的热忱。他的头盔和鞋子上都有翅膀图案，象征想象力。这一人一马就这样朝着河流前进。</p>
+<h3 id="牌义推演-11"><a href="#牌义推演-11" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>对于爱情他很热衷，他是女性心目中的理想情人，不过他却不像圣杯国王那样专一，在不好的情况下，他可能会玩爱情游戏，以当情圣自豪。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯骑士是最浪漫的情人，俗称白马王子。他是个梦想家，生性多情，温柔倜傥，风流潇洒，魅力十足，通常具有艺术天份，也许懂得写诗作曲，演奏乐器，让女孩神魂颠倒。</li>
+<li>他有很崇高的理想，表面开起来可能有点害羞，不过他也会跟熟朋友高谈阔论，这样的特质对初次见面的异性通常很有吸引力，虽然他不见得能够踏实的实现理想，而且有点好高骛远又懒惰。</li>
+<li>如果他是你的朋友，你会觉得他很有理想抱负，多才多艺，很友善，脾气也不错，通常很有礼貌，对别人的情绪感觉也很敏锐，不过行动力稍微弱了点。</li>
+<li>圣杯骑士的挑战在于如何把高远的梦想以行动来实现，而他通常都做不到。</li>
+<li>圣杯骑士带来邀请与机会，可能有朋友来访、邀请函、交际或恋爱机会。</li>
+<li>也可能代表旅行，特别是水边旅行，或是在潮湿气候地区旅行。</li>
+</ul>
+<hr>
+<ul>
+<li>逆位的圣杯骑士是个花心大萝卜，他仍热衷爱情游戏，说尽甜言蜜语，甚至玩到床上去，但却十分不诚实也不专一，还可能用爱情作为达成目标的手段。如果此时你遇到这样一位对象，除非你同样抱持玩玩的心态，否则请特别小心。</li>
+<li>另一方面，有为了逃避现实而成瘾的可能，也可能表示单恋或自恋，还有些人认为圣杯骑士逆位可能暗示同性恋。</li>
+<li>如果代表事件，则对于各种邀请要特别审慎看待。</li>
+</ul>
+<h2 id="圣杯王后"><a href="#圣杯王后" class="headerlink" title="圣杯王后"></a>圣杯王后</h2><p><img lazyload="" alt="圣杯王后" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯王后.7zqapky6l7.webp"></p>
+<h3 id="我的感受-12"><a href="#我的感受-12" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>圣杯的样子、好奇怪</li>
+<li>王座上有三个人鱼小孩的图案</li>
+</ul>
+<h3 id="牌面解析-12"><a href="#牌面解析-12" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>修女 灵媒 言情小说的女主角 女艺术家</p>
+<p>圣杯王后双手捧着圣杯，眼神直直的注视着圣杯。那圣杯是教堂形状，两臂各有一位天使，顶端是十字架，象征圣杯王后的虔诚。</p>
+<p>她坐在海边的宝座上，宝座基部有个小美人鱼抓鱼的图案，顶部是两个小美人鱼共同抱着一个大蚌壳。相较于坐在海面与世隔绝的圣杯国王，有三只美人鱼相伴的圣杯王后，坐在陆地上，象征她更常与人接触。</p>
+<h3 id="牌义推演-12"><a href="#牌义推演-12" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>圣杯王后是四位王后中最温柔慈爱的母亲。她是个小鸟依人的妻子，为儿女奉献一切的好妈妈。</li>
+<li>然而，这样的个性可能流于多愁善感，甚至有点情绪化。她恐怕受不了宝剑型人的绝对理性和尖锐，宝剑型人也会受不了她的感性和情绪波动。</li>
+<li>她有很强的想象力，常常出现新的想法，不过却很少付诸行动，在这方面她与钱币型人较为匹配，钱币型人可以为她逐步实现理想。</li>
+</ul>
+<hr>
+<ul>
+<li>她信任直觉与梦境，具有超越常人的感应力。她是个充满梦幻和诗意的情人，擅长使用眼泪攻势。慈悲心和同情心极强，很有耐心，照顾小孩和动植物是她的专长，因为她打从心底喜欢呵护别人。</li>
+<li>她也能够设身处地为别人着想，非常重视别人的想法，凡事容易顺着他人的意见，有时显得比较没原则，好欺负。她不讲理，只讲情，情感丰富的程度，令人叹为观止。</li>
+<li>如果她是你的上司，你与她沟通，她会听，只是在言语上最好小心斟酌，不要刺伤了她。万一引起她的情绪反应，她会当众哭给你看。如果她做事没什么规划，喜欢随时更改政策，你也不要太惊讶。</li>
+<li>她是很称职的保姆、护士、艺术家和诉苦的对象。</li>
+<li>可能表示当事人在进行灵性成长方面的活动，或有直觉跟梦境的特殊体验。也可能代表当事人负责照顾抚育的工作。</li>
+</ul>
+<hr>
+<ul>
+<li>一方面她会被情绪所淹没，活在幻想中，总是以受害者的形象出现，变得忧郁、善感、自怜、情绪化、过度敏感、不切实际、依赖、沉迷上瘾、不老实、缺乏现实感。</li>
+<li>正位时，她是最忠贞的情人，逆位的她却变得像堕落的天使，过度渴求爱情，会刻意诱惑男人，做出不道德的事。她在情绪上失去安全感，导致疑心或嫉妒，整天黏着情人不放。</li>
+<li>另一方面，可能表示当事人缺乏信任直觉或梦境的能力，或不愿表达情感或关怀。逆位的圣杯王后不值得信赖。</li>
+</ul>
+<h2 id="圣杯国王"><a href="#圣杯国王" class="headerlink" title="圣杯国王"></a>圣杯国王</h2><p><img lazyload="" alt="圣杯国王" data-src="https://cdn.statically.io/gh/Paraderno/picx-images-hosting@master/圣杯国王.3go9mlspn2.webp"></p>
+<h3 id="我的感受-13"><a href="#我的感受-13" class="headerlink" title="我的感受"></a>我的感受</h3><ul>
+<li>背后有一艘帆船</li>
+<li>王座在海面上漂浮，比沙漠上的权杖国王还幽默</li>
+<li>服饰上没有鱼和水，佩戴了一只金色的鱼。</li>
+<li>左手拿的什么，权杖吗。下边的王座上也有权杖的图案</li>
+</ul>
+<h3 id="牌面解析-13"><a href="#牌面解析-13" class="headerlink" title="牌面解析"></a>牌面解析</h3><p>宗教家 慈善家 艺术家</p>
+<p>国王坐在汹涌海中央的宝座上，左边有条鱼跳出海面，右边有一艘帆船，象征潜意识浮出。他的内袍是代表水要素的蓝色，胸前还挂着鱼形项链，象征想象力或创意。</p>
+<p>他左手拿着象征权利的杖，右手持圣杯，他却是圣杯家族中唯一不注视圣杯的人，暗示他不能完全沉浸在圣杯特质中。而且，他虽然身处海中央，却没有碰到水，也象征在某些程度上他必须跟他充满感情和创意的本性划清界限，以符合领导形象。</p>
+<h3 id="牌义推演-13"><a href="#牌义推演-13" class="headerlink" title="牌义推演"></a>牌义推演</h3><ul>
+<li>相较于宝剑国王的纯粹理性分析，圣杯国王懂得运用直觉，他成熟且经历练，所以也会将人情因素考虑进去。</li>
+</ul>
+<hr>
+<ul>
+<li>在古代，圣杯国王是宗教领袖；他不像一般社会认为的领导者，因为他不用威权统治，反而慈爱温和又体贴，修养很好，对下属比其他国王都宽容。</li>
+<li>现在的圣杯国王则是最顾家的新好男人。他是最慈祥的老爷爷，最温柔的丈夫，和最溺爱孩子的父亲。他非常重视家庭，愿意为家人奉献，可能有很深的宗教信仰。</li>
+<li>他像是关心全家健康的家庭医师、具有同理心的咨商师，或是关怀社会的慈善家。他重视和平，富有艺术气息，有时候让人觉得他像圣人一般。</li>
+<li>他如果是父亲，一定非常关心孩子，但碍于传统文化，可能会假仙一下。他如果是情人或丈夫，对另一半非常忠心，也很顾家。他如果是朋友，会非常好客，当你有需要时，他会伸出援手。</li>
+<li>圣杯国王有个矛盾之处，一方面他具有这些艺术和想象力特质，一方面又得维持领导者地位，所以他不能尽情流露情感，导致内心跟外在表现可能不一致。</li>
+<li>在艺术、宗教或灵修领域获得成功。你可能会照顾别人或受到照顾。</li>
+</ul>
+<hr>
+<ul>
+<li>圣杯国王正位时，情感控制得宜；逆位时，内外不一致的情形更严重，他内心澎湃的情感也变了调，而且他掌控不住，只好加以伪装，导致笑里藏刀，口蜜腹剑，变成双面人，不老实，甚至有外遇倾向。</li>
+<li>在正位时，他运用想象力和直觉力从事艺术创作，逆位时，就用来撒谎。</li>
+</ul>
+
+            </div>
+
+            
+
+            
+                <ul class="post-tags-box">
+                    
+                        <li class="tag-item">
+                            <a href="/tags/%E5%A1%94%E7%BD%97%E7%89%8C%E7%89%8C%E4%B9%89/">#塔罗牌牌义</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <div class="article-nav">
+                    
+                        <div class="article-prev">
+                            <a class="prev"
+                               rel="prev"
+                               href="/2024/06/23/WXG%E5%AE%9E%E4%B9%A0/Week%205/"
+                            >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                                <span class="title flex-center">
+                                <span class="post-nav-title-item">WXG实习 Week 5</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                            </a>
+                        </div>
+                    
+                    
+                        <div class="article-next">
+                            <a class="next"
+                               rel="next"
+                               href="/2024/06/16/WXG%E5%AE%9E%E4%B9%A0/Week%204/"
+                            >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">WXG实习 Week 4</span>
+                                <span class="post-nav-item">下一篇</span>
+                            </span>
+                                <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                            </a>
+                        </div>
+                    
+                </div>
+            
+
+            
+        </div>
+
+        
+            <div class="toc-content-container">
+                <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E9%A6%96%E7%89%8C"><span class="nav-text">圣杯首牌</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E4%BA%8C"><span class="nav-text">圣杯二</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-1"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-1"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-1"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E4%B8%89"><span class="nav-text">圣杯三</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-2"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-2"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-2"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E5%9B%9B"><span class="nav-text">圣杯四</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-3"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-3"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-3"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E4%BA%94"><span class="nav-text">圣杯五</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-4"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-4"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-4"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E5%85%AD"><span class="nav-text">圣杯六</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-5"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-5"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-5"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E4%B8%83"><span class="nav-text">圣杯七</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-6"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-6"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-6"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E5%85%AB"><span class="nav-text">圣杯八</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-7"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-7"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-7"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E4%B9%9D"><span class="nav-text">圣杯九</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-8"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-8"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-8"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E5%8D%81"><span class="nav-text">圣杯十</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-9"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-9"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-9"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E4%BE%8D%E4%BB%8E"><span class="nav-text">圣杯侍从</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-10"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-10"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-10"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E9%AA%91%E5%A3%AB"><span class="nav-text">圣杯骑士</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-11"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-11"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-11"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E7%8E%8B%E5%90%8E"><span class="nav-text">圣杯王后</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-12"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-12"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-12"><span class="nav-text">牌义推演</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9C%A3%E6%9D%AF%E5%9B%BD%E7%8E%8B"><span class="nav-text">圣杯国王</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%88%91%E7%9A%84%E6%84%9F%E5%8F%97-13"><span class="nav-text">我的感受</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E9%9D%A2%E8%A7%A3%E6%9E%90-13"><span class="nav-text">牌面解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%89%8C%E4%B9%89%E6%8E%A8%E6%BC%94-13"><span class="nav-text">牌义推演</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            
+<footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+                <span>2022</span> -
+            
+            2024
+            
+                &nbsp;<i class="fas fa-heart icon-animate"></i>
+                &nbsp;<a href="/">儒烏風亭いおり</a>
+            
+        </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.6.1</a>
+        </div>
+        
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item flex-center toggle-show-toc">
+                <i class="fas fa-list"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="fas fa-arrow-up"></i>
+            </li>
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="close-popup-btn">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-block.js"></script>
+
+
+
+
+    
+<script src="/js/lazyload.js"></script>
+
+
+
+<div class="post-scripts">
+    
+        
+<script src="/js/post-helper.js"></script>
+
+        
+            
+<script src="/js/libs/anime.min.js"></script>
+
+        
+        
+            
+<script src="/js/toc.js"></script>
+
+        
+    
+</div>
+
+
+
+</body>
+</html>
